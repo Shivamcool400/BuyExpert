@@ -32,6 +32,42 @@ import Samsung_9 from './phonecomponents/samsung/samsung_9';
 import Samsung_12 from './phonecomponents/samsung/samsung_12';
 import Samsung_11 from './phonecomponents/samsung/samsung_11';
 import Samsung_10 from './phonecomponents/samsung/samsung_10';
+import Realme_1 from './phonecomponents/realme/realme_1';
+import Realme_2 from './phonecomponents/realme/realme_2';
+import Realme_3 from './phonecomponents/realme/realme_3';
+import Realme_4 from './phonecomponents/realme/realme_4';
+import Realme_5 from './phonecomponents/realme/realme_5';
+import Realme_6 from './phonecomponents/realme/realme_6';
+import Realme_7 from './phonecomponents/realme/realme_7';
+import Realme_8 from './phonecomponents/realme/realme_8';
+import Realme_9 from './phonecomponents/realme/realme_9';
+import Xiaomi_1 from './phonecomponents/xiaomi/xiaomi_1';
+import Xiaomi_2 from './phonecomponents/xiaomi/xiaomi_2';
+import Xiaomi_3 from './phonecomponents/xiaomi/xiaomi_3';
+import Xiaomi_4 from './phonecomponents/xiaomi/xiaomi_4';
+import Xiaomi_5 from './phonecomponents/xiaomi/xiaomi_5';
+import Xiaomi_6 from './phonecomponents/xiaomi/xiaomi_6';
+import Xiaomi_7 from './phonecomponents/xiaomi/xiaomi_7';
+import Xiaomi_8 from './phonecomponents/xiaomi/xiaomi_8';
+import Xiaomi_9 from './phonecomponents/xiaomi/xiaomi_9';
+import Oppo_1 from './phonecomponents/oppo/oppo_1';
+import Oppo_2 from './phonecomponents/oppo/oppo_2';
+import Oppo_3 from './phonecomponents/oppo/oppo_3';
+import Oppo_4 from './phonecomponents/oppo/oppo_4';
+import Oppo_5 from './phonecomponents/oppo/oppo_5';
+import Oppo_6 from './phonecomponents/oppo/oppo_6';
+import Oppo_7 from './phonecomponents/oppo/oppo_7';
+import Oppo_8 from './phonecomponents/oppo/oppo_8';
+import Oppo_9 from './phonecomponents/oppo/oppo_9';
+import Vivo_1 from './phonecomponents/vivo/vivo_1';
+import Vivo_2 from './phonecomponents/vivo/vivo_2';
+import Vivo_3 from './phonecomponents/vivo/vivo_3';
+import Vivo_4 from './phonecomponents/vivo/vivo_4';
+import Vivo_5 from './phonecomponents/vivo/vivo_5';
+import Vivo_6 from './phonecomponents/vivo/vivo_6';
+import Vivo_7 from './phonecomponents/vivo/vivo_7';
+import Vivo_8 from './phonecomponents/vivo/vivo_8';
+import Vivo_9 from './phonecomponents/vivo/vivo_9';
 
 
 function Phones () {
@@ -83,7 +119,10 @@ function Phones () {
     setShow(true);
   }
 const reset = () => {
-  window.location.reload(false);
+  setSelected("");
+ setShow("");
+ var dropDown = document.getElementById("inputGroupSelect01");  
+ dropDown.selectedIndex = 0;
 }
   
 
@@ -335,6 +374,147 @@ const reset = () => {
 {selected === "samsung" && price === "above 40000" && genere === "gaming" && show && ram === "8gb above 256gb storage" && <>           <Samsung_10 /><Samsung_11 /> <Samsung_12/>  </>}
 {selected === "samsung" && price === "above 40000" && genere === "normal" && show && ram === "8gb above 256gb storage" && <>           <Samsung_10 /><Samsung_11 /> <Samsung_12/>  </>}
 {selected === "samsung" && price === "above 40000" && genere === "both"   && show && ram === "8gb above 256gb storage" && <>           <Samsung_10 /><Samsung_11 /> <Samsung_12/>  </>}
+
+
+{/* realme above 10000 */}
+{selected === "realme" && price === "above 10000" && genere === "gaming" && show && ram === "6gb above 64gb storage/memorycard" && <> <Realme_1 /><Realme_2 /> <Realme_3/>  </>}
+{selected === "realme" && price === "above 10000" && genere === "normal" && show && ram === "6gb above 64gb storage/memorycard" && <> <Realme_1 /><Realme_2 /> <Realme_3/>  </>}
+{selected === "realme" && price === "above 10000" && genere === "speedy" && show && ram === "6gb above 64gb storage/memorycard" && <> <Realme_1 /><Realme_2 /> <Realme_3/>  </>}
+{selected === "realme" && price === "above 10000" && genere === "normal" && show && ram === "6gb above 128gb storage" && <>           <Realme_1 /><Realme_2 /> <Realme_3/>  </>}
+{selected === "realme" && price === "above 10000" && genere === "speedy" && show && ram === "6gb above 128gb storage" && <>           <Realme_1 /><Realme_2 /> <Realme_3/>  </>}
+{selected === "realme" && price === "above 10000" && genere === "gaming" && show && ram === "6gb above 128gb storage" && <>           <Realme_1 /><Realme_2 /> <Realme_3/>  </>}
+{selected === "realme" && price === "above 10000" && genere === "speedy" && show && ram === "8gb above 128gb storage" && <>           <Realme_1 /><Realme_2 /> <Realme_3/>  </>}
+{selected === "realme" && price === "above 10000" && genere === "gaming" && show && ram === "8gb above 128gb storage" && <>           <Realme_1 /><Realme_2 /> <Realme_3/>  </>}
+{selected === "realme" && price === "above 10000" && genere === "normal" && show && ram === "8gb above 128gb storage" && <>           <Realme_1 /><Realme_2 /> <Realme_3/>  </>}
+
+{/* realme above 20000 */}
+{selected === "realme" && price === "above 20000" && genere === "gaming" && show && ram === "6gb above 64gb storage/memorycard" && <> <Realme_4 /><Realme_5 /> <Realme_6/>  </>}
+{selected === "realme" && price === "above 20000" && genere === "normal" && show && ram === "6gb above 64gb storage/memorycard" && <> <Realme_4 /><Realme_5 /> <Realme_6/>  </>}
+{selected === "realme" && price === "above 20000" && genere === "speedy" && show && ram === "6gb above 64gb storage/memorycard" && <> <Realme_4 /><Realme_5 /> <Realme_6/>  </>}
+{selected === "realme" && price === "above 20000" && genere === "normal" && show && ram === "6gb above 128gb storage" && <>           <Realme_4 /><Realme_5 /> <Realme_6/>  </>}
+{selected === "realme" && price === "above 20000" && genere === "speedy" && show && ram === "6gb above 128gb storage" && <>           <Realme_4 /><Realme_5 /> <Realme_6/>  </>}
+{selected === "realme" && price === "above 20000" && genere === "gaming" && show && ram === "6gb above 128gb storage" && <>           <Realme_4 /><Realme_5 /> <Realme_6/>  </>}
+{selected === "realme" && price === "above 20000" && genere === "speedy" && show && ram === "8gb above 128gb storage" && <>           <Realme_4 /><Realme_5 /> <Realme_6/>  </>}
+{selected === "realme" && price === "above 20000" && genere === "gaming" && show && ram === "8gb above 128gb storage" && <>           <Realme_4 /><Realme_5 /> <Realme_6/>  </>}
+{selected === "realme" && price === "above 20000" && genere === "normal" && show && ram === "8gb above 128gb storage" && <>           <Realme_4 /><Realme_5 /> <Realme_6/>  </>}
+
+{/* realme above 30000 */}
+{selected === "realme" && price === "above 30000" && genere === "gaming" && show && ram === "6gb above 64gb storage/memorycard" && <> <Realme_7 /><Realme_8 /> <Realme_9/>  </>}
+{selected === "realme" && price === "above 30000" && genere === "normal" && show && ram === "6gb above 64gb storage/memorycard" && <> <Realme_7 /><Realme_8 /> <Realme_9/>  </>}
+{selected === "realme" && price === "above 30000" && genere === "speedy" && show && ram === "6gb above 64gb storage/memorycard" && <> <Realme_7 /><Realme_8 /> <Realme_9/>  </>}
+{selected === "realme" && price === "above 30000" && genere === "normal" && show && ram === "6gb above 128gb storage" && <>           <Realme_7 /><Realme_8 /> <Realme_9/>  </>}
+{selected === "realme" && price === "above 30000" && genere === "speedy" && show && ram === "6gb above 128gb storage" && <>           <Realme_7 /><Realme_8 /> <Realme_9/>  </>}
+{selected === "realme" && price === "above 30000" && genere === "gaming" && show && ram === "6gb above 128gb storage" && <>           <Realme_7 /><Realme_8 /> <Realme_9/>  </>}
+{selected === "realme" && price === "above 30000" && genere === "speedy" && show && ram === "8gb above 128gb storage" && <>           <Realme_7 /><Realme_8 /> <Realme_9/>  </>}
+{selected === "realme" && price === "above 30000" && genere === "gaming" && show && ram === "8gb above 128gb storage" && <>           <Realme_7 /><Realme_8 /> <Realme_9/>  </>}
+{selected === "realme" && price === "above 30000" && genere === "normal" && show && ram === "8gb above 128gb storage" && <>           <Realme_7 /><Realme_8 /> <Realme_9/>  </>}
+
+{/* xiaomi above 10000 */}
+{selected === "xiaomi" && price === "above 10000" && genere === "gaming" && show && ram === "4gb above 64gb storage/memorycard" && <> <Xiaomi_1 /><Xiaomi_2 /> <Xiaomi_3/>  </>}
+{selected === "xiaomi" && price === "above 10000" && genere === "normal" && show && ram === "4gb above 64gb storage/memorycard" && <> <Xiaomi_1 /><Xiaomi_2 /> <Xiaomi_3/>  </>}
+{selected === "xiaomi" && price === "above 10000" && genere === "speedy" && show && ram === "4gb above 64gb storage/memorycard" && <> <Xiaomi_1 /><Xiaomi_2 /> <Xiaomi_3/>  </>}
+{selected === "xiaomi" && price === "above 10000" && genere === "normal" && show && ram === "6gb above 128gb storage/memorycard" && <>           <Xiaomi_1 /><Xiaomi_2 /> <Xiaomi_3/>  </>}
+{selected === "xiaomi" && price === "above 10000" && genere === "speedy" && show && ram === "6gb above 128gb storage/memorycard" && <>           <Xiaomi_1 /><Xiaomi_2 /> <Xiaomi_3/>  </>}
+{selected === "xiaomi" && price === "above 10000" && genere === "gaming" && show && ram === "6gb above 128gb storage/memorycard" && <>           <Xiaomi_1 /><Xiaomi_2 /> <Xiaomi_3/>  </>}
+{selected === "xiaomi" && price === "above 10000" && genere === "gaming" && show && ram === "8gb above 256gb storage/memorycard" && <>           <Xiaomi_1 /><Xiaomi_2 /> <Xiaomi_3/>  </>}
+{selected === "xiaomi" && price === "above 10000" && genere === "normal" && show && ram === "8gb above 256gb storage/memorycard" && <>           <Xiaomi_1 /><Xiaomi_2 /> <Xiaomi_3/>  </>}
+{selected === "xiaomi" && price === "above 10000" && genere === "speedy" && show && ram === "8gb above 256gb storage/memorycard" && <>           <Xiaomi_1 /><Xiaomi_2 /> <Xiaomi_3/>  </>}
+
+{/* xiaomi above 20000 */}
+{selected === "xiaomi" && price === "above 20000" && genere === "gaming" && show && ram === "4gb above 64gb storage/memorycard" && <> <Xiaomi_4 /><Xiaomi_5 /> <Xiaomi_6/>  </>}
+{selected === "xiaomi" && price === "above 20000" && genere === "normal" && show && ram === "4gb above 64gb storage/memorycard" && <> <Xiaomi_4 /><Xiaomi_5 /> <Xiaomi_6/>  </>}
+{selected === "xiaomi" && price === "above 20000" && genere === "speedy" && show && ram === "4gb above 64gb storage/memorycard" && <> <Xiaomi_4 /><Xiaomi_5 /> <Xiaomi_6/>  </>}
+{selected === "xiaomi" && price === "above 20000" && genere === "normal" && show && ram === "6gb above 128gb storage/memorycard" && <>           <Xiaomi_4 /><Xiaomi_5 /> <Xiaomi_6/>  </>}
+{selected === "xiaomi" && price === "above 20000" && genere === "speedy" && show && ram === "6gb above 128gb storage/memorycard" && <>           <Xiaomi_4 /><Xiaomi_5 /> <Xiaomi_6/>  </>}
+{selected === "xiaomi" && price === "above 20000" && genere === "gaming" && show && ram === "6gb above 128gb storage/memorycard" && <>           <Xiaomi_4 /><Xiaomi_5 /> <Xiaomi_6/>  </>}
+{selected === "xiaomi" && price === "above 20000" && genere === "speedy" && show && ram === "8gb above 256gb storage/memorycard" && <>           <Xiaomi_4 /><Xiaomi_5 /> <Xiaomi_6/>  </>}
+{selected === "xiaomi" && price === "above 20000" && genere === "gaming" && show && ram === "8gb above 256gb storage/memorycard" && <>           <Xiaomi_4 /><Xiaomi_5 /> <Xiaomi_6/>  </>}
+{selected === "xiaomi" && price === "above 20000" && genere === "normal" && show && ram === "8gb above 256gb storage/memorycard" && <>           <Xiaomi_4 /><Xiaomi_5 /> <Xiaomi_6/>  </>}
+
+{/* xiaomi above 30000 */}
+{selected === "xiaomi" && price === "above 30000" && genere === "gaming" && show && ram === "4gb above 64gb storage/memorycard" && <> <Xiaomi_7 /><Xiaomi_8 /> <Xiaomi_9/>  </>}
+{selected === "xiaomi" && price === "above 30000" && genere === "normal" && show && ram === "4gb above 64gb storage/memorycard" && <> <Xiaomi_7 /><Xiaomi_8 /> <Xiaomi_9/>  </>}
+{selected === "xiaomi" && price === "above 30000" && genere === "speedy" && show && ram === "4gb above 64gb storage/memorycard" && <> <Xiaomi_7 /><Xiaomi_8 /> <Xiaomi_9/>  </>}
+{selected === "xiaomi" && price === "above 30000" && genere === "normal" && show && ram === "6gb above 128gb storage/memorycard" && <>           <Xiaomi_7 /><Xiaomi_8 /> <Xiaomi_9/>  </>}
+{selected === "xiaomi" && price === "above 30000" && genere === "speedy" && show && ram === "6gb above 128gb storage/memorycard" && <>           <Xiaomi_7 /><Xiaomi_8 /> <Xiaomi_9/>  </>}
+{selected === "xiaomi" && price === "above 30000" && genere === "gaming" && show && ram === "6gb above 128gb storage/memorycard" && <>           <Xiaomi_7 /><Xiaomi_8 /> <Xiaomi_9/>  </>}
+{selected === "xiaomi" && price === "above 30000" && genere === "gaming" && show && ram === "8gb above 256gb storage/memorycard" && <>           <Xiaomi_7 /><Xiaomi_8 /> <Xiaomi_9/>  </>}
+{selected === "xiaomi" && price === "above 30000" && genere === "normal" && show && ram === "8gb above 256gb storage/memorycard" && <>           <Xiaomi_7 /><Xiaomi_8 /> <Xiaomi_9/>  </>}
+{selected === "xiaomi" && price === "above 30000" && genere === "speedy" && show && ram === "8gb above 256gb storage/memorycard" && <>           <Xiaomi_7 /><Xiaomi_8 /> <Xiaomi_9/>  </>}
+
+{/* oppo above 10000 */}
+{selected === "oppo" && price === "above 10000" && genere === "gaming" && show && ram === "4gb above 64gb storage/memorycard" && <> <Oppo_1 /><Oppo_2 /> <Oppo_3/>  </>}
+{selected === "oppo" && price === "above 10000" && genere === "normal" && show && ram === "4gb above 64gb storage/memorycard" && <> <Oppo_1 /><Oppo_2 /> <Oppo_3/>  </>}
+{selected === "oppo" && price === "above 10000" && genere === "speedy" && show && ram === "4gb above 64gb storage/memorycard" && <> <Oppo_1 /><Oppo_2 /> <Oppo_3/>  </>}
+{selected === "oppo" && price === "above 10000" && genere === "normal" && show && ram === "6gb above 128gb storage/memorycard" && <>           <Oppo_1 /><Oppo_2 /> <Oppo_3/>  </>}
+{selected === "oppo" && price === "above 10000" && genere === "speedy" && show && ram === "6gb above 128gb storage/memorycard" && <>           <Oppo_1 /><Oppo_2 /> <Oppo_3/>  </>}
+{selected === "oppo" && price === "above 10000" && genere === "gaming" && show && ram === "6gb above 128gb storage/memorycard" && <>           <Oppo_1 /><Oppo_2 /> <Oppo_3/>  </>}
+{selected === "oppo" && price === "above 10000" && genere === "gaming" && show && ram === "8gb above 256gb storage/memorycard" && <>           <Oppo_1 /><Oppo_2 /> <Oppo_3/>  </>}
+{selected === "oppo" && price === "above 10000" && genere === "normal" && show && ram === "8gb above 256gb storage/memorycard" && <>           <Oppo_1 /><Oppo_2 /> <Oppo_3/>  </>}
+{selected === "oppo" && price === "above 10000" && genere === "speedy" && show && ram === "8gb above 256gb storage/memorycard" && <>           <Oppo_1 /><Oppo_2 /> <Oppo_3/>  </>}
+
+{/* oppo above 20000 */}
+{selected === "oppo" && price === "above 20000" && genere === "gaming" && show && ram === "4gb above 64gb storage/memorycard" && <> <Oppo_4 /><Oppo_5 /> <Oppo_6/>  </>}
+{selected === "oppo" && price === "above 20000" && genere === "normal" && show && ram === "4gb above 64gb storage/memorycard" && <> <Oppo_4 /><Oppo_5 /> <Oppo_6/>  </>}
+{selected === "oppo" && price === "above 20000" && genere === "speedy" && show && ram === "4gb above 64gb storage/memorycard" && <> <Oppo_4 /><Oppo_5 /> <Oppo_6/>  </>}
+{selected === "oppo" && price === "above 20000" && genere === "normal" && show && ram === "6gb above 128gb storage/memorycard" && <>           <Oppo_4 /><Oppo_5 /> <Oppo_6/>  </>}
+{selected === "oppo" && price === "above 20000" && genere === "speedy" && show && ram === "6gb above 128gb storage/memorycard" && <>           <Oppo_4 /><Oppo_5 /> <Oppo_6/>  </>}
+{selected === "oppo" && price === "above 20000" && genere === "gaming" && show && ram === "6gb above 128gb storage/memorycard" && <>           <Oppo_4 /><Oppo_5 /> <Oppo_6/>  </>}
+{selected === "oppo" && price === "above 20000" && genere === "gaming" && show && ram === "8gb above 256gb storage/memorycard" && <>           <Oppo_4 /><Oppo_5 /> <Oppo_6/>  </>}
+{selected === "oppo" && price === "above 20000" && genere === "normal" && show && ram === "8gb above 256gb storage/memorycard" && <>           <Oppo_4 /><Oppo_5 /> <Oppo_6/>  </>}
+{selected === "oppo" && price === "above 20000" && genere === "speedy" && show && ram === "8gb above 256gb storage/memorycard" && <>           <Oppo_4 /><Oppo_5 /> <Oppo_6/>  </>}
+
+{/* oppo above 30000 */}
+
+{selected === "oppo" && price === "above 30000" && genere === "gaming" && show && ram === "4gb above 64gb storage/memorycard" && <> <Oppo_7 /><Oppo_8 /> <Oppo_9/>  </>}
+{selected === "oppo" && price === "above 30000" && genere === "normal" && show && ram === "4gb above 64gb storage/memorycard" && <> <Oppo_7 /><Oppo_8 /> <Oppo_9/>  </>}
+{selected === "oppo" && price === "above 30000" && genere === "speedy" && show && ram === "4gb above 64gb storage/memorycard" && <> <Oppo_7 /><Oppo_8 /> <Oppo_9/>  </>}
+{selected === "oppo" && price === "above 30000" && genere === "normal" && show && ram === "6gb above 128gb storage/memorycard" && <>           <Oppo_7 /><Oppo_8 /> <Oppo_9/>  </>}
+{selected === "oppo" && price === "above 30000" && genere === "speedy" && show && ram === "6gb above 128gb storage/memorycard" && <>           <Oppo_7 /><Oppo_8 /> <Oppo_9/>  </>}
+{selected === "oppo" && price === "above 30000" && genere === "gaming" && show && ram === "6gb above 128gb storage/memorycard" && <>           <Oppo_7 /><Oppo_8 /> <Oppo_9/>  </>}
+{selected === "oppo" && price === "above 30000" && genere === "gaming" && show && ram === "8gb above 256gb storage/memorycard" && <>           <Oppo_7 /><Oppo_8 /> <Oppo_9/>  </>}
+{selected === "oppo" && price === "above 30000" && genere === "normal" && show && ram === "8gb above 256gb storage/memorycard" && <>           <Oppo_7 /><Oppo_8 /> <Oppo_9/>  </>}
+{selected === "oppo" && price === "above 30000" && genere === "speedy" && show && ram === "8gb above 256gb storage/memorycard" && <>           <Oppo_7 /><Oppo_8 /> <Oppo_9/>  </>}
+
+{/* vivo above 10000 */}
+
+{selected === "vivo" && price === "above 10000" && genere === "gaming" && show && ram === "4gb above 64gb storage/memorycard" && <> <Vivo_1 /><Vivo_2 /> <Vivo_3/>  </>}
+{selected === "vivo" && price === "above 10000" && genere === "normal" && show && ram === "4gb above 64gb storage/memorycard" && <> <Vivo_1 /><Vivo_2 /> <Vivo_3/>  </>}
+{selected === "vivo" && price === "above 10000" && genere === "speedy" && show && ram === "4gb above 64gb storage/memorycard" && <> <Vivo_1 /><Vivo_2 /> <Vivo_3/>  </>}
+{selected === "vivo" && price === "above 10000" && genere === "normal" && show && ram === "6gb above 128gb storage/memorycard" && <>           <Vivo_1 /><Vivo_2 /> <Vivo_3/>  </>}
+{selected === "vivo" && price === "above 10000" && genere === "speedy" && show && ram === "6gb above 128gb storage/memorycard" && <>           <Vivo_1 /><Vivo_2 /> <Vivo_3/>  </>}
+{selected === "vivo" && price === "above 10000" && genere === "gaming" && show && ram === "6gb above 128gb storage/memorycard" && <>           <Vivo_1 /><Vivo_2 /> <Vivo_3/>  </>}
+{selected === "vivo" && price === "above 10000" && genere === "gaming" && show && ram === "8gb above 256gb storage/memorycard" && <>           <Vivo_1 /><Vivo_2 /> <Vivo_3/>  </>}
+{selected === "vivo" && price === "above 10000" && genere === "normal" && show && ram === "8gb above 256gb storage/memorycard" && <>           <Vivo_1 /><Vivo_2 /> <Vivo_3/>  </>}
+{selected === "vivo" && price === "above 10000" && genere === "speedy" && show && ram === "8gb above 256gb storage/memorycard" && <>           <Vivo_1 /><Vivo_2 /> <Vivo_3/>  </>}
+
+{/* vivo above 20000 */}
+{selected === "vivo" && price === "above 20000" && genere === "gaming" && show && ram === "4gb above 64gb storage/memorycard" && <> <Vivo_4 /><Vivo_5 /> <Vivo_6/>  </>}
+{selected === "vivo" && price === "above 20000" && genere === "normal" && show && ram === "4gb above 64gb storage/memorycard" && <> <Vivo_4 /><Vivo_5 /> <Vivo_6/>  </>}
+{selected === "vivo" && price === "above 20000" && genere === "speedy" && show && ram === "4gb above 64gb storage/memorycard" && <> <Vivo_4 /><Vivo_5 /> <Vivo_6/>  </>}
+{selected === "vivo" && price === "above 20000" && genere === "normal" && show && ram === "6gb above 128gb storage/memorycard" && <>           <Vivo_4 /><Vivo_5 /> <Vivo_6/>  </>}
+{selected === "vivo" && price === "above 20000" && genere === "speedy" && show && ram === "6gb above 128gb storage/memorycard" && <>           <Vivo_4 /><Vivo_5 /> <Vivo_6/>  </>}
+{selected === "vivo" && price === "above 20000" && genere === "gaming" && show && ram === "6gb above 128gb storage/memorycard" && <>           <Vivo_4 /><Vivo_5 /> <Vivo_6/>  </>}
+{selected === "vivo" && price === "above 20000" && genere === "gaming" && show && ram === "8gb above 256gb storage/memorycard" && <>           <Vivo_4 /><Vivo_5 /> <Vivo_6/>  </>}
+{selected === "vivo" && price === "above 20000" && genere === "normal" && show && ram === "8gb above 256gb storage/memorycard" && <>           <Vivo_4 /><Vivo_5 /> <Vivo_6/>  </>}
+{selected === "vivo" && price === "above 20000" && genere === "speedy" && show && ram === "8gb above 256gb storage/memorycard" && <>           <Vivo_4 /><Vivo_5 /> <Vivo_6/>  </>}
+
+{/* vivo above 30000 */}
+
+{selected === "vivo" && price === "above 30000" && genere === "gaming" && show && ram === "4gb above 64gb storage/memorycard" && <> <Vivo_7 /><Vivo_8 /> <Vivo_9/>  </>}
+{selected === "vivo" && price === "above 30000" && genere === "normal" && show && ram === "4gb above 64gb storage/memorycard" && <> <Vivo_7 /><Vivo_8 /> <Vivo_9/>  </>}
+{selected === "vivo" && price === "above 30000" && genere === "speedy" && show && ram === "4gb above 64gb storage/memorycard" && <> <Vivo_7 /><Vivo_8 /> <Vivo_9/>  </>}
+{selected === "vivo" && price === "above 30000" && genere === "normal" && show && ram === "6gb above 128gb storage/memorycard" && <>           <Vivo_7 /><Vivo_8 /> <Vivo_9/>  </>}
+{selected === "vivo" && price === "above 30000" && genere === "speedy" && show && ram === "6gb above 128gb storage/memorycard" && <>           <Vivo_7 /><Vivo_8 /> <Vivo_9/>  </>}
+{selected === "vivo" && price === "above 30000" && genere === "gaming" && show && ram === "6gb above 128gb storage/memorycard" && <>           <Vivo_7 /><Vivo_8 /> <Vivo_9/>  </>}
+{selected === "vivo" && price === "above 30000" && genere === "gaming" && show && ram === "8gb above 256gb storage/memorycard" && <>           <Vivo_7 /><Vivo_8 /> <Vivo_9/>  </>}
+{selected === "vivo" && price === "above 30000" && genere === "normal" && show && ram === "8gb above 256gb storage/memorycard" && <>           <Vivo_7 /><Vivo_8 /> <Vivo_9/>  </>}
+{selected === "vivo" && price === "above 30000" && genere === "speedy" && show && ram === "8gb above 256gb storage/memorycard" && <>           <Vivo_7 /><Vivo_8 /> <Vivo_9/>  </>}
+
+
+
+
+
 
 
 
