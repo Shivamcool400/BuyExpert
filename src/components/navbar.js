@@ -42,7 +42,7 @@ function Navbar() {
 
         return (
                 
-                <nav className="navbar">
+                <nav className="navbar fixed-top">
                         <Link to='/home' className='navbar-logo'>
                                 <img src="./logomain.png" /> 
                         </Link>
