@@ -219,9 +219,9 @@ function Phones () {
 {selected === "Apple" && price === "above 30000" && genere === "normal" && show && ram === "above 128gb storage" && <><Apple_1 /><Apple_2 /> <Apple_3/>  </>}
 {selected === "Apple" && price === "above 30000" && genere === "speedy" && show && ram === "above 128gb storage" && <><Apple_1 /><Apple_2 /> <Apple_3/>  </>}
 {selected === "Apple" && price === "above 30000" && genere === "gaming" && show && ram === "above 128gb storage" && <><Apple_1 /><Apple_2 /> <Apple_3/>  </>}
-{selected === "Apple" && price === "above 30000" && genere === "speedy" && show && ram === "above 2gb storage" && <>  <Apple_1 /><Apple_2 /> <Apple_3/>  </>}
-{selected === "Apple" && price === "above 30000" && genere === "gaming" && show && ram === "above 2gb storage" && <>  <Apple_1 /><Apple_2 /> <Apple_3/>  </>}
-{selected === "Apple" && price === "above 30000" && genere === "normal" && show && ram === "above 2gb storage" && <>  <Apple_1 /><Apple_2 /> <Apple_3/>  </>}
+{selected === "Apple" && price === "above 30000" && genere === "speedy" && show && ram === "above 256gb storage" && <>  <Apple_1 /><Apple_2 /> <Apple_3/>  </>}
+{selected === "Apple" && price === "above 30000" && genere === "gaming" && show && ram === "above 256gb storage" && <>  <Apple_1 /><Apple_2 /> <Apple_3/>  </>}
+{selected === "Apple" && price === "above 30000" && genere === "normal" && show && ram === "above 256gb storage" && <>  <Apple_1 /><Apple_2 /> <Apple_3/>  </>}
 
 {/* apple above 40000 */}
 
@@ -231,9 +231,9 @@ function Phones () {
 {selected === "Apple" && price === "above 40000" && genere === "normal" && show && ram === "above 128gb storage" && <><Apple_4 /><Apple_5 /> <Apple_6/>  </>}
 {selected === "Apple" && price === "above 40000" && genere === "speedy" && show && ram === "above 128gb storage" && <><Apple_4 /><Apple_5 /> <Apple_6/>  </>}
 {selected === "Apple" && price === "above 40000" && genere === "gaming" && show && ram === "above 128gb storage" && <><Apple_4 /><Apple_5 /> <Apple_6/>  </>}
-{selected === "Apple" && price === "above 40000" && genere === "speedy" && show && ram === "above 2gb storage" && <>  <Apple_4 /><Apple_5 /> <Apple_6/>  </>}
-{selected === "Apple" && price === "above 40000" && genere === "gaming" && show && ram === "above 2gb storage" && <>  <Apple_4 /><Apple_5 /> <Apple_6/>  </>}
-{selected === "Apple" && price === "above 40000" && genere === "normal" && show && ram === "above 2gb storage" && <>  <Apple_4 /><Apple_5 /> <Apple_6/>  </>}
+{selected === "Apple" && price === "above 40000" && genere === "speedy" && show && ram === "above 256gb storage" && <>  <Apple_4 /><Apple_5 /> <Apple_6/>  </>}
+{selected === "Apple" && price === "above 40000" && genere === "gaming" && show && ram === "above 256gb storage" && <>  <Apple_4 /><Apple_5 /> <Apple_6/>  </>}
+{selected === "Apple" && price === "above 40000" && genere === "normal" && show && ram === "above 256gb storage" && <>  <Apple_4 /><Apple_5 /> <Apple_6/>  </>}
 
 
 {/* apple above 50000 */}
@@ -244,9 +244,9 @@ function Phones () {
 {selected === "Apple" && price === "above 50000" && genere === "normal" && show && ram === "above 128gb storage" && <><Apple_7 /><Apple_8/> <Apple_9/>  </>}
 {selected === "Apple" && price === "above 50000" && genere === "speedy" && show && ram === "above 128gb storage" && <><Apple_7 /><Apple_8/> <Apple_9/>  </>}
 {selected === "Apple" && price === "above 50000" && genere === "gaming" && show && ram === "above 128gb storage" && <><Apple_7 /><Apple_8/> <Apple_9/>  </>}
-{selected === "Apple" && price === "above 50000" && genere === "speedy" && show && ram === "above 2gb storage" && <>  <Apple_7 /><Apple_8/> <Apple_9/>  </>}
-{selected === "Apple" && price === "above 50000" && genere === "gaming" && show && ram === "above 2gb storage" && <>  <Apple_7 /><Apple_8/> <Apple_9/>  </>}
-{selected === "Apple" && price === "above 50000" && genere === "normal" && show && ram === "above 2gb storage" && <>  <Apple_7 /><Apple_8/> <Apple_9/>  </>}
+{selected === "Apple" && price === "above 50000" && genere === "speedy" && show && ram === "above 256gb storage" && <>  <Apple_7 /><Apple_8/> <Apple_9/>  </>}
+{selected === "Apple" && price === "above 50000" && genere === "gaming" && show && ram === "above 256gb storage" && <>  <Apple_7 /><Apple_8/> <Apple_9/>  </>}
+{selected === "Apple" && price === "above 50000" && genere === "normal" && show && ram === "above 256gb storage" && <>  <Apple_7 /><Apple_8/> <Apple_9/>  </>}
 
 
 {/* samsung above 10000 */}
