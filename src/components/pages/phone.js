@@ -82,8 +82,14 @@ function Phones () {
   const content = () => {
     setShow(true);
   }
+const reset = () => {
+  window.location.reload(false);
+}
+  
 
   var [show,setShow] = useState(false);
+
+  
   
    
   var currentarray=[];
@@ -123,7 +129,7 @@ function Phones () {
            <div className="col-sm-12 col-md-3"><div className="input-group mb-3">
   <label className="input-group-text" htmlFor="inputGroupSelect01">Brand</label>
   <select onChange={(e) => setSelected(e.target.value)} className="form-select" id="inputGroupSelect01">
-    <option selected>Choose...</option>
+    <option selected value="1">Choose...</option>
           {brand.map((brand) => (
             <option value={brand.name} key={brand.name}>{brand.name}</option>
           ))}
@@ -164,7 +170,11 @@ function Phones () {
 </div>
 </div>
 <div className="">
-            <button type="button" onClick={content}  className="btn  btn-primary btn-outline-secondary btn-lg find-btn"> Find! </button>
+  { show ? <button type="button" onClick={reset} className="btn  btn-primary btn-outline-secondary btn-lg find-btn"> Reset! </button> 
+  :
+  <button type="button" onClick={content} className="btn  btn-primary btn-outline-secondary btn-lg find-btn"> Find! </button>
+  }
+  
           </div>
           <br></br>
           <br></br>
