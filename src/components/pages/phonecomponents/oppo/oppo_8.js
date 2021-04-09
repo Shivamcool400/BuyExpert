@@ -8,25 +8,25 @@ const Oppo_8 = () => {
 
     useEffect(() => {
         
-       db.collection('head_8Oppo_8_oppo').orderBy("choice").onSnapshot(snapshot => (
+       db.collection('head_8_oppo').orderBy("choice").onSnapshot(snapshot => (
          setHead(snapshot.docs.map(doc => doc.data()))
        ))
-       db.collection('specs_8Oppo_8_oppo').onSnapshot(snapshot => (
+       db.collection('specs_8_oppo').onSnapshot(snapshot => (
          setSpecs(snapshot.docs.map(doc => doc.data()))
        ))
-       db.collection('youtube_8Oppo_8_oppo').onSnapshot(snapshot => (
+       db.collection('youtube_8_oppo').onSnapshot(snapshot => (
          setYoutube(snapshot.docs.map(doc => doc.data()))
        ))
-       db.collection('blog_8Oppo_8_oppo').onSnapshot(snapshot => (
+       db.collection('blog_8_oppo').onSnapshot(snapshot => (
          setBlog(snapshot.docs.map(doc => doc.data()))
        ))
-       db.collection('seller_8Oppo_8_oppo').orderBy("name").onSnapshot(snapshot => (
+       db.collection('seller_8_oppo').orderBy("name").onSnapshot(snapshot => (
          setSeller(snapshot.docs.map(doc => doc.data()))
        ))
-       db.collection('gaming_8Oppo_8_oppo').onSnapshot(snapshot => (
+       db.collection('gaming_8_oppo').onSnapshot(snapshot => (
          setGaming(snapshot.docs.map(doc => doc.data()))
        ))
-       db.collection('tech_8Oppo_8_oppo').orderBy("serial").onSnapshot(snapshot => (
+       db.collection('tech_8_oppo').orderBy("serial").onSnapshot(snapshot => (
          setTech(snapshot.docs.map(doc => doc.data()))
        ))
        }, []);

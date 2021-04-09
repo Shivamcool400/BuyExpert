@@ -471,12 +471,12 @@ const reset = () => {
 {selected === "oppo" && price === "above 30000" && genere === "gaming" && show && ram === "4gb above 64gb storage/memorycard" && <> <Oppo_7 /><Oppo_8 /> <Oppo_9/>  </>}
 {selected === "oppo" && price === "above 30000" && genere === "normal" && show && ram === "4gb above 64gb storage/memorycard" && <> <Oppo_7 /><Oppo_8 /> <Oppo_9/>  </>}
 {selected === "oppo" && price === "above 30000" && genere === "speedy" && show && ram === "4gb above 64gb storage/memorycard" && <> <Oppo_7 /><Oppo_8 /> <Oppo_9/>  </>}
-{selected === "oppo" && price === "above 30000" && genere === "normal" && show && ram === "6gb above 128gb storage/memorycard" && <>           <Oppo_7 /><Oppo_8 /> <Oppo_9/>  </>}
-{selected === "oppo" && price === "above 30000" && genere === "speedy" && show && ram === "6gb above 128gb storage/memorycard" && <>           <Oppo_7 /><Oppo_8 /> <Oppo_9/>  </>}
-{selected === "oppo" && price === "above 30000" && genere === "gaming" && show && ram === "6gb above 128gb storage/memorycard" && <>           <Oppo_7 /><Oppo_8 /> <Oppo_9/>  </>}
-{selected === "oppo" && price === "above 30000" && genere === "gaming" && show && ram === "8gb above 256gb storage/memorycard" && <>           <Oppo_7 /><Oppo_8 /> <Oppo_9/>  </>}
-{selected === "oppo" && price === "above 30000" && genere === "normal" && show && ram === "8gb above 256gb storage/memorycard" && <>           <Oppo_7 /><Oppo_8 /> <Oppo_9/>  </>}
-{selected === "oppo" && price === "above 30000" && genere === "speedy" && show && ram === "8gb above 256gb storage/memorycard" && <>           <Oppo_7 /><Oppo_8 /> <Oppo_9/>  </>}
+{selected === "oppo" && price === "above 30000" && genere === "normal" && show && ram === "6gb above 128gb storage/memorycard" && <><Oppo_7 /><Oppo_8 /> <Oppo_9/>  </>}
+{selected === "oppo" && price === "above 30000" && genere === "speedy" && show && ram === "6gb above 128gb storage/memorycard" && <><Oppo_7 /><Oppo_8 /> <Oppo_9/>  </>}
+{selected === "oppo" && price === "above 30000" && genere === "gaming" && show && ram === "6gb above 128gb storage/memorycard" && <><Oppo_7 /><Oppo_8 /> <Oppo_9/>  </>}
+{selected === "oppo" && price === "above 30000" && genere === "gaming" && show && ram === "8gb above 256gb storage/memorycard" && <><Oppo_7 /><Oppo_8 /> <Oppo_9/>  </>}
+{selected === "oppo" && price === "above 30000" && genere === "normal" && show && ram === "8gb above 256gb storage/memorycard" && <><Oppo_7 /><Oppo_8 /> <Oppo_9/>  </>}
+{selected === "oppo" && price === "above 30000" && genere === "speedy" && show && ram === "8gb above 256gb storage/memorycard" && <><Oppo_7 /><Oppo_8 /> <Oppo_9/>  </>}
 
 {/* vivo above 10000 */}
 
