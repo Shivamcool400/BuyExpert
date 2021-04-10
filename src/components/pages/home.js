@@ -95,7 +95,7 @@ class Home extends Component{
       <div className="card m-3">
         <img src="/phone.jpg" className="card-img-top " alt="..." />
         <div className="card-body">
-          <h5 className="card-title"> <b>Phones</b> </h5> 
+          <h5 className="card-title text-center"> <b>Phones</b> </h5> 
           <p className="card-text text-center"> "Find the best phone which meets your required needs with our approved  guidance"</p>  <div classname="wrapper-btn">
            <a className="phn" href="/phones"> <button type="button"  className="btn btn-lg btn-outline-secondary mainbtn">Find!</button></a>
           </div> 
@@ -106,7 +106,7 @@ class Home extends Component{
       <div className="card m-3">
         <img src="/gamingconsole.jpg" className="card-img-top" alt="..." />
         <div className="card-body">
-          <h5 className="card-title"> <b> Gaming Consoles</b> </h5> 
+          <h5 className="card-title text-center"> <b> Gaming Consoles</b> </h5> 
           <p className="card-text text-center"> "Winner winner chicken dinner!! True gamers always require  relevant choices."</p>
           <div className="wrapper-btn">
           <a className="phn" href="/gamingconsoles"><button type="button" className="btn btn-lg btn-outline-secondary mainbtn">Find!</button></a>
@@ -121,7 +121,7 @@ class Home extends Component{
       <div className="card m-3">
         <img src="/laptop.jpg" className="card-img-top " alt="..." />
         <div className="card-body">
-          <h5 className="card-title"> <b>Laptops</b> </h5> 
+          <h5 className="card-title text-center"> <b>Laptops</b> </h5> 
           <p className="card-text text-center"> "Find a genuine laptop for youself"</p> 
           <div className="wrapper-btn">
           <a className="phn" href="/laptops"><button type="button" className="btn btn-lg btn-outline-secondary mainbtn">Find!</button></a>
@@ -131,7 +131,7 @@ class Home extends Component{
       <div className="card m-3">
         <img src="/accesories.jpg" className="card-img-top" alt="..." />
         <div className="card-body">
-          <h5 className="card-title"> <b>Accessories</b> </h5> 
+          <h5 className="card-title text-center"> <b>Accessories</b> </h5> 
           <p className="card-text text-center">"Finding the thing which is right for u buddy!</p>
           <div className="wrapper-btn">
           <a className="phn" href="/accessories"><button type="button" className="btn btn-lg btn-outline-secondary mainbtn">Find!</button></a>

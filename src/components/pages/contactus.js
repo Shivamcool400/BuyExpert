@@ -33,7 +33,8 @@ class Contactus extends Component{
         return(
         
         <div className="body">
-            <h1 className="head"> Contact Us</h1>
+            <hr className="shadow-lg bg-body rounded" />
+            {/* <h1 className="head"> Contact Us</h1> */}
             <div className="box box2">
                 <div className="left">
                     <form method="POST" action="/contactus" onSubmit={this.handleSubmit}>
@@ -59,13 +60,13 @@ class Contactus extends Component{
 
                 
 
-                <div className="right">
+                {/* <div className="right">
                     <div className="emailicon shadow p-3 mb-5 bg-white rounded">
                         <em>For more queries, mail at</em>
                         <i className="fa fa-envelope-o fa-3x"></i>
                         <a href="https://www.gmail.com mailto: shivam.ece.pu@gmail.com" className="email">shivam.ece.pu@gmail.com</a>
                     </div>
-                </div>
+                </div> */}
             </div>
             
         </div>
