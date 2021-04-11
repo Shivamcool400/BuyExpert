@@ -13,6 +13,54 @@ import Dell_9 from './phonecomponents/dell/dell_9';
 import Dell_10 from './phonecomponents/dell/dell_10';
 import Dell_11 from './phonecomponents/dell/dell_11';
 import Dell_12 from './phonecomponents/dell/dell_12';
+import Acer_1 from './phonecomponents/acer/acer_1';
+import Acer_2 from './phonecomponents/acer/acer_2';
+import Acer_3 from './phonecomponents/acer/acer_3';
+import Acer_4 from './phonecomponents/acer/acer_4';
+import Acer_5 from './phonecomponents/acer/acer_5';
+import Acer_6 from './phonecomponents/acer/acer_6';
+import Acer_7 from './phonecomponents/acer/acer_7';
+import Acer_8 from './phonecomponents/acer/acer_8';
+import Acer_9 from './phonecomponents/acer/acer_9';
+import Acer_10 from './phonecomponents/acer/acer_10';
+import Acer_11 from './phonecomponents/acer/acer_11';
+import Acer_12 from './phonecomponents/acer/acer_12';
+import Applelaps_1 from './phonecomponents/applelaps/applelaps_1';
+import Applelaps_2 from './phonecomponents/applelaps/applelaps_2';
+import Applelaps_3 from './phonecomponents/applelaps/applelaps_3';
+import Applelaps_4 from './phonecomponents/applelaps/applelaps_4';
+import Applelaps_5 from './phonecomponents/applelaps/applelaps_5';
+import Applelaps_6 from './phonecomponents/applelaps/applelaps_6';
+import Applelaps_7 from './phonecomponents/applelaps/applelaps_7';
+import Applelaps_8 from './phonecomponents/applelaps/applelaps_8';
+import Applelaps_9 from './phonecomponents/applelaps/applelaps_9';
+import Applelaps_10 from './phonecomponents/applelaps/applelaps_10';
+import Applelaps_11 from './phonecomponents/applelaps/applelaps_11';
+import Applelaps_12 from './phonecomponents/applelaps/applelaps_12';
+import Hp_1 from './phonecomponents/hp/hp_1';
+import Hp_2 from './phonecomponents/hp/hp_2';
+import Hp_3 from './phonecomponents/hp/hp_3';
+import Hp_4 from './phonecomponents/hp/hp_4';
+import Hp_5 from './phonecomponents/hp/hp_5';
+import Hp_6 from './phonecomponents/hp/hp_6';
+import Hp_7 from './phonecomponents/hp/hp_7';
+import Hp_8 from './phonecomponents/hp/hp_8';
+import Hp_9 from './phonecomponents/hp/hp_9';
+import Hp_10 from './phonecomponents/hp/hp_10';
+import Hp_11 from './phonecomponents/hp/hp_11';
+import Hp_12 from './phonecomponents/hp/hp_12';
+import Lenovo_1 from './phonecomponents/lenovo/lenovo_1';
+import Lenovo_2 from './phonecomponents/lenovo/lenovo_2';
+import Lenovo_3 from './phonecomponents/lenovo/lenovo_3';
+import Lenovo_4 from './phonecomponents/lenovo/lenovo_4';
+import Lenovo_5 from './phonecomponents/lenovo/lenovo_5';
+import Lenovo_6 from './phonecomponents/lenovo/lenovo_6';
+import Lenovo_7 from './phonecomponents/lenovo/lenovo_7';
+import Lenovo_8 from './phonecomponents/lenovo/lenovo_8';
+import Lenovo_9 from './phonecomponents/lenovo/lenovo_9';
+import Lenovo_10 from './phonecomponents/lenovo/lenovo_10';
+import Lenovo_11 from './phonecomponents/lenovo/lenovo_11';
+import Lenovo_12 from './phonecomponents/lenovo/lenovo_12';
 
 function Laptops () {
   const db = Fire.firestore();
@@ -224,11 +272,289 @@ const reset = () => {
 {selected === "Dell" && price === "above 50000" && genere === "normal" && show && ram === "above 8gb above 8gb graphic card" && <>       <Dell_10 /><Dell_11 /> <Dell_12/>  </>}
 {selected === "Dell" && price === "above 50000" && genere === "coding" && show && ram === "above 8gb above 8gb graphic card" && <>       <Dell_10 /><Dell_11 /> <Dell_12/>  </>}
 
+{/* acer */}
+
+{selected === "Acer" && price === "20000-30000" && genere === "gaming" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Acer_1 /><Acer_2 /> <Acer_3/>  </>}
+{selected === "Acer" && price === "20000-30000" && genere === "normal" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Acer_1 /><Acer_2 /> <Acer_3/>  </>}
+{selected === "Acer" && price === "20000-30000" && genere === "speedy" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Acer_1 /><Acer_2 /> <Acer_3/>  </>}
+{selected === "Acer" && price === "20000-30000" && genere === "coding" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Acer_1 /><Acer_2 /> <Acer_3/>  </>}
+{selected === "Acer" && price === "20000-30000" && genere === "normal" && show && ram === "6-8gb above 4gb graphic card" && <>           <Acer_1 /><Acer_2 /> <Acer_3/>  </>}
+{selected === "Acer" && price === "20000-30000" && genere === "speedy" && show && ram === "6-8gb above 4gb graphic card" && <>           <Acer_1 /><Acer_2 /> <Acer_3/>  </>}
+{selected === "Acer" && price === "20000-30000" && genere === "gaming" && show && ram === "6-8gb above 4gb graphic card" && <>           <Acer_1 /><Acer_2 /> <Acer_3/>  </>}
+{selected === "Acer" && price === "20000-30000" && genere === "coding" && show && ram === "6-8gb above 4gb graphic card" && <>           <Acer_1 /><Acer_2 /> <Acer_3/>  </>}
+{selected === "Acer" && price === "20000-30000" && genere === "speedy" && show && ram === "above 8gb above 6gb graphic card" && <>       <Acer_1 /><Acer_2 /> <Acer_3/>  </>}
+{selected === "Acer" && price === "20000-30000" && genere === "gaming" && show && ram === "above 8gb above 6gb graphic card" && <>       <Acer_1 /><Acer_2 /> <Acer_3/>  </>}
+{selected === "Acer" && price === "20000-30000" && genere === "normal" && show && ram === "above 8gb above 6gb graphic card" && <>       <Acer_1 /><Acer_2 /> <Acer_3/>  </>}
+{selected === "Acer" && price === "20000-30000" && genere === "coding" && show && ram === "above 8gb above 6gb graphic card" && <>       <Acer_1 /><Acer_2 /> <Acer_3/>  </>}
+{selected === "Acer" && price === "20000-30000" && genere === "speedy" && show && ram === "above 8gb above 8gb graphic card" && <>       <Acer_1 /><Acer_2 /> <Acer_3/>  </>}
+{selected === "Acer" && price === "20000-30000" && genere === "gaming" && show && ram === "above 8gb above 8gb graphic card" && <>       <Acer_1 /><Acer_2 /> <Acer_3/>  </>}
+{selected === "Acer" && price === "20000-30000" && genere === "normal" && show && ram === "above 8gb above 8gb graphic card" && <>       <Acer_1 /><Acer_2 /> <Acer_3/>  </>}
+{selected === "Acer" && price === "20000-30000" && genere === "coding" && show && ram === "above 8gb above 8gb graphic card" && <>       <Acer_1 /><Acer_2 /> <Acer_3/>  </>}
+ 
+{selected === "Acer" && price === "30000-40000" && genere === "gaming" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Acer_4 /><Acer_5 /> <Acer_6/>  </>}
+{selected === "Acer" && price === "30000-40000" && genere === "normal" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Acer_4 /><Acer_5 /> <Acer_6/>  </>}
+{selected === "Acer" && price === "30000-40000" && genere === "speedy" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Acer_4 /><Acer_5 /> <Acer_6/>  </>}
+{selected === "Acer" && price === "30000-40000" && genere === "coding" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Acer_4 /><Acer_5 /> <Acer_6/>  </>}
+{selected === "Acer" && price === "30000-40000" && genere === "normal" && show && ram === "6-8gb above 4gb graphic card" && <>           <Acer_4 /><Acer_5 /> <Acer_6/>  </>}
+{selected === "Acer" && price === "30000-40000" && genere === "speedy" && show && ram === "6-8gb above 4gb graphic card" && <>           <Acer_4 /><Acer_5 /> <Acer_6/>  </>}
+{selected === "Acer" && price === "30000-40000" && genere === "gaming" && show && ram === "6-8gb above 4gb graphic card" && <>           <Acer_4 /><Acer_5 /> <Acer_6/>  </>}
+{selected === "Acer" && price === "30000-40000" && genere === "coding" && show && ram === "6-8gb above 4gb graphic card" && <>           <Acer_4 /><Acer_5 /> <Acer_6/>  </>}
+{selected === "Acer" && price === "30000-40000" && genere === "speedy" && show && ram === "above 8gb above 6gb graphic card" && <>       <Acer_4 /><Acer_5 /> <Acer_6/>  </>}
+{selected === "Acer" && price === "30000-40000" && genere === "gaming" && show && ram === "above 8gb above 6gb graphic card" && <>       <Acer_4 /><Acer_5 /> <Acer_6/>  </>}
+{selected === "Acer" && price === "30000-40000" && genere === "normal" && show && ram === "above 8gb above 6gb graphic card" && <>       <Acer_4 /><Acer_5 /> <Acer_6/>  </>}
+{selected === "Acer" && price === "30000-40000" && genere === "coding" && show && ram === "above 8gb above 6gb graphic card" && <>       <Acer_4 /><Acer_5 /> <Acer_6/>  </>}
+{selected === "Acer" && price === "30000-40000" && genere === "speedy" && show && ram === "above 8gb above 8gb graphic card" && <>       <Acer_4 /><Acer_5 /> <Acer_6/>  </>}
+{selected === "Acer" && price === "30000-40000" && genere === "gaming" && show && ram === "above 8gb above 8gb graphic card" && <>       <Acer_4 /><Acer_5 /> <Acer_6/>  </>}
+{selected === "Acer" && price === "30000-40000" && genere === "normal" && show && ram === "above 8gb above 8gb graphic card" && <>       <Acer_4 /><Acer_5 /> <Acer_6/>  </>}
+{selected === "Acer" && price === "30000-40000" && genere === "coding" && show && ram === "above 8gb above 8gb graphic card" && <>       <Acer_4 /><Acer_5 /> <Acer_6/>  </>}
+
+{selected === "Acer" && price === "40000-50000" && genere === "gaming" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Acer_7 /><Acer_8 /> <Acer_9/>  </>}
+{selected === "Acer" && price === "40000-50000" && genere === "normal" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Acer_7 /><Acer_8 /> <Acer_9/>  </>}
+{selected === "Acer" && price === "40000-50000" && genere === "speedy" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Acer_7 /><Acer_8 /> <Acer_9/>  </>}
+{selected === "Acer" && price === "40000-50000" && genere === "coding" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Acer_7 /><Acer_8 /> <Acer_9/>  </>}
+{selected === "Acer" && price === "40000-50000" && genere === "normal" && show && ram === "6-8gb above 4gb graphic card" && <>           <Acer_7 /><Acer_8 /> <Acer_9/>  </>}
+{selected === "Acer" && price === "40000-50000" && genere === "speedy" && show && ram === "6-8gb above 4gb graphic card" && <>           <Acer_7 /><Acer_8 /> <Acer_9/>  </>}
+{selected === "Acer" && price === "40000-50000" && genere === "gaming" && show && ram === "6-8gb above 4gb graphic card" && <>           <Acer_7 /><Acer_8 /> <Acer_9/>  </>}
+{selected === "Acer" && price === "40000-50000" && genere === "coding" && show && ram === "6-8gb above 4gb graphic card" && <>           <Acer_7 /><Acer_8 /> <Acer_9/>  </>}
+{selected === "Acer" && price === "40000-50000" && genere === "speedy" && show && ram === "above 8gb above 6gb graphic card" && <>       <Acer_7 /><Acer_8 /> <Acer_9/>  </>}
+{selected === "Acer" && price === "40000-50000" && genere === "gaming" && show && ram === "above 8gb above 6gb graphic card" && <>       <Acer_7 /><Acer_8 /> <Acer_9/>  </>}
+{selected === "Acer" && price === "40000-50000" && genere === "normal" && show && ram === "above 8gb above 6gb graphic card" && <>       <Acer_7 /><Acer_8 /> <Acer_9/>  </>}
+{selected === "Acer" && price === "40000-50000" && genere === "coding" && show && ram === "above 8gb above 6gb graphic card" && <>       <Acer_7 /><Acer_8 /> <Acer_9/>  </>}
+{selected === "Acer" && price === "40000-50000" && genere === "speedy" && show && ram === "above 8gb above 8gb graphic card" && <>       <Acer_7 /><Acer_8 /> <Acer_9/>  </>}
+{selected === "Acer" && price === "40000-50000" && genere === "gaming" && show && ram === "above 8gb above 8gb graphic card" && <>       <Acer_7 /><Acer_8 /> <Acer_9/>  </>}
+{selected === "Acer" && price === "40000-50000" && genere === "normal" && show && ram === "above 8gb above 8gb graphic card" && <>       <Acer_7 /><Acer_8 /> <Acer_9/>  </>}
+{selected === "Acer" && price === "40000-50000" && genere === "coding" && show && ram === "above 8gb above 8gb graphic card" && <>       <Acer_7 /><Acer_8 /> <Acer_9/>  </>}
+
+{selected === "Acer" && price === "above 50000" && genere === "gaming" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Acer_10 /><Acer_11 /> <Acer_12/>  </>}
+{selected === "Acer" && price === "above 50000" && genere === "normal" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Acer_10 /><Acer_11 /> <Acer_12/>  </>}
+{selected === "Acer" && price === "above 50000" && genere === "speedy" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Acer_10 /><Acer_11 /> <Acer_12/>  </>}
+{selected === "Acer" && price === "above 50000" && genere === "coding" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Acer_10 /><Acer_11 /> <Acer_12/>  </>}
+{selected === "Acer" && price === "above 50000" && genere === "normal" && show && ram === "6-8gb above 4gb graphic card" && <>           <Acer_10 /><Acer_11 /> <Acer_12/>  </>}
+{selected === "Acer" && price === "above 50000" && genere === "speedy" && show && ram === "6-8gb above 4gb graphic card" && <>           <Acer_10 /><Acer_11 /> <Acer_12/>  </>}
+{selected === "Acer" && price === "above 50000" && genere === "gaming" && show && ram === "6-8gb above 4gb graphic card" && <>           <Acer_10 /><Acer_11 /> <Acer_12/>  </>}
+{selected === "Acer" && price === "above 50000" && genere === "coding" && show && ram === "6-8gb above 4gb graphic card" && <>           <Acer_10 /><Acer_11 /> <Acer_12/>  </>}
+{selected === "Acer" && price === "above 50000" && genere === "speedy" && show && ram === "above 8gb above 6gb graphic card" && <>       <Acer_10 /><Acer_11 /> <Acer_12/>  </>}
+{selected === "Acer" && price === "above 50000" && genere === "gaming" && show && ram === "above 8gb above 6gb graphic card" && <>       <Acer_10 /><Acer_11 /> <Acer_12/>  </>}
+{selected === "Acer" && price === "above 50000" && genere === "normal" && show && ram === "above 8gb above 6gb graphic card" && <>       <Acer_10 /><Acer_11 /> <Acer_12/>  </>}
+{selected === "Acer" && price === "above 50000" && genere === "coding" && show && ram === "above 8gb above 6gb graphic card" && <>       <Acer_10 /><Acer_11 /> <Acer_12/>  </>}
+{selected === "Acer" && price === "above 50000" && genere === "speedy" && show && ram === "above 8gb above 8gb graphic card" && <>       <Acer_10 /><Acer_11 /> <Acer_12/>  </>}
+{selected === "Acer" && price === "above 50000" && genere === "gaming" && show && ram === "above 8gb above 8gb graphic card" && <>       <Acer_10 /><Acer_11 /> <Acer_12/>  </>}
+{selected === "Acer" && price === "above 50000" && genere === "normal" && show && ram === "above 8gb above 8gb graphic card" && <>       <Acer_10 /><Acer_11 /> <Acer_12/>  </>}
+{selected === "Acer" && price === "above 50000" && genere === "coding" && show && ram === "above 8gb above 8gb graphic card" && <>       <Acer_10 /><Acer_11 /> <Acer_12/>  </>}
+
+
+{/* apple laps */}
+
+{selected === "Apple" && price === "20000-30000" && genere === "gaming" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Applelaps_1 /><Applelaps_2 /> <Applelaps_3/>  </>}
+{selected === "Apple" && price === "20000-30000" && genere === "normal" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Applelaps_1 /><Applelaps_2 /> <Applelaps_3/>  </>}
+{selected === "Apple" && price === "20000-30000" && genere === "speedy" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Applelaps_1 /><Applelaps_2 /> <Applelaps_3/>  </>}
+{selected === "Apple" && price === "20000-30000" && genere === "coding" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Applelaps_1 /><Applelaps_2 /> <Applelaps_3/>  </>}
+{selected === "Apple" && price === "20000-30000" && genere === "normal" && show && ram === "6-8gb above 4gb graphic card" && <>           <Applelaps_1 /><Applelaps_2 /> <Applelaps_3/>  </>}
+{selected === "Apple" && price === "20000-30000" && genere === "speedy" && show && ram === "6-8gb above 4gb graphic card" && <>           <Applelaps_1 /><Applelaps_2 /> <Applelaps_3/>  </>}
+{selected === "Apple" && price === "20000-30000" && genere === "gaming" && show && ram === "6-8gb above 4gb graphic card" && <>           <Applelaps_1 /><Applelaps_2 /> <Applelaps_3/>  </>}
+{selected === "Apple" && price === "20000-30000" && genere === "coding" && show && ram === "6-8gb above 4gb graphic card" && <>           <Applelaps_1 /><Applelaps_2 /> <Applelaps_3/>  </>}
+{selected === "Apple" && price === "20000-30000" && genere === "speedy" && show && ram === "above 8gb above 6gb graphic card" && <>       <Applelaps_1 /><Applelaps_2 /> <Applelaps_3/>  </>}
+{selected === "Apple" && price === "20000-30000" && genere === "gaming" && show && ram === "above 8gb above 6gb graphic card" && <>       <Applelaps_1 /><Applelaps_2 /> <Applelaps_3/>  </>}
+{selected === "Apple" && price === "20000-30000" && genere === "normal" && show && ram === "above 8gb above 6gb graphic card" && <>       <Applelaps_1 /><Applelaps_2 /> <Applelaps_3/>  </>}
+{selected === "Apple" && price === "20000-30000" && genere === "coding" && show && ram === "above 8gb above 6gb graphic card" && <>       <Applelaps_1 /><Applelaps_2 /> <Applelaps_3/>  </>}
+{selected === "Apple" && price === "20000-30000" && genere === "speedy" && show && ram === "above 8gb above 8gb graphic card" && <>       <Applelaps_1 /><Applelaps_2 /> <Applelaps_3/>  </>}
+{selected === "Apple" && price === "20000-30000" && genere === "gaming" && show && ram === "above 8gb above 8gb graphic card" && <>       <Applelaps_1 /><Applelaps_2 /> <Applelaps_3/>  </>}
+{selected === "Apple" && price === "20000-30000" && genere === "normal" && show && ram === "above 8gb above 8gb graphic card" && <>       <Applelaps_1 /><Applelaps_2 /> <Applelaps_3/>  </>}
+{selected === "Apple" && price === "20000-30000" && genere === "coding" && show && ram === "above 8gb above 8gb graphic card" && <>       <Applelaps_1 /><Applelaps_2 /> <Applelaps_3/>  </>}
+ 
+{selected === "Apple" && price === "30000-40000" && genere === "gaming" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Applelaps_4 /><Applelaps_5 /> <Applelaps_6/>  </>}
+{selected === "Apple" && price === "30000-40000" && genere === "normal" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Applelaps_4 /><Applelaps_5 /> <Applelaps_6/>  </>}
+{selected === "Apple" && price === "30000-40000" && genere === "speedy" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Applelaps_4 /><Applelaps_5 /> <Applelaps_6/>  </>}
+{selected === "Apple" && price === "30000-40000" && genere === "coding" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Applelaps_4 /><Applelaps_5 /> <Applelaps_6/>  </>}
+{selected === "Apple" && price === "30000-40000" && genere === "normal" && show && ram === "6-8gb above 4gb graphic card" && <>           <Applelaps_4 /><Applelaps_5 /> <Applelaps_6/>  </>}
+{selected === "Apple" && price === "30000-40000" && genere === "speedy" && show && ram === "6-8gb above 4gb graphic card" && <>           <Applelaps_4 /><Applelaps_5 /> <Applelaps_6/>  </>}
+{selected === "Apple" && price === "30000-40000" && genere === "gaming" && show && ram === "6-8gb above 4gb graphic card" && <>           <Applelaps_4 /><Applelaps_5 /> <Applelaps_6/>  </>}
+{selected === "Apple" && price === "30000-40000" && genere === "coding" && show && ram === "6-8gb above 4gb graphic card" && <>           <Applelaps_4 /><Applelaps_5 /> <Applelaps_6/>  </>}
+{selected === "Apple" && price === "30000-40000" && genere === "speedy" && show && ram === "above 8gb above 6gb graphic card" && <>       <Applelaps_4 /><Applelaps_5 /> <Applelaps_6/>  </>}
+{selected === "Apple" && price === "30000-40000" && genere === "gaming" && show && ram === "above 8gb above 6gb graphic card" && <>       <Applelaps_4 /><Applelaps_5 /> <Applelaps_6/>  </>}
+{selected === "Apple" && price === "30000-40000" && genere === "normal" && show && ram === "above 8gb above 6gb graphic card" && <>       <Applelaps_4 /><Applelaps_5 /> <Applelaps_6/>  </>}
+{selected === "Apple" && price === "30000-40000" && genere === "coding" && show && ram === "above 8gb above 6gb graphic card" && <>       <Applelaps_4 /><Applelaps_5 /> <Applelaps_6/>  </>}
+{selected === "Apple" && price === "30000-40000" && genere === "speedy" && show && ram === "above 8gb above 8gb graphic card" && <>       <Applelaps_4 /><Applelaps_5 /> <Applelaps_6/>  </>}
+{selected === "Apple" && price === "30000-40000" && genere === "gaming" && show && ram === "above 8gb above 8gb graphic card" && <>       <Applelaps_4 /><Applelaps_5 /> <Applelaps_6/>  </>}
+{selected === "Apple" && price === "30000-40000" && genere === "normal" && show && ram === "above 8gb above 8gb graphic card" && <>       <Applelaps_4 /><Applelaps_5 /> <Applelaps_6/>  </>}
+{selected === "Apple" && price === "30000-40000" && genere === "coding" && show && ram === "above 8gb above 8gb graphic card" && <>       <Applelaps_4 /><Applelaps_5 /> <Applelaps_6/>  </>}
+
+{selected === "Apple" && price === "40000-50000" && genere === "gaming" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Applelaps_7 /><Applelaps_8 /> <Applelaps_9/>  </>}
+{selected === "Apple" && price === "40000-50000" && genere === "normal" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Applelaps_7 /><Applelaps_8 /> <Applelaps_9/>  </>}
+{selected === "Apple" && price === "40000-50000" && genere === "speedy" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Applelaps_7 /><Applelaps_8 /> <Applelaps_9/>  </>}
+{selected === "Apple" && price === "40000-50000" && genere === "coding" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Applelaps_7 /><Applelaps_8 /> <Applelaps_9/>  </>}
+{selected === "Apple" && price === "40000-50000" && genere === "normal" && show && ram === "6-8gb above 4gb graphic card" && <>           <Applelaps_7 /><Applelaps_8 /> <Applelaps_9/>  </>}
+{selected === "Apple" && price === "40000-50000" && genere === "speedy" && show && ram === "6-8gb above 4gb graphic card" && <>           <Applelaps_7 /><Applelaps_8 /> <Applelaps_9/>  </>}
+{selected === "Apple" && price === "40000-50000" && genere === "gaming" && show && ram === "6-8gb above 4gb graphic card" && <>           <Applelaps_7 /><Applelaps_8 /> <Applelaps_9/>  </>}
+{selected === "Apple" && price === "40000-50000" && genere === "coding" && show && ram === "6-8gb above 4gb graphic card" && <>           <Applelaps_7 /><Applelaps_8 /> <Applelaps_9/>  </>}
+{selected === "Apple" && price === "40000-50000" && genere === "speedy" && show && ram === "above 8gb above 6gb graphic card" && <>       <Applelaps_7 /><Applelaps_8 /> <Applelaps_9/>  </>}
+{selected === "Apple" && price === "40000-50000" && genere === "gaming" && show && ram === "above 8gb above 6gb graphic card" && <>       <Applelaps_7 /><Applelaps_8 /> <Applelaps_9/>  </>}
+{selected === "Apple" && price === "40000-50000" && genere === "normal" && show && ram === "above 8gb above 6gb graphic card" && <>       <Applelaps_7 /><Applelaps_8 /> <Applelaps_9/>  </>}
+{selected === "Apple" && price === "40000-50000" && genere === "coding" && show && ram === "above 8gb above 6gb graphic card" && <>       <Applelaps_7 /><Applelaps_8 /> <Applelaps_9/>  </>}
+{selected === "Apple" && price === "40000-50000" && genere === "speedy" && show && ram === "above 8gb above 8gb graphic card" && <>       <Applelaps_7 /><Applelaps_8 /> <Applelaps_9/>  </>}
+{selected === "Apple" && price === "40000-50000" && genere === "gaming" && show && ram === "above 8gb above 8gb graphic card" && <>       <Applelaps_7 /><Applelaps_8 /> <Applelaps_9/>  </>}
+{selected === "Apple" && price === "40000-50000" && genere === "normal" && show && ram === "above 8gb above 8gb graphic card" && <>       <Applelaps_7 /><Applelaps_8 /> <Applelaps_9/>  </>}
+{selected === "Apple" && price === "40000-50000" && genere === "coding" && show && ram === "above 8gb above 8gb graphic card" && <>       <Applelaps_7 /><Applelaps_8 /> <Applelaps_9/>  </>}
+
+{selected === "Apple" && price === "above 50000" && genere === "gaming" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Applelaps_10 /><Applelaps_11 /> <Applelaps_12/>  </>}
+{selected === "Apple" && price === "above 50000" && genere === "normal" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Applelaps_10 /><Applelaps_11 /> <Applelaps_12/>  </>}
+{selected === "Apple" && price === "above 50000" && genere === "speedy" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Applelaps_10 /><Applelaps_11 /> <Applelaps_12/>  </>}
+{selected === "Apple" && price === "above 50000" && genere === "coding" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Applelaps_10 /><Applelaps_11 /> <Applelaps_12/>  </>}
+{selected === "Apple" && price === "above 50000" && genere === "normal" && show && ram === "6-8gb above 4gb graphic card" && <>           <Applelaps_10 /><Applelaps_11 /> <Applelaps_12/>  </>}
+{selected === "Apple" && price === "above 50000" && genere === "speedy" && show && ram === "6-8gb above 4gb graphic card" && <>           <Applelaps_10 /><Applelaps_11 /> <Applelaps_12/>  </>}
+{selected === "Apple" && price === "above 50000" && genere === "gaming" && show && ram === "6-8gb above 4gb graphic card" && <>           <Applelaps_10 /><Applelaps_11 /> <Applelaps_12/>  </>}
+{selected === "Apple" && price === "above 50000" && genere === "coding" && show && ram === "6-8gb above 4gb graphic card" && <>           <Applelaps_10 /><Applelaps_11 /> <Applelaps_12/>  </>}
+{selected === "Apple" && price === "above 50000" && genere === "speedy" && show && ram === "above 8gb above 6gb graphic card" && <>       <Applelaps_10 /><Applelaps_11 /> <Applelaps_12/>  </>}
+{selected === "Apple" && price === "above 50000" && genere === "gaming" && show && ram === "above 8gb above 6gb graphic card" && <>       <Applelaps_10 /><Applelaps_11 /> <Applelaps_12/>  </>}
+{selected === "Apple" && price === "above 50000" && genere === "normal" && show && ram === "above 8gb above 6gb graphic card" && <>       <Applelaps_10 /><Applelaps_11 /> <Applelaps_12/>  </>}
+{selected === "Apple" && price === "above 50000" && genere === "coding" && show && ram === "above 8gb above 6gb graphic card" && <>       <Applelaps_10 /><Applelaps_11 /> <Applelaps_12/>  </>}
+{selected === "Apple" && price === "above 50000" && genere === "speedy" && show && ram === "above 8gb above 8gb graphic card" && <>       <Applelaps_10 /><Applelaps_11 /> <Applelaps_12/>  </>}
+{selected === "Apple" && price === "above 50000" && genere === "gaming" && show && ram === "above 8gb above 8gb graphic card" && <>       <Applelaps_10 /><Applelaps_11 /> <Applelaps_12/>  </>}
+{selected === "Apple" && price === "above 50000" && genere === "normal" && show && ram === "above 8gb above 8gb graphic card" && <>       <Applelaps_10 /><Applelaps_11 /> <Applelaps_12/>  </>}
+{selected === "Apple" && price === "above 50000" && genere === "coding" && show && ram === "above 8gb above 8gb graphic card" && <>       <Applelaps_10 /><Applelaps_11 /> <Applelaps_12/>  </>}
+
+
+{/* hp  */}
+
+{selected === "Hp" && price === "20000-30000" && genere === "gaming" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Hp_1 /><Hp_2 /> <Hp_3/>  </>}
+{selected === "Hp" && price === "20000-30000" && genere === "normal" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Hp_1 /><Hp_2 /> <Hp_3/>  </>}
+{selected === "Hp" && price === "20000-30000" && genere === "speedy" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Hp_1 /><Hp_2 /> <Hp_3/>  </>}
+{selected === "Hp" && price === "20000-30000" && genere === "coding" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Hp_1 /><Hp_2 /> <Hp_3/>  </>}
+{selected === "Hp" && price === "20000-30000" && genere === "normal" && show && ram === "6-8gb above 4gb graphic card" && <>           <Hp_1 /><Hp_2 /> <Hp_3/>  </>}
+{selected === "Hp" && price === "20000-30000" && genere === "speedy" && show && ram === "6-8gb above 4gb graphic card" && <>           <Hp_1 /><Hp_2 /> <Hp_3/>  </>}
+{selected === "Hp" && price === "20000-30000" && genere === "gaming" && show && ram === "6-8gb above 4gb graphic card" && <>           <Hp_1 /><Hp_2 /> <Hp_3/>  </>}
+{selected === "Hp" && price === "20000-30000" && genere === "coding" && show && ram === "6-8gb above 4gb graphic card" && <>           <Hp_1 /><Hp_2 /> <Hp_3/>  </>}
+{selected === "Hp" && price === "20000-30000" && genere === "speedy" && show && ram === "above 8gb above 6gb graphic card" && <>       <Hp_1 /><Hp_2 /> <Hp_3/>  </>}
+{selected === "Hp" && price === "20000-30000" && genere === "gaming" && show && ram === "above 8gb above 6gb graphic card" && <>       <Hp_1 /><Hp_2 /> <Hp_3/>  </>}
+{selected === "Hp" && price === "20000-30000" && genere === "normal" && show && ram === "above 8gb above 6gb graphic card" && <>       <Hp_1 /><Hp_2 /> <Hp_3/>  </>}
+{selected === "Hp" && price === "20000-30000" && genere === "coding" && show && ram === "above 8gb above 6gb graphic card" && <>       <Hp_1 /><Hp_2 /> <Hp_3/>  </>}
+{selected === "Hp" && price === "20000-30000" && genere === "speedy" && show && ram === "above 8gb above 8gb graphic card" && <>       <Hp_1 /><Hp_2 /> <Hp_3/>  </>}
+{selected === "Hp" && price === "20000-30000" && genere === "gaming" && show && ram === "above 8gb above 8gb graphic card" && <>       <Hp_1 /><Hp_2 /> <Hp_3/>  </>}
+{selected === "Hp" && price === "20000-30000" && genere === "normal" && show && ram === "above 8gb above 8gb graphic card" && <>       <Hp_1 /><Hp_2 /> <Hp_3/>  </>}
+{selected === "Hp" && price === "20000-30000" && genere === "coding" && show && ram === "above 8gb above 8gb graphic card" && <>       <Hp_1 /><Hp_2 /> <Hp_3/>  </>}
+ 
+{selected === "Hp" && price === "30000-40000" && genere === "gaming" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Hp_4 /><Hp_5 /> <Hp_6/>  </>}
+{selected === "Hp" && price === "30000-40000" && genere === "normal" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Hp_4 /><Hp_5 /> <Hp_6/>  </>}
+{selected === "Hp" && price === "30000-40000" && genere === "speedy" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Hp_4 /><Hp_5 /> <Hp_6/>  </>}
+{selected === "Hp" && price === "30000-40000" && genere === "coding" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Hp_4 /><Hp_5 /> <Hp_6/>  </>}
+{selected === "Hp" && price === "30000-40000" && genere === "normal" && show && ram === "6-8gb above 4gb graphic card" && <>           <Hp_4 /><Hp_5 /> <Hp_6/>  </>}
+{selected === "Hp" && price === "30000-40000" && genere === "speedy" && show && ram === "6-8gb above 4gb graphic card" && <>           <Hp_4 /><Hp_5 /> <Hp_6/>  </>}
+{selected === "Hp" && price === "30000-40000" && genere === "gaming" && show && ram === "6-8gb above 4gb graphic card" && <>           <Hp_4 /><Hp_5 /> <Hp_6/>  </>}
+{selected === "Hp" && price === "30000-40000" && genere === "coding" && show && ram === "6-8gb above 4gb graphic card" && <>           <Hp_4 /><Hp_5 /> <Hp_6/>  </>}
+{selected === "Hp" && price === "30000-40000" && genere === "speedy" && show && ram === "above 8gb above 6gb graphic card" && <>       <Hp_4 /><Hp_5 /> <Hp_6/>  </>}
+{selected === "Hp" && price === "30000-40000" && genere === "gaming" && show && ram === "above 8gb above 6gb graphic card" && <>       <Hp_4 /><Hp_5 /> <Hp_6/>  </>}
+{selected === "Hp" && price === "30000-40000" && genere === "normal" && show && ram === "above 8gb above 6gb graphic card" && <>       <Hp_4 /><Hp_5 /> <Hp_6/>  </>}
+{selected === "Hp" && price === "30000-40000" && genere === "coding" && show && ram === "above 8gb above 6gb graphic card" && <>       <Hp_4 /><Hp_5 /> <Hp_6/>  </>}
+{selected === "Hp" && price === "30000-40000" && genere === "speedy" && show && ram === "above 8gb above 8gb graphic card" && <>       <Hp_4 /><Hp_5 /> <Hp_6/>  </>}
+{selected === "Hp" && price === "30000-40000" && genere === "gaming" && show && ram === "above 8gb above 8gb graphic card" && <>       <Hp_4 /><Hp_5 /> <Hp_6/>  </>}
+{selected === "Hp" && price === "30000-40000" && genere === "normal" && show && ram === "above 8gb above 8gb graphic card" && <>       <Hp_4 /><Hp_5 /> <Hp_6/>  </>}
+{selected === "Hp" && price === "30000-40000" && genere === "coding" && show && ram === "above 8gb above 8gb graphic card" && <>       <Hp_4 /><Hp_5 /> <Hp_6/>  </>}
+
+{selected === "Hp" && price === "40000-50000" && genere === "gaming" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Hp_7 /><Hp_8 /> <Hp_9/>  </>}
+{selected === "Hp" && price === "40000-50000" && genere === "normal" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Hp_7 /><Hp_8 /> <Hp_9/>  </>}
+{selected === "Hp" && price === "40000-50000" && genere === "speedy" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Hp_7 /><Hp_8 /> <Hp_9/>  </>}
+{selected === "Hp" && price === "40000-50000" && genere === "coding" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Hp_7 /><Hp_8 /> <Hp_9/>  </>}
+{selected === "Hp" && price === "40000-50000" && genere === "normal" && show && ram === "6-8gb above 4gb graphic card" && <>           <Hp_7 /><Hp_8 /> <Hp_9/>  </>}
+{selected === "Hp" && price === "40000-50000" && genere === "speedy" && show && ram === "6-8gb above 4gb graphic card" && <>           <Hp_7 /><Hp_8 /> <Hp_9/>  </>}
+{selected === "Hp" && price === "40000-50000" && genere === "gaming" && show && ram === "6-8gb above 4gb graphic card" && <>           <Hp_7 /><Hp_8 /> <Hp_9/>  </>}
+{selected === "Hp" && price === "40000-50000" && genere === "coding" && show && ram === "6-8gb above 4gb graphic card" && <>           <Hp_7 /><Hp_8 /> <Hp_9/>  </>}
+{selected === "Hp" && price === "40000-50000" && genere === "speedy" && show && ram === "above 8gb above 6gb graphic card" && <>       <Hp_7 /><Hp_8 /> <Hp_9/>  </>}
+{selected === "Hp" && price === "40000-50000" && genere === "gaming" && show && ram === "above 8gb above 6gb graphic card" && <>       <Hp_7 /><Hp_8 /> <Hp_9/>  </>}
+{selected === "Hp" && price === "40000-50000" && genere === "normal" && show && ram === "above 8gb above 6gb graphic card" && <>       <Hp_7 /><Hp_8 /> <Hp_9/>  </>}
+{selected === "Hp" && price === "40000-50000" && genere === "coding" && show && ram === "above 8gb above 6gb graphic card" && <>       <Hp_7 /><Hp_8 /> <Hp_9/>  </>}
+{selected === "Hp" && price === "40000-50000" && genere === "speedy" && show && ram === "above 8gb above 8gb graphic card" && <>       <Hp_7 /><Hp_8 /> <Hp_9/>  </>}
+{selected === "Hp" && price === "40000-50000" && genere === "gaming" && show && ram === "above 8gb above 8gb graphic card" && <>       <Hp_7 /><Hp_8 /> <Hp_9/>  </>}
+{selected === "Hp" && price === "40000-50000" && genere === "normal" && show && ram === "above 8gb above 8gb graphic card" && <>       <Hp_7 /><Hp_8 /> <Hp_9/>  </>}
+{selected === "Hp" && price === "40000-50000" && genere === "coding" && show && ram === "above 8gb above 8gb graphic card" && <>       <Hp_7 /><Hp_8 /> <Hp_9/>  </>}
+
+{selected === "Hp" && price === "above 50000" && genere === "gaming" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Hp_10 /><Hp_11 /> <Hp_12/>  </>}
+{selected === "Hp" && price === "above 50000" && genere === "normal" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Hp_10 /><Hp_11 /> <Hp_12/>  </>}
+{selected === "Hp" && price === "above 50000" && genere === "speedy" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Hp_10 /><Hp_11 /> <Hp_12/>  </>}
+{selected === "Hp" && price === "above 50000" && genere === "coding" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Hp_10 /><Hp_11 /> <Hp_12/>  </>}
+{selected === "Hp" && price === "above 50000" && genere === "normal" && show && ram === "6-8gb above 4gb graphic card" && <>           <Hp_10 /><Hp_11 /> <Hp_12/>  </>}
+{selected === "Hp" && price === "above 50000" && genere === "speedy" && show && ram === "6-8gb above 4gb graphic card" && <>           <Hp_10 /><Hp_11 /> <Hp_12/>  </>}
+{selected === "Hp" && price === "above 50000" && genere === "gaming" && show && ram === "6-8gb above 4gb graphic card" && <>           <Hp_10 /><Hp_11 /> <Hp_12/>  </>}
+{selected === "Hp" && price === "above 50000" && genere === "coding" && show && ram === "6-8gb above 4gb graphic card" && <>           <Hp_10 /><Hp_11 /> <Hp_12/>  </>}
+{selected === "Hp" && price === "above 50000" && genere === "speedy" && show && ram === "above 8gb above 6gb graphic card" && <>       <Hp_10 /><Hp_11 /> <Hp_12/>  </>}
+{selected === "Hp" && price === "above 50000" && genere === "gaming" && show && ram === "above 8gb above 6gb graphic card" && <>       <Hp_10 /><Hp_11 /> <Hp_12/>  </>}
+{selected === "Hp" && price === "above 50000" && genere === "normal" && show && ram === "above 8gb above 6gb graphic card" && <>       <Hp_10 /><Hp_11 /> <Hp_12/>  </>}
+{selected === "Hp" && price === "above 50000" && genere === "coding" && show && ram === "above 8gb above 6gb graphic card" && <>       <Hp_10 /><Hp_11 /> <Hp_12/>  </>}
+{selected === "Hp" && price === "above 50000" && genere === "speedy" && show && ram === "above 8gb above 8gb graphic card" && <>       <Hp_10 /><Hp_11 /> <Hp_12/>  </>}
+{selected === "Hp" && price === "above 50000" && genere === "gaming" && show && ram === "above 8gb above 8gb graphic card" && <>       <Hp_10 /><Hp_11 /> <Hp_12/>  </>}
+{selected === "Hp" && price === "above 50000" && genere === "normal" && show && ram === "above 8gb above 8gb graphic card" && <>       <Hp_10 /><Hp_11 /> <Hp_12/>  </>}
+{selected === "Hp" && price === "above 50000" && genere === "coding" && show && ram === "above 8gb above 8gb graphic card" && <>       <Hp_10 /><Hp_11 /> <Hp_12/>  </>}
 
 
 
+{/* lenovo */}
 
+{selected === "Lenovo" && price === "20000-30000" && genere === "gaming" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Lenovo_1 /><Lenovo_2 /> <Lenovo_3/>  </>}
+{selected === "Lenovo" && price === "20000-30000" && genere === "normal" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Lenovo_1 /><Lenovo_2 /> <Lenovo_3/>  </>}
+{selected === "Lenovo" && price === "20000-30000" && genere === "speedy" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Lenovo_1 /><Lenovo_2 /> <Lenovo_3/>  </>}
+{selected === "Lenovo" && price === "20000-30000" && genere === "coding" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Lenovo_1 /><Lenovo_2 /> <Lenovo_3/>  </>}
+{selected === "Lenovo" && price === "20000-30000" && genere === "normal" && show && ram === "6-8gb above 4gb graphic card" && <>           <Lenovo_1 /><Lenovo_2 /> <Lenovo_3/>  </>}
+{selected === "Lenovo" && price === "20000-30000" && genere === "speedy" && show && ram === "6-8gb above 4gb graphic card" && <>           <Lenovo_1 /><Lenovo_2 /> <Lenovo_3/>  </>}
+{selected === "Lenovo" && price === "20000-30000" && genere === "gaming" && show && ram === "6-8gb above 4gb graphic card" && <>           <Lenovo_1 /><Lenovo_2 /> <Lenovo_3/>  </>}
+{selected === "Lenovo" && price === "20000-30000" && genere === "coding" && show && ram === "6-8gb above 4gb graphic card" && <>           <Lenovo_1 /><Lenovo_2 /> <Lenovo_3/>  </>}
+{selected === "Lenovo" && price === "20000-30000" && genere === "speedy" && show && ram === "above 8gb above 6gb graphic card" && <>       <Lenovo_1 /><Lenovo_2 /> <Lenovo_3/>  </>}
+{selected === "Lenovo" && price === "20000-30000" && genere === "gaming" && show && ram === "above 8gb above 6gb graphic card" && <>       <Lenovo_1 /><Lenovo_2 /> <Lenovo_3/>  </>}
+{selected === "Lenovo" && price === "20000-30000" && genere === "normal" && show && ram === "above 8gb above 6gb graphic card" && <>       <Lenovo_1 /><Lenovo_2 /> <Lenovo_3/>  </>}
+{selected === "Lenovo" && price === "20000-30000" && genere === "coding" && show && ram === "above 8gb above 6gb graphic card" && <>       <Lenovo_1 /><Lenovo_2 /> <Lenovo_3/>  </>}
+{selected === "Lenovo" && price === "20000-30000" && genere === "speedy" && show && ram === "above 8gb above 8gb graphic card" && <>       <Lenovo_1 /><Lenovo_2 /> <Lenovo_3/>  </>}
+{selected === "Lenovo" && price === "20000-30000" && genere === "gaming" && show && ram === "above 8gb above 8gb graphic card" && <>       <Lenovo_1 /><Lenovo_2 /> <Lenovo_3/>  </>}
+{selected === "Lenovo" && price === "20000-30000" && genere === "normal" && show && ram === "above 8gb above 8gb graphic card" && <>       <Lenovo_1 /><Lenovo_2 /> <Lenovo_3/>  </>}
+{selected === "Lenovo" && price === "20000-30000" && genere === "coding" && show && ram === "above 8gb above 8gb graphic card" && <>       <Lenovo_1 /><Lenovo_2 /> <Lenovo_3/>  </>}
+ 
+{selected === "Lenovo" && price === "30000-40000" && genere === "gaming" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Lenovo_4 /><Lenovo_5 /> <Lenovo_6/>  </>}
+{selected === "Lenovo" && price === "30000-40000" && genere === "normal" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Lenovo_4 /><Lenovo_5 /> <Lenovo_6/>  </>}
+{selected === "Lenovo" && price === "30000-40000" && genere === "speedy" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Lenovo_4 /><Lenovo_5 /> <Lenovo_6/>  </>}
+{selected === "Lenovo" && price === "30000-40000" && genere === "coding" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Lenovo_4 /><Lenovo_5 /> <Lenovo_6/>  </>}
+{selected === "Lenovo" && price === "30000-40000" && genere === "normal" && show && ram === "6-8gb above 4gb graphic card" && <>           <Lenovo_4 /><Lenovo_5 /> <Lenovo_6/>  </>}
+{selected === "Lenovo" && price === "30000-40000" && genere === "speedy" && show && ram === "6-8gb above 4gb graphic card" && <>           <Lenovo_4 /><Lenovo_5 /> <Lenovo_6/>  </>}
+{selected === "Lenovo" && price === "30000-40000" && genere === "gaming" && show && ram === "6-8gb above 4gb graphic card" && <>           <Lenovo_4 /><Lenovo_5 /> <Lenovo_6/>  </>}
+{selected === "Lenovo" && price === "30000-40000" && genere === "coding" && show && ram === "6-8gb above 4gb graphic card" && <>           <Lenovo_4 /><Lenovo_5 /> <Lenovo_6/>  </>}
+{selected === "Lenovo" && price === "30000-40000" && genere === "speedy" && show && ram === "above 8gb above 6gb graphic card" && <>       <Lenovo_4 /><Lenovo_5 /> <Lenovo_6/>  </>}
+{selected === "Lenovo" && price === "30000-40000" && genere === "gaming" && show && ram === "above 8gb above 6gb graphic card" && <>       <Lenovo_4 /><Lenovo_5 /> <Lenovo_6/>  </>}
+{selected === "Lenovo" && price === "30000-40000" && genere === "normal" && show && ram === "above 8gb above 6gb graphic card" && <>       <Lenovo_4 /><Lenovo_5 /> <Lenovo_6/>  </>}
+{selected === "Lenovo" && price === "30000-40000" && genere === "coding" && show && ram === "above 8gb above 6gb graphic card" && <>       <Lenovo_4 /><Lenovo_5 /> <Lenovo_6/>  </>}
+{selected === "Lenovo" && price === "30000-40000" && genere === "speedy" && show && ram === "above 8gb above 8gb graphic card" && <>       <Lenovo_4 /><Lenovo_5 /> <Lenovo_6/>  </>}
+{selected === "Lenovo" && price === "30000-40000" && genere === "gaming" && show && ram === "above 8gb above 8gb graphic card" && <>       <Lenovo_4 /><Lenovo_5 /> <Lenovo_6/>  </>}
+{selected === "Lenovo" && price === "30000-40000" && genere === "normal" && show && ram === "above 8gb above 8gb graphic card" && <>       <Lenovo_4 /><Lenovo_5 /> <Lenovo_6/>  </>}
+{selected === "Lenovo" && price === "30000-40000" && genere === "coding" && show && ram === "above 8gb above 8gb graphic card" && <>       <Lenovo_4 /><Lenovo_5 /> <Lenovo_6/>  </>}
 
+{selected === "Lenovo" && price === "40000-50000" && genere === "gaming" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Lenovo_7 /><Lenovo_8 /> <Lenovo_9/>  </>}
+{selected === "Lenovo" && price === "40000-50000" && genere === "normal" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Lenovo_7 /><Lenovo_8 /> <Lenovo_9/>  </>}
+{selected === "Lenovo" && price === "40000-50000" && genere === "speedy" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Lenovo_7 /><Lenovo_8 /> <Lenovo_9/>  </>}
+{selected === "Lenovo" && price === "40000-50000" && genere === "coding" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Lenovo_7 /><Lenovo_8 /> <Lenovo_9/>  </>}
+{selected === "Lenovo" && price === "40000-50000" && genere === "normal" && show && ram === "6-8gb above 4gb graphic card" && <>           <Lenovo_7 /><Lenovo_8 /> <Lenovo_9/>  </>}
+{selected === "Lenovo" && price === "40000-50000" && genere === "speedy" && show && ram === "6-8gb above 4gb graphic card" && <>           <Lenovo_7 /><Lenovo_8 /> <Lenovo_9/>  </>}
+{selected === "Lenovo" && price === "40000-50000" && genere === "gaming" && show && ram === "6-8gb above 4gb graphic card" && <>           <Lenovo_7 /><Lenovo_8 /> <Lenovo_9/>  </>}
+{selected === "Lenovo" && price === "40000-50000" && genere === "coding" && show && ram === "6-8gb above 4gb graphic card" && <>           <Lenovo_7 /><Lenovo_8 /> <Lenovo_9/>  </>}
+{selected === "Lenovo" && price === "40000-50000" && genere === "speedy" && show && ram === "above 8gb above 6gb graphic card" && <>       <Lenovo_7 /><Lenovo_8 /> <Lenovo_9/>  </>}
+{selected === "Lenovo" && price === "40000-50000" && genere === "gaming" && show && ram === "above 8gb above 6gb graphic card" && <>       <Lenovo_7 /><Lenovo_8 /> <Lenovo_9/>  </>}
+{selected === "Lenovo" && price === "40000-50000" && genere === "normal" && show && ram === "above 8gb above 6gb graphic card" && <>       <Lenovo_7 /><Lenovo_8 /> <Lenovo_9/>  </>}
+{selected === "Lenovo" && price === "40000-50000" && genere === "coding" && show && ram === "above 8gb above 6gb graphic card" && <>       <Lenovo_7 /><Lenovo_8 /> <Lenovo_9/>  </>}
+{selected === "Lenovo" && price === "40000-50000" && genere === "speedy" && show && ram === "above 8gb above 8gb graphic card" && <>       <Lenovo_7 /><Lenovo_8 /> <Lenovo_9/>  </>}
+{selected === "Lenovo" && price === "40000-50000" && genere === "gaming" && show && ram === "above 8gb above 8gb graphic card" && <>       <Lenovo_7 /><Lenovo_8 /> <Lenovo_9/>  </>}
+{selected === "Lenovo" && price === "40000-50000" && genere === "normal" && show && ram === "above 8gb above 8gb graphic card" && <>       <Lenovo_7 /><Lenovo_8 /> <Lenovo_9/>  </>}
+{selected === "Lenovo" && price === "40000-50000" && genere === "coding" && show && ram === "above 8gb above 8gb graphic card" && <>       <Lenovo_7 /><Lenovo_8 /> <Lenovo_9/>  </>}
+
+{selected === "Lenovo" && price === "above 50000" && genere === "gaming" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Lenovo_10 /><Lenovo_11 /> <Lenovo_12/>  </>}
+{selected === "Lenovo" && price === "above 50000" && genere === "normal" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Lenovo_10 /><Lenovo_11 /> <Lenovo_12/>  </>}
+{selected === "Lenovo" && price === "above 50000" && genere === "speedy" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Lenovo_10 /><Lenovo_11 /> <Lenovo_12/>  </>}
+{selected === "Lenovo" && price === "above 50000" && genere === "coding" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Lenovo_10 /><Lenovo_11 /> <Lenovo_12/>  </>}
+{selected === "Lenovo" && price === "above 50000" && genere === "normal" && show && ram === "6-8gb above 4gb graphic card" && <>           <Lenovo_10 /><Lenovo_11 /> <Lenovo_12/>  </>}
+{selected === "Lenovo" && price === "above 50000" && genere === "speedy" && show && ram === "6-8gb above 4gb graphic card" && <>           <Lenovo_10 /><Lenovo_11 /> <Lenovo_12/>  </>}
+{selected === "Lenovo" && price === "above 50000" && genere === "gaming" && show && ram === "6-8gb above 4gb graphic card" && <>           <Lenovo_10 /><Lenovo_11 /> <Lenovo_12/>  </>}
+{selected === "Lenovo" && price === "above 50000" && genere === "coding" && show && ram === "6-8gb above 4gb graphic card" && <>           <Lenovo_10 /><Lenovo_11 /> <Lenovo_12/>  </>}
+{selected === "Lenovo" && price === "above 50000" && genere === "speedy" && show && ram === "above 8gb above 6gb graphic card" && <>       <Lenovo_10 /><Lenovo_11 /> <Lenovo_12/>  </>}
+{selected === "Lenovo" && price === "above 50000" && genere === "gaming" && show && ram === "above 8gb above 6gb graphic card" && <>       <Lenovo_10 /><Lenovo_11 /> <Lenovo_12/>  </>}
+{selected === "Lenovo" && price === "above 50000" && genere === "normal" && show && ram === "above 8gb above 6gb graphic card" && <>       <Lenovo_10 /><Lenovo_11 /> <Lenovo_12/>  </>}
+{selected === "Lenovo" && price === "above 50000" && genere === "coding" && show && ram === "above 8gb above 6gb graphic card" && <>       <Lenovo_10 /><Lenovo_11 /> <Lenovo_12/>  </>}
+{selected === "Lenovo" && price === "above 50000" && genere === "speedy" && show && ram === "above 8gb above 8gb graphic card" && <>       <Lenovo_10 /><Lenovo_11 /> <Lenovo_12/>  </>}
+{selected === "Lenovo" && price === "above 50000" && genere === "gaming" && show && ram === "above 8gb above 8gb graphic card" && <>       <Lenovo_10 /><Lenovo_11 /> <Lenovo_12/>  </>}
+{selected === "Lenovo" && price === "above 50000" && genere === "normal" && show && ram === "above 8gb above 8gb graphic card" && <>       <Lenovo_10 /><Lenovo_11 /> <Lenovo_12/>  </>}
+{selected === "Lenovo" && price === "above 50000" && genere === "coding" && show && ram === "above 8gb above 8gb graphic card" && <>       <Lenovo_10 /><Lenovo_11 /> <Lenovo_12/>  </>}
 
 
 

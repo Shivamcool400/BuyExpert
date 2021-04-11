@@ -3,30 +3,30 @@ import Fire from '../../../../firebase';
 import Product from '../product';
 
 
-const Lenovo_11 = () => {
+const Lenovo_2 = () => {
     const db = Fire.firestore();
 
     useEffect(() => {
         
-       db.collection('head_11_lenovo').orderBy("choice").onSnapshot(snapshot => (
+       db.collection('head_2_lenovo').orderBy("choice").onSnapshot(snapshot => (
          setHead(snapshot.docs.map(doc => doc.data()))
        ))
-       db.collection('specs_11_lenovo').onSnapshot(snapshot => (
+       db.collection('specs_2_lenovo').onSnapshot(snapshot => (
          setSpecs(snapshot.docs.map(doc => doc.data()))
        ))
-       db.collection('youtube_11_lenovo').onSnapshot(snapshot => (
+       db.collection('youtube_2_lenovo').onSnapshot(snapshot => (
          setYoutube(snapshot.docs.map(doc => doc.data()))
        ))
-       db.collection('blog_11_lenovo').onSnapshot(snapshot => (
+       db.collection('blog_2_lenovo').onSnapshot(snapshot => (
          setBlog(snapshot.docs.map(doc => doc.data()))
        ))
-       db.collection('seller_11_lenovo').orderBy("name").onSnapshot(snapshot => (
+       db.collection('seller_2_lenovo').orderBy("name").onSnapshot(snapshot => (
          setSeller(snapshot.docs.map(doc => doc.data()))
        ))
-       db.collection('gaming_11_lenovo').onSnapshot(snapshot => (
+       db.collection('gaming_2_lenovo').onSnapshot(snapshot => (
          setGaming(snapshot.docs.map(doc => doc.data()))
        ))
-       db.collection('tech_11_lenovo').orderBy("serial").onSnapshot(snapshot => (
+       db.collection('tech_2_lenovo').orderBy("serial").onSnapshot(snapshot => (
          setTech(snapshot.docs.map(doc => doc.data()))
        ))
        }, []);
@@ -52,5 +52,5 @@ const Lenovo_11 = () => {
     )
 }
 
-export default Lenovo_11
+export default Lenovo_2
 
