@@ -8,6 +8,16 @@ class Footer extends Component{
         return (
 
   <div>
+
+<div>
+    <div className="footer-icons text-center">
+      <div className="followus">Follow Us</div>
+      <i class="fab fa-facebook footer-icon1"></i>
+      <i class="fab fa-instagram footer-icon2"></i>
+      <i class="fab fa-twitter footer-icon3"></i>
+      <i class="fab fa-linkedin footer-icon4"></i>
+    </div>
+  </div>
   <footer className="footer">
     <div className="footer-body">
       <div className="head3">BuyExperts</div>
@@ -37,14 +47,7 @@ class Footer extends Component{
     <div className="copyright text-center">&copy; BUY EXPERTS. All rights reserved</div>
   </footer>
 
-  <div>
-    <div className="footer-icons text-center">
-      <i class="fab fa-facebook footer-icon1"></i>
-      <i class="fab fa-instagram footer-icon2"></i>
-      <i class="fab fa-twitter footer-icon3"></i>
-      <i class="fab fa-linkedin footer-icon4"></i>
-    </div>
-  </div>
+  
 
   {/* <div className="copyright text-center">&copy; BUY EXPERTS. All rights reserved</div> */}
 
