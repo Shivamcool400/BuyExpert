@@ -1,11 +1,97 @@
-import React, {Component} from 'react';
+import React, {useState,useEffect} from 'react';
 import './laptop.css';
+import Fire from '../../firebase';
+import Dell_1 from './phonecomponents/dell/dell_1';
+import Dell_2 from './phonecomponents/dell/dell_2';
+import Dell_3 from './phonecomponents/dell/dell_3';
+import Dell_4 from './phonecomponents/dell/dell_4';
+import Dell_5 from './phonecomponents/dell/dell_5';
+import Dell_6 from './phonecomponents/dell/dell_6';
+import Dell_7 from './phonecomponents/dell/dell_7';
+import Dell_8 from './phonecomponents/dell/dell_8';
+import Dell_9 from './phonecomponents/dell/dell_9';
+import Dell_10 from './phonecomponents/dell/dell_10';
+import Dell_11 from './phonecomponents/dell/dell_11';
+import Dell_12 from './phonecomponents/dell/dell_12';
 
-class Laptops extends Component{
-    render() {
+function Laptops () {
+  const db = Fire.firestore();
+  const [brand, setBrand] = useState([]);
+  useEffect(() => {
+   db.collection('laptop').onSnapshot(snapshot => (
+     setBrand(snapshot.docs.map(doc => doc.data()))
+   ))
+   db.collection('dell').orderBy("price").onSnapshot(snapshot => (
+    setDell(snapshot.docs.map(doc => doc.data()))
+  ))
+  db.collection('acer').orderBy("price").onSnapshot(snapshot => (
+    setAcer(snapshot.docs.map(doc => doc.data()))
+  ))
+  db.collection('applelaps').orderBy("price").onSnapshot(snapshot => (
+    setApplelaps(snapshot.docs.map(doc => doc.data()))
+  ))
+  db.collection('lenovo').orderBy("price").onSnapshot(snapshot => (
+    setLenovo(snapshot.docs.map(doc => doc.data()))
+  ))
+  db.collection('hp').orderBy("price").onSnapshot(snapshot => (
+    setHp(snapshot.docs.map(doc => doc.data()))
+  ))
+ 
+  
+  }, []);
+
+
+
+  const [selected, setSelected] = useState('');
+
+  const [dell,setDell] = useState([]);
+  const [applelaps,setApplelaps] = useState([]);
+  const [lenovo,setLenovo] = useState([]);
+  const [acer,setAcer] = useState([]);
+  const [hp,setHp] = useState([]);
+
+
+  const [price,setPrice] = useState('');
+  const [genere,setGenere] = useState('');
+  const [ram,setRam] = useState('');
+
+
+const content = () => {
+    setShow(true);
+  }
+const reset = () => {
+  setSelected("");
+ setShow("");
+ var dropDown = document.getElementById("inputGroupSelect01");  
+ dropDown.selectedIndex = 0;
+}
+  
+
+  var [show,setShow] = useState(false);
+
+
+  var currentarray=[];
+  if(selected === "Dell"){
+    currentarray= dell;
+   } else if (selected === "Lenovo"){
+     currentarray= lenovo;
+   } else if (selected === "Apple") {
+     currentarray = applelaps;
+   } else if (selected === "Acer"){
+     currentarray = acer;
+   } else if (selected === "Hp"){
+    currentarray = hp ;
+  } 
+  
+
+
+
         return(
             <div>
         <div className="container" className="back">
+        <br></br>
+          <br></br>
+          <br></br>
             <figure className="text-center ">
       <blockquote className="blockquote ">
         <h2 className="msg-heading">Find Your Device ?</h2>
@@ -16,59 +102,175 @@ class Laptops extends Component{
     <div className="row">
            <div className="col-sm-12 col-md-3"><div className="input-group mb-3">
   <label className="input-group-text" htmlFor="inputGroupSelect01">Brand</label>
-  <select className="form-select" id="inputGroupSelect01">
-    <option selected>Choose...</option>
-    <option value={1}>Dell</option>
-    <option value={2}>Samsung</option>
-    <option value={3}>Apple</option>
-    <option value={4}>HP</option>
-    <option value={5}>Lenovo</option>
-    <option value={6}>Acer</option>
+  <select onChange={(e) => setSelected(e.target.value)} className="form-select" id="inputGroupSelect01">
+    
+    <option selected value="1">Choose...</option>
+          {brand.map((brand) => (
+            <option value={brand.name} key={brand.name}>{brand.name}</option>
+          ))}
   </select>
 </div>
 </div>
            <div className="col-sm-12 col-md-3"><div className="input-group mb-3">
   <label className="input-group-text" htmlFor="inputGroupSelect01">Price-range</label>
-  <select className="form-select" id="inputGroupSelect01">
-    <option selected>Choose...</option>
-    <option value={1}>below-20000</option>
-    <option value={2}>below-30000</option>
-    <option value={3}>below-40000</option>
-    <option value={3}>below-50000</option>
-    <option value={3}>below-60000</option>
-    <option value={3}>above-60000</option>
+  <select onChange={(e) => setPrice(e.target.value)} className="form-select" id="inputGroupSelect01">
+  <option selected>Choose...</option>
+    {currentarray.map((price) => (
+            <option value={price.price}>{price.price}</option>
+          ))}
   </select>
 </div>
 </div>
            <div className="col-sm-12 col-md-3"><div className="input-group mb-3">
   <label className="input-group-text" htmlFor="inputGroupSelect01">Genere</label>
-  <select className="form-select" id="inputGroupSelect01">
+  <select onChange={(e) => setGenere(e.target.value)} className="form-select" id="inputGroupSelect01">
     <option selected>Choose...</option>
-    <option value={1}>Normal</option>
-    <option value={2}>Gaming</option>
-    <option value={3}>Speedy</option>
-    <option value={4}>Coding</option>
+    {currentarray.map((genere) => (
+            <option value={genere.genere}>{genere.genere}</option>
+          ))}
   </select>
 </div>
 </div>
            <div className="col-sm-12 col-md-3"><div className="input-group mb-3">
-  <label className="input-group-text" htmlFor="inputGroupSelect01">Ram/Storage</label>
-  <select className="form-select" id="inputGroupSelect01">
+  <label className="input-group-text" htmlFor="inputGroupSelect01">Ram/ Graphic card</label>
+  <select onChange={(e) => setRam(e.target.value)} className="form-select" id="inputGroupSelect01">
     <option selected>Choose...</option>
-    <option value={1}>4gb above 256gb storage</option>
-    <option value={2}>8gb above 256gb storage</option>
-    <option value={3}>12gb above 256gb storage</option>
-    <option value={3}>16gb above 256gb storage</option>
+    {currentarray.map((ramstorage) => (
+            <option value={ramstorage.ramstorage}>{ramstorage.ramstorage}</option>
+          ))}
   </select>
 </div>
 </div>
 </div>
 <div className="">
-            <button type="button" className="btn  btn-primary btn-outline-secondary btn-lg find-btn"> Find! </button>
+{ show ? <button type="button" onClick={reset} className="btn  btn-primary btn-outline-secondary btn-lg find-btn"> Reset! </button> 
+  :
+  <button type="button" onClick={content} className="btn  btn-primary btn-outline-secondary btn-lg find-btn"> Find! </button>
+  }
           </div>
           <br></br>
           <br></br>
 </div>
+
+{/* middle part after clicking find */}
+
+{/* dell */}
+
+{selected === "Dell" && price === "20000-30000" && genere === "gaming" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Dell_1 /><Dell_2 /> <Dell_3/>  </>}
+{selected === "Dell" && price === "20000-30000" && genere === "normal" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Dell_1 /><Dell_2 /> <Dell_3/>  </>}
+{selected === "Dell" && price === "20000-30000" && genere === "speedy" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Dell_1 /><Dell_2 /> <Dell_3/>  </>}
+{selected === "Dell" && price === "20000-30000" && genere === "coding" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Dell_1 /><Dell_2 /> <Dell_3/>  </>}
+{selected === "Dell" && price === "20000-30000" && genere === "normal" && show && ram === "6-8gb above 4gb graphic card" && <>           <Dell_1 /><Dell_2 /> <Dell_3/>  </>}
+{selected === "Dell" && price === "20000-30000" && genere === "speedy" && show && ram === "6-8gb above 4gb graphic card" && <>           <Dell_1 /><Dell_2 /> <Dell_3/>  </>}
+{selected === "Dell" && price === "20000-30000" && genere === "gaming" && show && ram === "6-8gb above 4gb graphic card" && <>           <Dell_1 /><Dell_2 /> <Dell_3/>  </>}
+{selected === "Dell" && price === "20000-30000" && genere === "coding" && show && ram === "6-8gb above 4gb graphic card" && <>           <Dell_1 /><Dell_2 /> <Dell_3/>  </>}
+{selected === "Dell" && price === "20000-30000" && genere === "speedy" && show && ram === "above 8gb above 6gb graphic card" && <>       <Dell_1 /><Dell_2 /> <Dell_3/>  </>}
+{selected === "Dell" && price === "20000-30000" && genere === "gaming" && show && ram === "above 8gb above 6gb graphic card" && <>       <Dell_1 /><Dell_2 /> <Dell_3/>  </>}
+{selected === "Dell" && price === "20000-30000" && genere === "normal" && show && ram === "above 8gb above 6gb graphic card" && <>       <Dell_1 /><Dell_2 /> <Dell_3/>  </>}
+{selected === "Dell" && price === "20000-30000" && genere === "coding" && show && ram === "above 8gb above 6gb graphic card" && <>       <Dell_1 /><Dell_2 /> <Dell_3/>  </>}
+{selected === "Dell" && price === "20000-30000" && genere === "speedy" && show && ram === "above 8gb above 8gb graphic card" && <>       <Dell_1 /><Dell_2 /> <Dell_3/>  </>}
+{selected === "Dell" && price === "20000-30000" && genere === "gaming" && show && ram === "above 8gb above 8gb graphic card" && <>       <Dell_1 /><Dell_2 /> <Dell_3/>  </>}
+{selected === "Dell" && price === "20000-30000" && genere === "normal" && show && ram === "above 8gb above 8gb graphic card" && <>       <Dell_1 /><Dell_2 /> <Dell_3/>  </>}
+{selected === "Dell" && price === "20000-30000" && genere === "coding" && show && ram === "above 8gb above 8gb graphic card" && <>       <Dell_1 /><Dell_2 /> <Dell_3/>  </>}
+ 
+{selected === "Dell" && price === "30000-40000" && genere === "gaming" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Dell_4 /><Dell_5 /> <Dell_6/>  </>}
+{selected === "Dell" && price === "30000-40000" && genere === "normal" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Dell_4 /><Dell_5 /> <Dell_6/>  </>}
+{selected === "Dell" && price === "30000-40000" && genere === "speedy" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Dell_4 /><Dell_5 /> <Dell_6/>  </>}
+{selected === "Dell" && price === "30000-40000" && genere === "coding" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Dell_4 /><Dell_5 /> <Dell_6/>  </>}
+{selected === "Dell" && price === "30000-40000" && genere === "normal" && show && ram === "6-8gb above 4gb graphic card" && <>           <Dell_4 /><Dell_5 /> <Dell_6/>  </>}
+{selected === "Dell" && price === "30000-40000" && genere === "speedy" && show && ram === "6-8gb above 4gb graphic card" && <>           <Dell_4 /><Dell_5 /> <Dell_6/>  </>}
+{selected === "Dell" && price === "30000-40000" && genere === "gaming" && show && ram === "6-8gb above 4gb graphic card" && <>           <Dell_4 /><Dell_5 /> <Dell_6/>  </>}
+{selected === "Dell" && price === "30000-40000" && genere === "coding" && show && ram === "6-8gb above 4gb graphic card" && <>           <Dell_4 /><Dell_5 /> <Dell_6/>  </>}
+{selected === "Dell" && price === "30000-40000" && genere === "speedy" && show && ram === "above 8gb above 6gb graphic card" && <>       <Dell_4 /><Dell_5 /> <Dell_6/>  </>}
+{selected === "Dell" && price === "30000-40000" && genere === "gaming" && show && ram === "above 8gb above 6gb graphic card" && <>       <Dell_4 /><Dell_5 /> <Dell_6/>  </>}
+{selected === "Dell" && price === "30000-40000" && genere === "normal" && show && ram === "above 8gb above 6gb graphic card" && <>       <Dell_4 /><Dell_5 /> <Dell_6/>  </>}
+{selected === "Dell" && price === "30000-40000" && genere === "coding" && show && ram === "above 8gb above 6gb graphic card" && <>       <Dell_4 /><Dell_5 /> <Dell_6/>  </>}
+{selected === "Dell" && price === "30000-40000" && genere === "speedy" && show && ram === "above 8gb above 8gb graphic card" && <>       <Dell_4 /><Dell_5 /> <Dell_6/>  </>}
+{selected === "Dell" && price === "30000-40000" && genere === "gaming" && show && ram === "above 8gb above 8gb graphic card" && <>       <Dell_4 /><Dell_5 /> <Dell_6/>  </>}
+{selected === "Dell" && price === "30000-40000" && genere === "normal" && show && ram === "above 8gb above 8gb graphic card" && <>       <Dell_4 /><Dell_5 /> <Dell_6/>  </>}
+{selected === "Dell" && price === "30000-40000" && genere === "coding" && show && ram === "above 8gb above 8gb graphic card" && <>       <Dell_4 /><Dell_5 /> <Dell_6/>  </>}
+
+{selected === "Dell" && price === "40000-50000" && genere === "gaming" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Dell_7 /><Dell_8 /> <Dell_9/>  </>}
+{selected === "Dell" && price === "40000-50000" && genere === "normal" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Dell_7 /><Dell_8 /> <Dell_9/>  </>}
+{selected === "Dell" && price === "40000-50000" && genere === "speedy" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Dell_7 /><Dell_8 /> <Dell_9/>  </>}
+{selected === "Dell" && price === "40000-50000" && genere === "coding" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Dell_7 /><Dell_8 /> <Dell_9/>  </>}
+{selected === "Dell" && price === "40000-50000" && genere === "normal" && show && ram === "6-8gb above 4gb graphic card" && <>           <Dell_7 /><Dell_8 /> <Dell_9/>  </>}
+{selected === "Dell" && price === "40000-50000" && genere === "speedy" && show && ram === "6-8gb above 4gb graphic card" && <>           <Dell_7 /><Dell_8 /> <Dell_9/>  </>}
+{selected === "Dell" && price === "40000-50000" && genere === "gaming" && show && ram === "6-8gb above 4gb graphic card" && <>           <Dell_7 /><Dell_8 /> <Dell_9/>  </>}
+{selected === "Dell" && price === "40000-50000" && genere === "coding" && show && ram === "6-8gb above 4gb graphic card" && <>           <Dell_7 /><Dell_8 /> <Dell_9/>  </>}
+{selected === "Dell" && price === "40000-50000" && genere === "speedy" && show && ram === "above 8gb above 6gb graphic card" && <>       <Dell_7 /><Dell_8 /> <Dell_9/>  </>}
+{selected === "Dell" && price === "40000-50000" && genere === "gaming" && show && ram === "above 8gb above 6gb graphic card" && <>       <Dell_7 /><Dell_8 /> <Dell_9/>  </>}
+{selected === "Dell" && price === "40000-50000" && genere === "normal" && show && ram === "above 8gb above 6gb graphic card" && <>       <Dell_7 /><Dell_8 /> <Dell_9/>  </>}
+{selected === "Dell" && price === "40000-50000" && genere === "coding" && show && ram === "above 8gb above 6gb graphic card" && <>       <Dell_7 /><Dell_8 /> <Dell_9/>  </>}
+{selected === "Dell" && price === "40000-50000" && genere === "speedy" && show && ram === "above 8gb above 8gb graphic card" && <>       <Dell_7 /><Dell_8 /> <Dell_9/>  </>}
+{selected === "Dell" && price === "40000-50000" && genere === "gaming" && show && ram === "above 8gb above 8gb graphic card" && <>       <Dell_7 /><Dell_8 /> <Dell_9/>  </>}
+{selected === "Dell" && price === "40000-50000" && genere === "normal" && show && ram === "above 8gb above 8gb graphic card" && <>       <Dell_7 /><Dell_8 /> <Dell_9/>  </>}
+{selected === "Dell" && price === "40000-50000" && genere === "coding" && show && ram === "above 8gb above 8gb graphic card" && <>       <Dell_7 /><Dell_8 /> <Dell_9/>  </>}
+
+{selected === "Dell" && price === "above 50000" && genere === "gaming" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Dell_10 /><Dell_11 /> <Dell_12/>  </>}
+{selected === "Dell" && price === "above 50000" && genere === "normal" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Dell_10 /><Dell_11 /> <Dell_12/>  </>}
+{selected === "Dell" && price === "above 50000" && genere === "speedy" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Dell_10 /><Dell_11 /> <Dell_12/>  </>}
+{selected === "Dell" && price === "above 50000" && genere === "coding" && show && ram === "4-6gb and 2-4gb graphic card" && <>           <Dell_10 /><Dell_11 /> <Dell_12/>  </>}
+{selected === "Dell" && price === "above 50000" && genere === "normal" && show && ram === "6-8gb above 4gb graphic card" && <>           <Dell_10 /><Dell_11 /> <Dell_12/>  </>}
+{selected === "Dell" && price === "above 50000" && genere === "speedy" && show && ram === "6-8gb above 4gb graphic card" && <>           <Dell_10 /><Dell_11 /> <Dell_12/>  </>}
+{selected === "Dell" && price === "above 50000" && genere === "gaming" && show && ram === "6-8gb above 4gb graphic card" && <>           <Dell_10 /><Dell_11 /> <Dell_12/>  </>}
+{selected === "Dell" && price === "above 50000" && genere === "coding" && show && ram === "6-8gb above 4gb graphic card" && <>           <Dell_10 /><Dell_11 /> <Dell_12/>  </>}
+{selected === "Dell" && price === "above 50000" && genere === "speedy" && show && ram === "above 8gb above 6gb graphic card" && <>       <Dell_10 /><Dell_11 /> <Dell_12/>  </>}
+{selected === "Dell" && price === "above 50000" && genere === "gaming" && show && ram === "above 8gb above 6gb graphic card" && <>       <Dell_10 /><Dell_11 /> <Dell_12/>  </>}
+{selected === "Dell" && price === "above 50000" && genere === "normal" && show && ram === "above 8gb above 6gb graphic card" && <>       <Dell_10 /><Dell_11 /> <Dell_12/>  </>}
+{selected === "Dell" && price === "above 50000" && genere === "coding" && show && ram === "above 8gb above 6gb graphic card" && <>       <Dell_10 /><Dell_11 /> <Dell_12/>  </>}
+{selected === "Dell" && price === "above 50000" && genere === "speedy" && show && ram === "above 8gb above 8gb graphic card" && <>       <Dell_10 /><Dell_11 /> <Dell_12/>  </>}
+{selected === "Dell" && price === "above 50000" && genere === "gaming" && show && ram === "above 8gb above 8gb graphic card" && <>       <Dell_10 /><Dell_11 /> <Dell_12/>  </>}
+{selected === "Dell" && price === "above 50000" && genere === "normal" && show && ram === "above 8gb above 8gb graphic card" && <>       <Dell_10 /><Dell_11 /> <Dell_12/>  </>}
+{selected === "Dell" && price === "above 50000" && genere === "coding" && show && ram === "above 8gb above 8gb graphic card" && <>       <Dell_10 /><Dell_11 /> <Dell_12/>  </>}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <figure className="text-center ">
       <blockquote className="blockquote ">
@@ -176,7 +378,7 @@ class Laptops extends Component{
        
         
         
-        ); } }
+        );  }
         
 
 
