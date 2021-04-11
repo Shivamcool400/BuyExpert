@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Link } from 'react-router-dom';
 import './footer.css';
 import Contactus from './pages/contactus'
 
@@ -13,23 +14,23 @@ class Footer extends Component{
       <div className="main-footer">
         <div className="footer-col">
           <p>EXPLORE</p>
-          <div>Home</div>
-          <div>About us</div>
-          <div>Contact us</div>
-          <div>Login</div>
+          <div><Link to="/home" className="foot-link">Home</Link></div>
+          <div><Link to="/aboutus" className="foot-link">About us</Link></div>
+          <div><Link to="/contactus" className="foot-link">Contact us</Link></div>
+          <div><Link to="/login" className="foot-link">Login</Link></div>
         </div>
         <div className="footer-col">
           <p>ABOUT</p>
-          <div>Our story</div>
-          <div>Benefits</div>
-          <div>Team</div>
-          <div>Careers</div>
+          <div><Link to="/login" className="foot-link">Our story</Link></div>
+          <div><Link to="/login" className="foot-link">Benefits</Link></div>
+          <div><Link to="/login" className="foot-link">Team</Link></div>
+          <div><Link to="/login" className="foot-link">Careers</Link></div>
         </div>
         <div className="footer-col">
           <p>LEGAL</p>
-          <div>Terms & Conditions</div>
-          <div>Privacy Policy</div>
-          <div>Terms of use</div>
+          <div><Link to="/login" className="foot-link">Terms & Conditions</Link></div>
+          <div><Link to="/login" className="foot-link">Privacy Policy</Link></div>
+          <div><Link to="/login" className="foot-link">Terms of use</Link></div>
         </div>
       </div>
     </div>
