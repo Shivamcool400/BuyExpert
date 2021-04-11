@@ -1,8 +1,67 @@
-import React, {Component} from 'react';
+import React, {useState,useEffect} from 'react';
 import './gamingconsole.css';
+import Fire from '../../firebase';
+import Xbox_1 from './phonecomponents/xbox/xbox_1';
+import Xbox_2 from './phonecomponents/xbox/xbox_2';
+import Xbox_3 from './phonecomponents/xbox/xbox_3';
+import Xbox_4 from './phonecomponents/xbox/xbox_4';
+import Playstation_1 from './phonecomponents/playstation/playstation_1';
+import Playstation_2 from './phonecomponents/playstation/playstation_2';
+import Playstation_3 from './phonecomponents/playstation/playstation_3';
+import Playstation_4 from './phonecomponents/playstation/playstation_4';
 
-class Phones extends Component{
-    render() {
+ function Gamingconsoles () {
+  const db = Fire.firestore();
+  const [brand, setBrand] = useState([]);
+  useEffect(() => {
+   db.collection('gamingconsole').onSnapshot(snapshot => (
+     setBrand(snapshot.docs.map(doc => doc.data()))
+   ))
+   db.collection('xbox').orderBy("price").onSnapshot(snapshot => (
+    setXbox(snapshot.docs.map(doc => doc.data()))
+  ))
+  db.collection('playstation').orderBy("price").onSnapshot(snapshot => (
+    setPs(snapshot.docs.map(doc => doc.data()))
+  ))
+  
+ }, []);
+
+
+
+  const [selected, setSelected] = useState('');
+
+  const [xbox,setXbox] = useState([]);
+  const [ps,setPs] = useState([]);
+  
+
+  const [price,setPrice] = useState('');
+  
+
+
+const content = () => {
+    setShow(true);
+  }
+const reset = () => {
+  setSelected("");
+ setShow("");
+ var dropDown = document.getElementById("inputGroupSelect01");  
+ dropDown.selectedIndex = 0;
+}
+  
+
+  var [show,setShow] = useState(false);
+
+
+  var currentarray=[];
+  if(selected === "Xbox"){
+    currentarray= xbox;
+   } else if (selected === "Playstation"){
+     currentarray= ps;
+   } 
+  
+
+
+   
         return(
             <div>
         <div className="container" className="back">
@@ -16,31 +75,22 @@ class Phones extends Component{
     <div className="row">
            <div className="col-sm"><div className="input-group mb-3">
   <label className="input-group-text" htmlFor="inputGroupSelect01">Gaming Consoles</label>
-  <select className="form-select" id="inputGroupSelect01">
+  <select onChange={(e) => setSelected(e.target.value)} className="form-select" id="inputGroupSelect01">
     <option selected>Choose...</option>
-    <option value={1}>Xbox</option>
-    <option value={2}>Playstation</option>
+    {brand.map((brand) => (
+            <option value={brand.name} key={brand.name}>{brand.name}</option>
+          ))}
   </select>
   </div>
   </div>
 
-           <div className="col-sm"><div className="input-group mb-3">
-  <label className="input-group-text" htmlFor="inputGroupSelect01">Brand</label>
-  <select className="form-select" id="inputGroupSelect01">
-    <option selected>Choose...</option>
-    <option value={1}>Microsoft</option>
-    <option value={2}>Sony</option>
-  </select>
-</div>
-</div>
-           <div className="col-sm"><div className="input-group mb-3">
+          <div className="col-sm"><div className="input-group mb-3">
   <label className="input-group-text" htmlFor="inputGroupSelect01">Price-range</label>
-  <select className="form-select" id="inputGroupSelect01">
+  <select onChange={(e) => setPrice(e.target.value)} className="form-select" id="inputGroupSelect01">
     <option selected>Choose...</option>
-    <option value={1}>below-10000</option>
-    <option value={2}>below-20000</option>
-    <option value={3}>below-30000</option>
-    <option value={3}>above-30000</option>
+    {currentarray.map((price) => (
+            <option value={price.price}>{price.price}</option>
+          ))}
   </select>
 </div>
 </div>
@@ -48,11 +98,67 @@ class Phones extends Component{
           
 </div>
 <div className="">
-            <button type="button" className="btn  btn-primary btn-outline-secondary btn-lg find-btn"> Find! </button>
+{ show ? <button type="button" onClick={reset} className="btn  btn-primary btn-outline-secondary btn-lg find-btn"> Reset! </button> 
+  :
+  <button type="button" onClick={content} className="btn  btn-primary btn-outline-secondary btn-lg find-btn"> Find! </button>
+  }
           </div>
           <br></br>
           <br></br>
 </div>
+{/* middle part */}
+
+{/* xbox */}
+
+{selected === "Xbox" && price === "20000-30000"  && show  && <> <Xbox_1 /><Xbox_2 />   </>}
+{selected === "Xbox" && price === "above 30000"  && show  && <> <Xbox_3 /><Xbox_4 />  </>}
+
+{/* playstation */}
+
+{selected === "Playstation" && price === "20000-30000"  && show  && <> <Playstation_1 /><Playstation_2 />   </>}
+{selected === "Playstation" && price === "above 30000"  && show  && <> <Playstation_3 /><Playstation_4 />  </>}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <figure className="text-center ">
       <blockquote className="blockquote ">
@@ -145,8 +251,8 @@ class Phones extends Component{
        
         
         
-        ); } }
+        );  }
         
 
 
-export default Phones ;
+export default Gamingconsoles ;
