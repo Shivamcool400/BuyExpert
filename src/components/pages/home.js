@@ -5,6 +5,8 @@ class Home extends Component{
     render() {
         return(
             <>
+            <br></br>
+            <br></br>
   <img src="/logo.jpeg" className="rounded mx-auto d-block img-fluid headshot mt-5" alt="..." />
   <figure className="text-center ">
     <blockquote className="blockquote ">

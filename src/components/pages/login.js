@@ -79,6 +79,10 @@ const handleSignup = () => {
 
 
     return (
+      <>
+      <br></br>
+      <br></br>
+      <br></br>
         <div className="container">
   <div className="row">
     <div className="col" />
@@ -86,6 +90,7 @@ const handleSignup = () => {
       <div className="card">
         <div className="card-body">
           <img src="/logo.jpeg" className="img-fluid" />
+          <br></br>
           <div className="form-floating mb-3">
             <input type="email" autoFocus required value={email} onChange={(e) => setEmail(e.target.value)} className="form-control" id="floatingInput" placeholder="name@example.com" />
             <label htmlFor="floatingInput">Email address</label>
@@ -128,6 +133,7 @@ const handleSignup = () => {
     <div className="col" />
   </div>
 </div>
+</>
      ); 
       };
         

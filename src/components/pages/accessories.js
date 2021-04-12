@@ -109,6 +109,9 @@ const reset = () => {
         return(
             <div>
         <div className="container" className="back">
+          <br></br>
+          <br></br>
+          <br></br>
             <figure className="text-center ">
       <blockquote className="blockquote ">
         <h2 className="msg-heading">Find Your Device ?</h2>
