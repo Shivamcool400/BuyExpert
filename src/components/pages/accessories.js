@@ -1,8 +1,111 @@
-import React, {Component} from 'react';
+import React, {useState,useEffect} from 'react';
 import './accessories.css';
+import Fire from '../../firebase';
+import Dell_access_1 from './phonecomponents/dell_access/dell_access_1';
+import Dell_access_2 from './phonecomponents/dell_access/dell_access_2';
+import Dell_access_3 from './phonecomponents/dell_access/dell_access_3';
+import Dell_access_4 from './phonecomponents/dell_access/dell_access_4';
+import Dell_access_5 from './phonecomponents/dell_access/dell_access_5';
+import Dell_access_6 from './phonecomponents/dell_access/dell_access_6';
+import Hp_access_1 from './phonecomponents/hp_access/hp_access_1';
+import Hp_access_2 from './phonecomponents/hp_access/hp_access_2';
+import Hp_access_3 from './phonecomponents/hp_access/hp_access_3';
+import Hp_access_4 from './phonecomponents/hp_access/hp_access_4';
+import Hp_access_5 from './phonecomponents/hp_access/hp_access_5';
+import Hp_access_6 from './phonecomponents/hp_access/hp_access_6';
+import Samsung_access_1 from './phonecomponents/samsung_access/samsung_access_1';
+import Samsung_access_2 from './phonecomponents/samsung_access/samsung_access_2';
+import Samsung_access_3 from './phonecomponents/samsung_access/samsung_access_3';
+import Samsung_access_4 from './phonecomponents/samsung_access/samsung_access_4';
+import Samsung_access_5 from './phonecomponents/samsung_access/samsung_access_5';
+import Samsung_access_6 from './phonecomponents/samsung_access/samsung_access_6';
+import Bose_access_1 from './phonecomponents/bose_access/bose_access_1';
+import Bose_access_2 from './phonecomponents/bose_access/bose_access_2';
+import Bose_access_3 from './phonecomponents/bose_access/bose_access_3';
+import Bose_access_4 from './phonecomponents/bose_access/bose_access_4';
+import Bose_access_5 from './phonecomponents/bose_access/bose_access_5';
+import Bose_access_6 from './phonecomponents/bose_access/bose_access_6';
+import Apple_access_1 from './phonecomponents/apple_access/apple_access_1';
+import Apple_access_2 from './phonecomponents/apple_access/apple_access_2';
+import Apple_access_3 from './phonecomponents/apple_access/apple_access_3';
+import Apple_access_4 from './phonecomponents/apple_access/apple_access_4';
+import Apple_access_5 from './phonecomponents/apple_access/apple_access_5';
+import Apple_access_6 from './phonecomponents/apple_access/apple_access_6';
+import Apple_access_7 from './phonecomponents/apple_access/apple_access_7';
+import Apple_access_8 from './phonecomponents/apple_access/apple_access_8';
 
-class Accessories extends Component{
-    render() {
+
+function  Accessories () {
+
+  const db = Fire.firestore();
+  const [brand, setBrand] = useState([]);
+  useEffect(() => {
+   db.collection('accessories').onSnapshot(snapshot => (
+     setBrand(snapshot.docs.map(doc => doc.data()))
+   ))
+   db.collection('dell_access').orderBy("price").onSnapshot(snapshot => (
+    setDell(snapshot.docs.map(doc => doc.data()))
+  ))
+  db.collection('apple_access').orderBy("price").onSnapshot(snapshot => (
+    setApple(snapshot.docs.map(doc => doc.data()))
+  ))
+  db.collection('samsung_access').orderBy("price").onSnapshot(snapshot => (
+    setSamsung(snapshot.docs.map(doc => doc.data()))
+  ))
+  db.collection('hp_access').orderBy("price").onSnapshot(snapshot => (
+    setHp(snapshot.docs.map(doc => doc.data()))
+  ))
+  db.collection('bose_access').orderBy("price").onSnapshot(snapshot => (
+    setBose(snapshot.docs.map(doc => doc.data()))
+  ))
+ 
+  
+  }, []);
+
+
+
+  const [selected, setSelected] = useState('');
+
+  const [dell,setDell] = useState([]);
+  const [apple,setApple] = useState([]);
+  const [samsung,setSamsung] = useState([]);
+  const [bose,setBose] = useState([]);
+  const [hp,setHp] = useState([]);
+
+
+  const [price,setPrice] = useState('');
+  const [genere,setGenere] = useState('');
+  
+
+
+const content = () => {
+    setShow(true);
+  }
+const reset = () => {
+  setSelected("");
+ setShow("");
+ var dropDown = document.getElementById("inputGroupSelect01");  
+ dropDown.selectedIndex = 0;
+}
+  
+
+  var [show,setShow] = useState(false);
+
+
+  var currentarray=[];
+  if(selected === "Dell"){
+    currentarray= dell;
+   } else if (selected === "Apple"){
+     currentarray= apple;
+   } else if (selected === "Bose") {
+     currentarray = bose;
+   } else if (selected === "Samsung"){
+     currentarray = samsung;
+   } else if (selected === "Hp"){
+    currentarray = hp ;
+  } 
+  
+    
         return(
             <div>
         <div className="container" className="back">
@@ -15,45 +118,137 @@ class Accessories extends Component{
     <br></br>
     <div className="row">
            <div className="col-sm"><div className="input-group mb-3">
-  <label className="input-group-text" htmlFor="inputGroupSelect01">Accessories</label>
-  <select className="form-select" id="inputGroupSelect01">
+  <label className="input-group-text" htmlFor="inputGroupSelect01">Brand</label>
+  <select onChange={(e) => setSelected(e.target.value)} className="form-select" id="inputGroupSelect01">
     <option selected>Choose...</option>
-    <option value={1}>Earphones</option>
-    <option value={2}>Keyboards</option>
+    {brand.map((brand) => (
+            <option value={brand.name} key={brand.name}>{brand.name}</option>
+          ))}
   </select>
   </div>
   </div>
 
            <div className="col-sm"><div className="input-group mb-3">
-  <label className="input-group-text" htmlFor="inputGroupSelect01">Brand</label>
-  <select className="form-select" id="inputGroupSelect01">
+  <label className="input-group-text" htmlFor="inputGroupSelect01">Accessories</label>
+  <select onChange={(e) => setGenere(e.target.value)} className="form-select" id="inputGroupSelect01">
     <option selected>Choose...</option>
-    <option value={1}>Apple</option>
-    <option value={2}>Sony</option>
-    <option value={3}>Samsung</option>
+    {currentarray.map((genere) => (
+            <option value={genere.genere}>{genere.genere}</option>
+          ))}
   </select>
 </div>
 </div>
            <div className="col-sm"><div className="input-group mb-3">
   <label className="input-group-text" htmlFor="inputGroupSelect01">Price-range</label>
-  <select className="form-select" id="inputGroupSelect01">
+  <select onChange={(e) => setPrice(e.target.value)} className="form-select" id="inputGroupSelect01">
     <option selected>Choose...</option>
-    <option value={1}>below-200</option>
-    <option value={2}>below-500</option>
-    <option value={2}>below-500</option>
-    <option value={3}>below-1000</option>
-    <option value={3}>below-2000</option>
-    <option value={3}>above-2000</option>
+    {currentarray.map((price) => (
+            <option value={price.price}>{price.price}</option>
+          ))}
   </select>
 </div>
 </div>
 </div>
 <div className="">
-            <button type="button" className="btn  btn-primary btn-outline-secondary btn-lg find-btn"> Find! </button>
+{ show ? <button type="button" onClick={reset} className="btn  btn-primary btn-outline-secondary btn-lg find-btn"> Reset! </button> 
+  :
+  <button type="button" onClick={content} className="btn  btn-primary btn-outline-secondary btn-lg find-btn"> Find! </button>
+  }
           </div>
           <br></br>
           <br></br>
 </div>
+{/* middle part after clicking find */}
+
+{/* dell */}
+
+{selected === "Dell" && price === "below 1000" && genere === "keyboard" && show  && <>             <Dell_access_1 /><Dell_access_2 />   </>}
+{selected === "Dell" && price === "1000-2000"  && genere === "keyboard" && show  && <>             <Dell_access_1 /><Dell_access_2 />   </>}
+{selected === "Dell" && price === "above 2000" && genere === "keyboard" && show  && <>             <Dell_access_1 /><Dell_access_2 />   </>}
+
+{selected === "Dell" && price === "below 1000" && genere === "mouse" && show  && <>                <Dell_access_3 /><Dell_access_4 />   </>}
+{selected === "Dell" && price === "1000-2000"  && genere === "mouse" && show  && <>                <Dell_access_3 /><Dell_access_4 />   </>}
+{selected === "Dell" && price === "above 2000" && genere === "mouse" && show  && <>                <Dell_access_3 /><Dell_access_4 />   </>}
+
+{selected === "Dell" && price === "below 1000" && genere === "headphones" && show  && <>           <Dell_access_5 /><Dell_access_6 />   </>}
+{selected === "Dell" && price === "1000-2000"  && genere === "headphones" && show  && <>           <Dell_access_5 /><Dell_access_6 />   </>}
+{selected === "Dell" && price === "above 2000" && genere === "headphones" && show  && <>           <Dell_access_5 /><Dell_access_6 />   </>}
+
+{/* hp */}
+
+{selected === "Hp" && price === "below 1000" && genere === "keyboard" && show  && <>             <Hp_access_1 /><Hp_access_2 />   </>}
+{selected === "Hp" && price === "1000-2000"  && genere === "keyboard" && show  && <>             <Hp_access_1 /><Hp_access_2 />   </>}
+{selected === "Hp" && price === "above 2000" && genere === "keyboard" && show  && <>             <Hp_access_1 /><Hp_access_2 />   </>}
+
+{selected === "Hp" && price === "below 1000" && genere === "mouse" && show  && <>                <Hp_access_3 /><Hp_access_4 />   </>}
+{selected === "Hp" && price === "1000-2000"  && genere === "mouse" && show  && <>                <Hp_access_3 /><Hp_access_4 />   </>}
+{selected === "Hp" && price === "above 2000" && genere === "mouse" && show  && <>                <Hp_access_3 /><Hp_access_4 />   </>}
+
+{selected === "Hp" && price === "below 1000" && genere === "headphones" && show  && <>           <Hp_access_5 /><Hp_access_6 />   </>}
+{selected === "Hp" && price === "1000-2000"  && genere === "headphones" && show  && <>           <Hp_access_5 /><Hp_access_6 />   </>}
+{selected === "Hp" && price === "above 2000" && genere === "headphones" && show  && <>           <Hp_access_5 /><Hp_access_6 />   </>}
+
+{/* samsung */}
+
+{selected === "Samsung" && price === "below 1000" && genere === "headphones"   && show  && <>           <Samsung_access_1 /><Samsung_access_2 />   </>}
+{selected === "Samsung" && price === "1000-2000"  && genere === "headphones"   && show  && <>           <Samsung_access_1 /><Samsung_access_2 />   </>}
+{selected === "Samsung" && price === "above 2000" && genere === "headphones"   && show  && <>           <Samsung_access_1 /><Samsung_access_2 />   </>}
+{selected === "Samsung" && price === "below 1000" && genere === "air buds"      && show  && <>           <Samsung_access_3 /><Samsung_access_4 />   </>}
+{selected === "Samsung" && price === "1000-2000"  && genere === "air buds"      && show  && <>           <Samsung_access_3 /><Samsung_access_4 />   </>}
+{selected === "Samsung" && price === "above 2000" && genere === "air buds"      && show  && <>           <Samsung_access_3 /><Samsung_access_4 />   </>}
+{selected === "Samsung" && price === "below 1000" && genere === "smartwatches" && show  && <>           <Samsung_access_5 /><Samsung_access_6 />   </>}
+{selected === "Samsung" && price === "1000-2000"  && genere === "smartwatches" && show  && <>           <Samsung_access_5 /><Samsung_access_6 />   </>}
+{selected === "Samsung" && price === "above 2000" && genere === "smartwatches" && show  && <>           <Samsung_access_5 /><Samsung_access_6 />   </>}
+
+{/* bose */}
+
+{selected === "Bose" && price === "5000-10000" && genere === "earphones"   && show  && <>           <Bose_access_1 /><Bose_access_2 />   </>}
+{selected === "Bose" && price === "above 10000"  && genere === "earphones"   && show  && <>         <Bose_access_1 /><Bose_access_2 />   </>}
+{selected === "Bose" && price === "above 20000" && genere === "earphones"   && show  && <>          <Bose_access_1 /><Bose_access_2 />   </>}
+{selected === "Bose" && price === "5000-10000" && genere === "airpods"      && show  && <>          <Bose_access_3 /><Bose_access_4 />   </>}
+{selected === "Bose" && price === "above 10000"  && genere === "airpods"      && show  && <>        <Bose_access_3 /><Bose_access_4 />   </>}
+{selected === "Bose" && price === "above 20000" && genere === "airpods"      && show  && <>         <Bose_access_3 /><Bose_access_4 />   </>}
+{selected === "Bose" && price === "5000-10000" && genere === "speakers" && show  && <>              <Bose_access_5 /><Bose_access_6 />   </>}
+{selected === "Bose" && price === "above 10000"  && genere === "speakers" && show  && <>            <Bose_access_5 /><Bose_access_6 />   </>}
+{selected === "Bose" && price === "above 20000" && genere === "speakers" && show  && <>             <Bose_access_5 /><Bose_access_6 />   </>}
+
+{/* apple */}
+
+{selected === "Apple" && price === "1000-2000"  && genere === "keyboard" && show  && <>           <Apple_access_1 /><Apple_access_2 />   </>}
+{selected === "Apple" && price === "above 2000" && genere === "keyboard" && show  && <>           <Apple_access_1 /><Apple_access_2 />   </>}
+{selected === "Apple" && price === "above 5000" && genere === "keyboard" && show  && <>           <Apple_access_1 /><Apple_access_2 />   </>}
+{selected === "Apple" && price === "above 10000"&& genere === "keyboard" && show  && <>           <Apple_access_3 /><Apple_access_4 />   </>}
+
+{selected === "Apple" && price === "1000-2000"  && genere === "mouse" && show  && <>           <Apple_access_3 /><Apple_access_4 />   </>}
+{selected === "Apple" && price === "above 2000" && genere === "mouse" && show  && <>           <Apple_access_3 /><Apple_access_4 />   </>}
+{selected === "Apple" && price === "above 5000" && genere === "mouse" && show  && <>           <Apple_access_3 /><Apple_access_4 />   </>}
+{selected === "Apple" && price === "above 10000"&& genere === "mouse" && show  && <>           <Apple_access_3 /><Apple_access_4 />   </>}
+
+{selected === "Apple" && price === "1000-2000"  && genere === "earphones/headphones" && show  && <>           <Apple_access_5 /><Apple_access_6 />   </>}
+{selected === "Apple" && price === "above 2000" && genere === "earphones/headphones" && show  && <>           <Apple_access_5 /><Apple_access_6 />   </>}
+{selected === "Apple" && price === "above 5000" && genere === "earphones/headphones" && show  && <>           <Apple_access_5 /><Apple_access_6 />   </>}
+{selected === "Apple" && price === "above 10000"&& genere === "earphones/headphones" && show  && <>           <Apple_access_5 /><Apple_access_6 />   </>}
+
+{selected === "Apple" && price === "1000-2000"  && genere === "airpods" && show  && <>           <Apple_access_7 /><Apple_access_8 />   </>}
+{selected === "Apple" && price === "above 2000" && genere === "airpods" && show  && <>           <Apple_access_7 /><Apple_access_8 />   </>}
+{selected === "Apple" && price === "above 5000" && genere === "airpods" && show  && <>           <Apple_access_7 /><Apple_access_8 />   </>}
+{selected === "Apple" && price === "above 10000"&& genere === "airpods" && show  && <>           <Apple_access_7 /><Apple_access_8 />   </>}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <figure className="text-center ">
       <blockquote className="blockquote ">
@@ -158,7 +353,7 @@ class Accessories extends Component{
        
         
         
-        ); } }
+        );  }
         
 
 
