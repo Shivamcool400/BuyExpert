@@ -14,7 +14,7 @@ class Home extends Component{
   </figure>
   <div><br /><br /></div> */}
    
-  <div className="text-center homehead">Our Motive</div>
+  <div className="text-center homehead">Our Motive...</div>
 
   <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
   <div className="carousel-inner">
