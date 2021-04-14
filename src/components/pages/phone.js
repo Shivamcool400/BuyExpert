@@ -109,6 +109,12 @@ function Phones () {
   const [vivo,setVivo] = useState([]);
   const [oppo,setOppo] = useState([]);
   const [xiaomi,setXiaomi] = useState([]);
+  const [berror,setBerror] = useState('');
+  const [perror,setPerror] = useState('');
+  const [gerror,setGerror] = useState('');
+  const [rerror,setRerror] = useState('');
+
+
 
 
   const [price,setPrice] = useState('');
@@ -117,10 +123,23 @@ function Phones () {
  
   const content = () => {
     setShow(true);
+    if(selected===''){
+      setBerror("This is a required field");
+     }  if (price === ''){
+      setPerror("This is a required field");
+     }  if (genere === "") {
+      setGerror("This is a required field");
+     }  if (ram === ""){
+      setRerror("This is a required field");
+     }
   }
 const reset = () => {
   setSelected("");
  setShow("");
+ setBerror("");
+ setPerror("");
+ setGerror("");
+ setRerror("");
  var dropDown = document.getElementById("inputGroupSelect01");  
  dropDown.selectedIndex = 0;
 }
@@ -175,7 +194,9 @@ const reset = () => {
             <option value={brand.name} key={brand.name}>{brand.name}</option>
           ))}
    </select>
+  
 </div>
+<p className="errorMsg">{berror}</p>
 </div>
 
 
@@ -187,7 +208,8 @@ const reset = () => {
             <option value={price.price}>{price.price}</option>
           ))}
   </select>
-</div>
+ </div>
+ <p className="errorMsg">{perror}</p>
 </div>
            <div className="col-sm-12 col-md-3"><div className="input-group mb-3">
   <label className="input-group-text" htmlFor="inputGroupSelect01">Genere</label>
@@ -197,7 +219,9 @@ const reset = () => {
             <option value={genere.genere}>{genere.genere}</option>
           ))}
   </select>
+  
 </div>
+<p className="errorMsg">{gerror}</p>
 </div>
            <div className="col-sm-12 col-md-3"><div className="input-group mb-3">
   <label className="input-group-text" htmlFor="inputGroupSelect01">Ram/Storage</label>
@@ -207,7 +231,9 @@ const reset = () => {
             <option value={ramstorage.ramstorage}>{ramstorage.ramstorage}</option>
           ))}
   </select>
+  
 </div>
+<p className="errorMsg">{rerror}</p>
 </div>
 </div>
 <div className="">
