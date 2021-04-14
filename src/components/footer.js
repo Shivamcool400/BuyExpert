@@ -34,7 +34,7 @@ class Footer extends Component{
           <div><Link to="/login" className="foot-link">Our story</Link></div>
           <div><Link to="/login" className="foot-link">Benefits</Link></div>
           <div><Link to="/login" className="foot-link">Team</Link></div>
-          <div><Link to="/login" className="foot-link">Careers</Link></div>
+          <div><Link to="/login" className="foot-link">FAQs</Link></div>
         </div>
         <div className="footer-col">
           <p>LEGAL</p>

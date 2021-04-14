@@ -6,6 +6,12 @@ class Home extends Component{
         return(
             <>
 
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+
   {/* <img src="/logo.jpeg" className="rounded mx-auto d-block img-fluid headshot mt-5" alt="..." />
   <figure className="text-center ">
     <blockquote className="blockquote ">
@@ -14,18 +20,18 @@ class Home extends Component{
   </figure>
   <div><br /><br /></div> */}
    
-  <div className="text-center homehead">Our Motive...</div>
+  {/* <div className="text-center homehead">Our Motive...</div> */}
 
   <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <img src="/home1.jpg" className="d-block w-50" alt="..." />
+      <img src="/homee1.jpg" className="d-block w-100" alt="..." />
     </div>
     <div className="carousel-item">
-      <img src="/home2.jpg" className="d-block w-50" alt="..." />
+      <img src="/home2.jpg" className="d-block w-100" alt="..." />
     </div>
     <div className="carousel-item">
-      <img src="/home3.jpeg" className="d-block w-50" alt="..." />
+      <img src="/home3.jpeg" className="d-block w-100" alt="..." />
     </div>
   </div>
   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">

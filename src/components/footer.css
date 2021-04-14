@@ -116,11 +116,15 @@
     .footer-col {
         margin-right: 10%;
     }
+
+    .copyright {
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 506px) {
     .footer-col {
-        margin-right: 5%;
+        margin-right: 8%;
     }
 }
 
