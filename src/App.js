@@ -14,10 +14,11 @@ import Accessories from './components/pages/accessories';
 import Fire from './firebase';
 import { useStateValue } from "./stateprovider";
 import Forgotpassword from './components/pages/forgotpassword';
+import Loginalert from './components/pages/loginalert';
 
 
 function App() {
-  const [{}, dispatch] = useStateValue();
+  const [{ user }, dispatch] = useStateValue();
   const authListener = () => {
     Fire.auth().onAuthStateChanged((user) => {
       if (user) {
@@ -49,12 +50,13 @@ function App() {
                   <Route path='/contactus'  component={Contactus} />
                   <Route path='/home'  component={Home} />
                   <Route path='/login'  component={Login} />
-                  <Route path='/phones'  component={Phones} />
-                  <Route path='/laptops' component={Laptops} />
-                  <Route path='/gamingconsoles' component={GamingConsoles} />
-                  <Route path='/accessories' component={Accessories} />
-                  <Route path='/forgot' component={Forgotpassword} />
-               
+                  {user ? <Route path='/phones'  component={Phones} /> : <Route path='/phones'  component={Loginalert} />}
+                  {user ? <Route path='/laptops' component={Laptops} /> : <Route path='/laptops'  component={Loginalert} />}
+                  {user ? <Route path='/gamingconsoles' component={GamingConsoles} /> : <Route path='/gamingconsoles'  component={Loginalert} />}
+                  {user ? <Route path='/accessories' component={Accessories} /> : <Route path='/accessories'  component={Loginalert} />}
+                  
+               <Route path='/forgot' component={Forgotpassword}/>
+                  
               
               </Switch>
       
