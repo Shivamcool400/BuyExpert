@@ -71,6 +71,9 @@ function  Accessories () {
   const [samsung,setSamsung] = useState([]);
   const [bose,setBose] = useState([]);
   const [hp,setHp] = useState([]);
+  const [berror,setBerror] = useState('');
+  const [perror,setPerror] = useState('');
+  const [gerror,setGerror] = useState('');
 
 
   const [price,setPrice] = useState('');
@@ -80,10 +83,22 @@ function  Accessories () {
 
 const content = () => {
     setShow(true);
+    if(selected===''){
+      setBerror("This is a required field");
+     }  if (price === ''){
+      setPerror("This is a required field");
+     }  if (genere === "") {
+      setGerror("This is a required field");
+     }
   }
 const reset = () => {
   setSelected("");
  setShow("");
+ setPrice("");
+ setGenere("");
+ setBerror("");
+ setPerror("");
+ setGerror("");
  var dropDown = document.getElementById("inputGroupSelect01");  
  dropDown.selectedIndex = 0;
 }
@@ -129,6 +144,7 @@ const reset = () => {
           ))}
   </select>
   </div>
+  <p className="errorMsg">{berror}</p>
   </div>
 
            <div className="col-sm"><div className="input-group mb-3">
@@ -140,6 +156,7 @@ const reset = () => {
           ))}
   </select>
 </div>
+<p className="errorMsg">{gerror}</p>
 </div>
            <div className="col-sm"><div className="input-group mb-3">
   <label className="input-group-text" htmlFor="inputGroupSelect01">Price-range</label>
@@ -150,6 +167,7 @@ const reset = () => {
           ))}
   </select>
 </div>
+<p className="errorMsg">{perror}</p>
 </div>
 </div>
 <div className="">

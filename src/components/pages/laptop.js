@@ -97,6 +97,11 @@ function Laptops () {
   const [lenovo,setLenovo] = useState([]);
   const [acer,setAcer] = useState([]);
   const [hp,setHp] = useState([]);
+  const [berror,setBerror] = useState('');
+  const [perror,setPerror] = useState('');
+  const [gerror,setGerror] = useState('');
+  const [rerror,setRerror] = useState('');
+
 
 
   const [price,setPrice] = useState('');
@@ -106,10 +111,26 @@ function Laptops () {
 
 const content = () => {
     setShow(true);
+    if(selected===''){
+      setBerror("This is a required field");
+     }  if (price === ''){
+      setPerror("This is a required field");
+     }  if (genere === "") {
+      setGerror("This is a required field");
+     }  if (ram === ""){
+      setRerror("This is a required field");
+     }
   }
 const reset = () => {
   setSelected("");
  setShow("");
+ setPrice("");
+ setGenere("");
+ setRam("");
+ setBerror("");
+ setPerror("");
+ setGerror("");
+ setRerror("");
  var dropDown = document.getElementById("inputGroupSelect01");  
  dropDown.selectedIndex = 0;
 }
@@ -158,6 +179,7 @@ const reset = () => {
           ))}
   </select>
 </div>
+<p className="errorMsg">{berror}</p>
 </div>
            <div className="col-sm-12 col-md-3"><div className="input-group mb-3">
   <label className="input-group-text" htmlFor="inputGroupSelect01">Price-range</label>
@@ -168,6 +190,7 @@ const reset = () => {
           ))}
   </select>
 </div>
+<p className="errorMsg">{perror}</p>
 </div>
            <div className="col-sm-12 col-md-3"><div className="input-group mb-3">
   <label className="input-group-text" htmlFor="inputGroupSelect01">Genere</label>
@@ -178,6 +201,7 @@ const reset = () => {
           ))}
   </select>
 </div>
+<p className="errorMsg">{gerror}</p>
 </div>
            <div className="col-sm-12 col-md-3"><div className="input-group mb-3">
   <label className="input-group-text" htmlFor="inputGroupSelect01">Ram/ Graphic card</label>
@@ -188,6 +212,7 @@ const reset = () => {
           ))}
   </select>
 </div>
+<p className="errorMsg">{rerror}</p>
 </div>
 </div>
 <div className="">

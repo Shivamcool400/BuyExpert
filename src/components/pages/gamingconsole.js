@@ -32,6 +32,8 @@ import Playstation_4 from './phonecomponents/playstation/playstation_4';
 
   const [xbox,setXbox] = useState([]);
   const [ps,setPs] = useState([]);
+  const [berror,setBerror] = useState('');
+  const [perror,setPerror] = useState('');
   
 
   const [price,setPrice] = useState('');
@@ -40,10 +42,18 @@ import Playstation_4 from './phonecomponents/playstation/playstation_4';
 
 const content = () => {
     setShow(true);
+    if(selected===''){
+      setBerror("This is a required field");
+     }  if (price === ''){
+      setPerror("This is a required field");
+     }
   }
 const reset = () => {
   setSelected("");
+  setPrice("");
  setShow("");
+ setBerror("");
+ setPerror("");
  var dropDown = document.getElementById("inputGroupSelect01");  
  dropDown.selectedIndex = 0;
 }
@@ -86,6 +96,7 @@ const reset = () => {
           ))}
   </select>
   </div>
+  <p className="errorMsg">{berror}</p>
   </div>
 
           <div className="col-sm"><div className="input-group mb-3">
@@ -97,6 +108,7 @@ const reset = () => {
           ))}
   </select>
 </div>
+<p className="errorMsg">{perror}</p>
 </div>
            
           

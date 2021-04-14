@@ -136,6 +136,9 @@ function Phones () {
 const reset = () => {
   setSelected("");
  setShow("");
+ setPrice("");
+ setGenere("");
+ setRam("");
  setBerror("");
  setPerror("");
  setGerror("");
