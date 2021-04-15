@@ -4,13 +4,11 @@ import './home.css';
 class Home extends Component{
     render() {
         return(
-            <>
+            <div className="homebody">
 
             <br></br>
             <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
+
 
   {/* <img src="/logo.jpeg" className="rounded mx-auto d-block img-fluid headshot mt-5" alt="..." />
   <figure className="text-center ">
@@ -22,16 +20,16 @@ class Home extends Component{
    
   {/* <div className="text-center homehead">Our Motive...</div> */}
 
-  <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
+  <div id="carouselExampleControls" className="carousel slide caro" data-bs-ride="carousel">
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <img src="/homee1.jpg" className="d-block w-100" alt="..." />
+      <img src="/homenew1.jpg" className="d-block w-100" alt="..." />
     </div>
     <div className="carousel-item">
-      <img src="/home2.jpg" className="d-block w-100" alt="..." />
+      <img src="/homenew2.jpg" className="d-block w-100" alt="..." />
     </div>
     <div className="carousel-item">
-      <img src="/home3.jpeg" className="d-block w-100" alt="..." />
+      <img src="/homenew3.jpg" className="d-block w-100" alt="..." />
     </div>
   </div>
   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -170,7 +168,7 @@ class Home extends Component{
           </div></div> </div>
     </div>  <div className="col"> </div>
   </div>
-</>
+</div>
 
          );
     }
