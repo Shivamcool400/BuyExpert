@@ -1,8 +1,8 @@
 import React, { useState, useEffect} from 'react';
 import './login.css';
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import Fire from '../../firebase';
-import { useStateValue } from '../../stateprovider';
+
 
 
 const Login = () => { 

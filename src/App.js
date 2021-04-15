@@ -14,11 +14,12 @@ import Accessories from './components/pages/accessories';
 import Fire from './firebase';
 import { useStateValue } from "./stateprovider";
 import Forgotpassword from './components/pages/forgotpassword';
-import Loginalert from './components/pages/loginalert';
+import Protected from './protected';
+import { AuthProvider } from './Auth';
 
 
 function App() {
-  const [{ user }, dispatch] = useStateValue();
+  const [{}, dispatch] = useStateValue();
   const authListener = () => {
     Fire.auth().onAuthStateChanged((user) => {
       if (user) {
@@ -42,6 +43,7 @@ function App() {
   return (
     <div className="App">
       <div className="background">
+      <AuthProvider>
           <Router>
           <Navbar/>
               <Switch>
@@ -50,12 +52,13 @@ function App() {
                   <Route path='/contactus'  component={Contactus} />
                   <Route path='/home'  component={Home} />
                   <Route path='/login'  component={Login} />
-                  {user ? <Route path='/phones'  component={Phones} /> : <Route path='/phones'  component={Loginalert} />}
-                  {user ? <Route path='/laptops' component={Laptops} /> : <Route path='/laptops'  component={Loginalert} />}
-                  {user ? <Route path='/gamingconsoles' component={GamingConsoles} /> : <Route path='/gamingconsoles'  component={Loginalert} />}
-                  {user ? <Route path='/accessories' component={Accessories} /> : <Route path='/accessories'  component={Loginalert} />}
                   
-               <Route path='/forgot' component={Forgotpassword}/>
+                  <Protected path='/phones' component={Phones}/>
+                  <Protected path='/laptops' component={Laptops}/>
+                  <Protected path='/gamingconsoles' component={GamingConsoles}/>
+                  <Protected path='/accessories' component={Accessories}/>
+                  
+                   <Route path='/forgot' component={Forgotpassword}/>
                   
               
               </Switch>
@@ -66,6 +69,8 @@ function App() {
           
           
           </Router>
+          </AuthProvider>
+          
       </div>
       </div>
       

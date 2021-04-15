@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import Fire from '../../firebase';
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 function Forgotpassword() {
 
     const [email,setEmail] = useState('');

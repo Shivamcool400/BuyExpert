@@ -1,7 +1,6 @@
 import React, {useState, useEffect, Component} from 'react';
 import './phone.css';
 import Fire from '../../firebase';
-import Product from './phonecomponents/product';
 import Oneplus_1 from './phonecomponents/oneplus/oneplus_1';
 import Oneplus_2 from './phonecomponents/oneplus/oneplus_2';
 import Oneplus_3 from './phonecomponents/oneplus/oneplus_3';
