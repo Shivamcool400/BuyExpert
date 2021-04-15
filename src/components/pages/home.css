@@ -22,6 +22,12 @@
      /* border: 1px solid red; 
  } */
 
+ .caption {
+     font-size: 2rem;
+     margin-bottom: 5%;
+     opacity: 0.6;
+ }
+
  @media screen and (min-width: 960px) {
     .carousel-inner{
         height: 700px;
@@ -32,7 +38,15 @@
          width:  100% !important;
 
      }
+
      
+     
+ }
+
+ @media screen and (max-width: 960px) {
+     .caption {
+         font-size: 1.5rem;
+     }
  }
 
 
