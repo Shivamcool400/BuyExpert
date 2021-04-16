@@ -1,10 +1,14 @@
-import React, {Component} from 'react';
+import React, {useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import './footer.css';
-import Contactus from './pages/contactus'
+import Contactus from './pages/contactus';
 
-class Footer extends Component{
-    render() {
+function Footer() {
+    
+  const backtotop = () => {
+    window.scrollTo(0, 0)
+  }
+    
         return (
 
   <div>
@@ -24,23 +28,23 @@ class Footer extends Component{
       <div className="main-footer">
         <div className="footer-col">
           <p>EXPLORE</p>
-          <div><Link to="/home" className="foot-link">Home</Link></div>
-          <div><Link to="/aboutus" className="foot-link">About us</Link></div>
-          <div><Link to="/contactus" className="foot-link">Contact us</Link></div>
-          <div><Link to="/login" className="foot-link">Login</Link></div>
+          <div><Link to="/home" className="foot-link" onClick={backtotop}>Home</Link></div>
+          <div><Link to="/aboutus" className="foot-link" onClick={backtotop}>About us</Link></div>
+          <div><Link to="/contactus" className="foot-link" onClick={backtotop}>Contact us</Link></div>
+          <div><Link to="/login" className="foot-link" onClick={backtotop}>Login</Link></div>
         </div>
         <div className="footer-col">
           <p>ABOUT</p>
-          <div><Link to="/login" className="foot-link">Our story</Link></div>
-          <div><Link to="/login" className="foot-link">Benefits</Link></div>
-          <div><Link to="/login" className="foot-link">Team</Link></div>
-          <div><Link to="/login" className="foot-link">FAQs</Link></div>
+          <div><Link to="/login" className="foot-link" onClick={backtotop}>Our story</Link></div>
+          <div><Link to="/login" className="foot-link" onClick={backtotop}>Benefits</Link></div>
+          <div><Link to="/login" className="foot-link" onClick={backtotop}>Team</Link></div>
+          <div><Link to="/login" className="foot-link" onClick={backtotop}>FAQs</Link></div>
         </div>
         <div className="footer-col">
           <p>LEGAL</p>
-          <div><Link to="/login" className="foot-link">Terms & Conditions</Link></div>
-          <div><Link to="/login" className="foot-link">Privacy Policy</Link></div>
-          <div><Link to="/login" className="foot-link">Terms of use</Link></div>
+          <div><Link to="/login" className="foot-link" onClick={backtotop}>Terms & Conditions</Link></div>
+          <div><Link to="/login" className="foot-link" onClick={backtotop}>Privacy Policy</Link></div>
+          <div><Link to="/login" className="foot-link" onClick={backtotop}>Terms of use</Link></div>
         </div>
       </div>
     </div>
@@ -55,5 +59,5 @@ class Footer extends Component{
         
         );
     }
-}
+
 export default Footer;

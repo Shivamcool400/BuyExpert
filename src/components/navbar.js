@@ -61,24 +61,30 @@ function Navbar() {
                                                 About Us
                                         </Link>
                                 </li>
-                                {/* <li className="nav-item" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-                                        <Link to='/quicklinks' className='nav-links' onClick={closeMobileMenu}>
-                                                Find Here <i className="fas fa-caret-down" />
-                                        </Link>
-                                        {dropdown && <Dropdown />}
-                                </li> */}
-                                <li class="nav-item nav-item2 dropdown">
-          <a className="nav-links dropdown-toggle link" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                {/* <li class="nav-item nav-item2 dropdown">
+          <Link to='#' className="nav-links dropdown-toggle link" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Find Here
-          </a>
+          </Link>
           <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
             <li><a class="dropdown-item" href="/phones">Phones</a></li>
             <li><a class="dropdown-item" href="/laptops">Laptops</a></li>
             <li><a class="dropdown-item" href="/gamingconsoles">Gaming Consoles</a></li>
             <li><a class="dropdown-item" href="/accessories">Accessories</a></li>
           </ul>
-        </li>
-                                <li className="nav-item2 nav-links-mobile">
+        </li> */}
+        <li className="nav-item nav-item2">
+                                        <Link to='findnow' className='nav-links link' onClick={closeMobileMenu}>
+                                                Find Now?
+                                        </Link>
+                                </li>
+
+                                <li className="nav-item nav-item2 mylogin">
+                                        <Link to={!user && '/login'} onClick={closeMobileMenu}>
+                                        <a className="link mobile-login" onClick={handleLogout} href="#">{user ? 'LogOut' : 'Login'}</a>
+                                        </Link>
+                                </li>
+
+                                <li className="nav-item nav-item2 nav-links-mobile">
                                         <Link to={!user && '/login'} onClick={closeMobileMenu}>
                                                 <button className="btn btn2" onClick={handleLogout}>{user ? 'LogOut' : 'Login'}</button>
                                         </Link>

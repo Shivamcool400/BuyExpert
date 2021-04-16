@@ -11,6 +11,9 @@
     font-size: 30px;
 }
 
+.ourmotivehead {
+    margin-bottom: 50px;
+}
 /*
 .carousel-inner{
     height: 700px;
@@ -25,7 +28,7 @@
  .caption {
      font-size: 2rem;
      margin-bottom: 5%;
-     opacity: 0.6;
+     opacity: 0.8;
  }
 
  @media screen and (min-width: 960px) {
