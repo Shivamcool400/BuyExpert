@@ -30,11 +30,16 @@ const clearErrors = () => {
 
 const handleLogin = () => {
   clearErrors();
+  
+  
   Fire.auth().signInWithEmailAndPassword(email, password)
   .then((auth) => {
-    if (auth) {
+    if (auth.user.emailVerified) {
       history.push('/home')
       window.scrollTo(0,0);
+    } else {
+      Fire.auth().signOut();
+      alert("please verify email to continue signin!")
     }
   })
   .catch((err) => {
@@ -56,8 +61,15 @@ const handleSignup = () => {
   Fire.auth().createUserWithEmailAndPassword(email, password)
   .then((auth) => {
     if (auth) {
-      history.push('/home')
-      window.scrollTo(0,0);
+      Fire.auth().signOut();
+      var user = Fire.auth().currentUser;
+      
+      user.sendEmailVerification().then(function() {
+        alert("successfuly registered! Please verify your email and then sign in!");
+      }).catch(function(error) {
+        // An error happened.
+      });
+      
       clearInputs();
     }
   })
