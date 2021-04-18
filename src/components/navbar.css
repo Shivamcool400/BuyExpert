@@ -132,7 +132,7 @@
   
     .link:hover {
       /* background-color: #1888ff; */
-      border: 2px solid rgba(255, 255, 255, 0.74);
+      border: 2px solid #1888ff;
       border-radius: 0;
     }
   
