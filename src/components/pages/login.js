@@ -27,6 +27,12 @@ const clearErrors = () => {
   setPasswordError('');
 }
 
+const togglesign = () => {
+  setHasAccount(!hasAccount);
+  clearInputs();
+  clearErrors();
+}
+
 
 const handleLogin = () => {
   clearErrors();
@@ -92,59 +98,43 @@ const handleSignup = () => {
 
     return (
       <>
-      <br></br>
-      <br></br>
-      <br></br>
-        <div className="container">
-  <div className="row">
-    <div className="col" />
-    <div className="col-sm-12 col-md-8">
-      <div className="card">
-        <div className="card-body">
-          <img src="/logo.jpeg" className="img-fluid" />
-          <br></br>
-          <div className="form-floating mb-3">
-            <input type="email" autoFocus required value={email} onChange={(e) => setEmail(e.target.value)} className="form-control" id="floatingInput" placeholder="name@example.com" />
-            <label htmlFor="floatingInput">Email address</label>
-            <p className="errorMsg">{emailError}</p>
-          </div>
-          <div className="form-floating">
-            <input type="password" required value={password} onChange={(e) => setPassword(e.target.value)} className="form-control" id="floatingPassword" placeholder="Password" />
-            <label htmlFor="floatingPassword">Password</label>
-            <p className="errorMSg">{passwordError}</p> 
-          </div>
-          <div>
-            { hasAccount ? (
-              <>
-            <button type="button" onClick={handleLogin} className="btn sign-in-btn btn-lg">Sign in</button>
-          <div className="form-check">
-            <input className="form-check-input" type="checkbox" defaultValue id="flexCheckDefault" />
-            <label className="form-check-label" htmlFor="flexCheckDefault">
-              Remember Me <div><a href="/forgot"> Forgot Password</a></div>
-            </label>
-          </div>
-          <a className="new-account" onClick={() => setHasAccount(!hasAccount)} href="#"> Create new account</a>  
-              </>
-            ) : (
-            <>
-            <button type="button" onClick={handleSignup} className="btn sign-in-btn btn-lg">Sign Up</button>
-          
-            <a className="new-account" onClick={() => setHasAccount(!hasAccount)} href="#"> Already have an account </a>
-             </>
+<div id="logreg-forms">
+  <form className="form-signin">
+    <h1 className="h3 mb-3 font-weight-normal" style={{textAlign: 'center'}}> Sign in</h1>
+    <div className="social-login">
+      <button className="btn facebook-btn social-btn" type="button"><span><i className="fab fa-facebook-f" /> Sign in with Facebook</span> </button>
+      <button className="btn google-btn social-btn" type="button"><span><i className="fab fa-google-plus-g" /> Sign in with Google+</span> </button>
+    </div>
+    <p style={{textAlign: 'center'}}> OR</p>
+    <input type="email" id="inputEmail" className="form-control" placeholder="Email address" required autofocus value={email} onChange={(e) => setEmail(e.target.value)} />
+    <p className="errorMsg">{emailError}</p>
+    <input type="password" id="inputPassword" className="form-control" placeholder="Password" required value={password} onChange={(e) => setPassword(e.target.value)} />
+    <p className="errorMsg">{passwordError}</p>
+    
+    
+    { hasAccount ? (<>
+      <button className="btn btn-success btn-block" type="button" onClick={handleLogin}><i className="fas fa-sign-in-alt" /> Sign in</button>
+    
+    <hr />
+      <p>Don't have an account!</p> 
+    <button className="btn btn-primary btn-block" type="button" id="btn-signup" onClick={togglesign}><i className="fas fa-user-plus" /> Sign up New Account</button>
+    </>) : (<>
+      <button className="btn btn-primary btn-block" type="button" onClick={handleSignup}><i className="fas fa-user-plus" /> Sign Up</button>
+    <a href="#" id="cancel_signup" onClick={togglesign}><i className="fas fa-angle-left" /> Back</a>
+    </>) }
 
-            )
-
-
-            }
-          </div>
-          
-          
-        </div>
-      </div>
-    </div>           
-    <div className="col" />
-  </div>
+    { hasAccount ? (<>
+      <a href="/forgot" id="forgot_pswd">Forgot password?</a>
+    </>) : (<></>) }
+    
+    
+  </form>
+  
+    
+    
+  <br />
 </div>
+
 </>
      ); 
       };
