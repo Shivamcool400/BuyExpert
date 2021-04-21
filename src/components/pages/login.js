@@ -2,6 +2,7 @@ import React, { useState, useEffect} from 'react';
 import './login.css';
 import { useHistory } from 'react-router-dom';
 import Fire from '../../firebase';
+import firebase from 'firebase';
 
 
 
@@ -61,7 +62,66 @@ const handleLogin = () => {
     }
   });
 };
+const facebooklogin = () => {
+  var provider = new firebase.auth.FacebookAuthProvider();
+  Fire
+  .auth()
+  .signInWithPopup(provider)
+  .then((result) => {
+    /** @type {Fire.auth.OAuthCredential} */
+    var credential = result.credential;
 
+    // The signed-in user info.
+    var user = result.user;
+
+    // This gives you a Facebook Access Token. You can use it to access the Facebook API.
+    var accessToken = credential.accessToken;
+    if (result) {
+      history.push('/home')
+      window.scrollTo(0,0);
+    }
+    // ...
+  })
+  .catch((error) => {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // The email of the user's account used.
+    var email = error.email;
+    // The firebase.auth.AuthCredential type that was used.
+    var credential = error.credential;
+
+    // ...
+  });
+}
+const googlelogin = () => {
+  var provider = new firebase.auth.GoogleAuthProvider();
+  Fire.auth()
+  .signInWithPopup(provider)
+  .then((result) => {
+    /** @type {Fire.auth.OAuthCredential} */
+    var credential = result.credential;
+
+    // This gives you a Google Access Token. You can use it to access the Google API.
+    var token = credential.accessToken;
+    // The signed-in user info.
+    var user = result.user;
+    if (result) {
+      history.push('/home')
+      window.scrollTo(0,0);
+    }
+    // ...
+  }).catch((error) => {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // The email of the user's account used.
+    var email = error.email;
+    // The firebase.auth.AuthCredential type that was used.
+    var credential = error.credential;
+    // ...
+  });
+}
 const handleSignup = () => {
   clearErrors();
   Fire.auth().createUserWithEmailAndPassword(email, password)
@@ -71,7 +131,7 @@ const handleSignup = () => {
       var user = Fire.auth().currentUser;
       
       user.sendEmailVerification().then(function() {
-        alert("successfuly registered! Please verify your email and then sign in!");
+        alert("successfuly registered!");
       }).catch(function(error) {
         // An error happened.
       });
@@ -104,8 +164,8 @@ const handleSignup = () => {
     <br />
     <br />
     <div className="social-login">
-      <button className="btn facebook-btn social-btn" type="button"><span><i className="fab fa-facebook-f" />{hasAccount ? (<>  Sign in with Facebook</>) : (<>  Sign Up with Facebook</>)}</span> </button>
-      <button className="btn google-btn social-btn" type="button"><span><i className="fab fa-google-plus-g" />{hasAccount ? (<>  Sign in with Google+</>) : (<>  Sign Up with Google+</>)}</span> </button>
+      <button className="btn facebook-btn social-btn" onClick={facebooklogin} type="button"><span><i className="fab fa-facebook-f" />  Sign in with Facebook  </span> </button>
+      <button className="btn google-btn social-btn" onClick={googlelogin} type="button"><span><i className="fab fa-google-plus-g" />  Sign in with Google+ </span> </button>
     </div>
     <br />
     <p style={{textAlign: 'center'}}> OR</p>
