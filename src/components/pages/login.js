@@ -100,10 +100,10 @@ const handleSignup = () => {
       <>
 <div id="logreg-forms">
   <form className="form-signin">
-    <h1 className="h3 mb-3 font-weight-normal" style={{textAlign: 'center'}}> Sign in</h1>
+    <h1 className="h3 mb-3 font-weight-normal" style={{textAlign: 'center'}}>{hasAccount ? (<> Sign in</>) : (<> Sign Up</>)}</h1>
     <div className="social-login">
-      <button className="btn facebook-btn social-btn" type="button"><span><i className="fab fa-facebook-f" /> Sign in with Facebook</span> </button>
-      <button className="btn google-btn social-btn" type="button"><span><i className="fab fa-google-plus-g" /> Sign in with Google+</span> </button>
+      <button className="btn facebook-btn social-btn" type="button"><span><i className="fab fa-facebook-f" />{hasAccount ? (<> Sign in with Facebook</>) : (<> Sign Up with Facebook</>)}</span> </button>
+      <button className="btn google-btn social-btn" type="button"><span><i className="fab fa-google-plus-g" />{hasAccount ? (<> Sign in with Google+</>) : (<> Sign Up with Google+</>)}</span> </button>
     </div>
     <p style={{textAlign: 'center'}}> OR</p>
     <input type="email" id="inputEmail" className="form-control" placeholder="Email address" required autofocus value={email} onChange={(e) => setEmail(e.target.value)} />
