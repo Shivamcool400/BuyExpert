@@ -4,6 +4,7 @@ import Login from './pages/login';
 import { Link } from 'react-router-dom';
 import { useStateValue } from '../stateprovider';
 import Fire from '../firebase';
+import { useHistory } from 'react-router-dom';
 // import Dropdown from './Dropdown'
 
 
@@ -12,9 +13,11 @@ import Fire from '../firebase';
 
 function Navbar() {
         const [{ user }, dispatch] = useStateValue();
+        const history = useHistory() ;
 
         const handleLogout = () => {
                 Fire.auth().signOut();
+                history.push('/login')
         };
 
         const [click,setClick] = useState(false);

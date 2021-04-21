@@ -11,6 +11,18 @@
     padding: 15px;
     margin: auto;
 }
+
+.error-msg {
+    color: red;
+}
+
+.social-btn:nth-child(1) {
+    margin-right: 2px;
+}
+.social-btn:nth-child(2) {
+    margin-left: 2px;
+}
+
 #logreg-forms .form-control {
     position: relative;
     box-sizing: border-box;
