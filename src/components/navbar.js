@@ -5,79 +5,9 @@ import { Link } from 'react-router-dom';
 import { useStateValue } from '../stateprovider';
 import Fire from '../firebase';
 import { useHistory } from 'react-router-dom';
-import * as FaIcons from 'react-icons/fa';
-import * as AiIcons from 'react-icons/ai';
-import { SidebarData } from './SidebarData';
-import SubMenu from './SubMenu';
-import { IconContext } from 'react-icons/lib';
-import styled from 'styled-components';
+// import Dropdown from './Dropdown'
 
 
-
-const Nav = styled.div`
-  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
-  height: 65px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-`;
-
-const NavIcon = styled(Link)`
-  margin-left: 1rem;
-  font-size: 2rem;
-  height: 65px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-`;
-
-const SidebarNav = styled.nav`
-  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
-  width: 250px;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  top: 0;
-  left: ${({ sidebar }) => (sidebar ? '0' : '-100%')};
-  transition: 350ms;
-  z-index: 10;
-`;
-
-const SidebarWrap = styled.div`
-  width: 100%;
-`;
-
-
-
-const Logo = styled(Link)`
-  color: white;
-  text-align: center;
-  margin-left: 15px;
-  font-size: 1.5rem;
-  font-weight: bold;
-  font-family: 'Play', sans-serif;
-  &:hover {
-    color: white;
-  }
-`;
-
-const LoginPage = styled(Link)`
-  color: white;
-  text-align: center;
-  margin-left: 40px;
-  position: absolute;
-  top: 14px;
-  right: 20px;
-  font-family: 'Play', sans-serif;
-  background: #1888ff;
-  padding: 7px 10px;
-  &:hover {
-    color: white;
-    border: 2px solid #1888ff;
-    background: transparent;
-  }
-`;
 
 
 
@@ -85,115 +15,86 @@ function Navbar() {
         const [{ user }, dispatch] = useStateValue();
         const history = useHistory() ;
 
-        const [sidebar, setSidebar] = useState(false);
-
-  const showSidebar = () => setSidebar(!sidebar);
-
         const handleLogout = () => {
                 Fire.auth().signOut();
                 history.push('/login')
         };
 
         const [click,setClick] = useState(false);
-        
+        const [dropdown,setDropdown] = useState(false);
 
         const handleClick = () => setClick(!click);
         const closeMobileMenu = () => setClick(false);
 
+        const onMouseEnter = () => {
+                if(window.innerwidth < 960) {
+                        setDropdown(false)
+                }
+                else {
+                        setDropdown(true)
+                }
+        }
+        const onMouseLeave = () => {
+                if(window.innerwidth < 960) {
+                        setDropdown(false)
+                }
+                else {
+                        setDropdown(false)
+                }
+        }
 
         return (
-                <>
-      <IconContext.Provider value={{ color: '#fff' }}>
-        <Nav>
-          <NavIcon to='#'>
-            <FaIcons.FaBars onClick={showSidebar} />
-          </NavIcon>
-          <Logo to='/home'>buyideal</Logo>
-          <LoginPage to={!user && '/login'} onClick={handleLogout}>{user ? 'LogOut' : 'Login'}</LoginPage>
-        </Nav>
-        <SidebarNav sidebar={sidebar}>
-          <SidebarWrap>
-            <NavIcon to='#'>
-              <AiIcons.AiOutlineClose onClick={showSidebar} />
-            </NavIcon>
-            {SidebarData.map((item, index) => {
-              return <SubMenu item={item} key={index} />;
-            })}
-          </SidebarWrap>
-        </SidebarNav>
-      </IconContext.Provider>
-    </>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 
-        //         <nav className="navbar fixed-top">
-        //                 <Link to='/home' className='navbar-logo'>
-        //                         <img src="./logomain.png" /> 
-        //                 </Link>
-        //                 <div className='menu-icon' onClick={handleClick}>
-        //                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
-        //                 </div>
+                <nav className="navbar fixed-top">
+                        <Link to='/home' className='navbar-logo'>
+                                <img src="./logomain.png" /> 
+                        </Link>
+                        <div className='menu-icon' onClick={handleClick}>
+                                <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+                        </div>
 
-        //                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-        //                         <li className="nav-item nav-item2">
-        //                                 <Link to='/home' className='nav-links link' onClick={closeMobileMenu}>
-        //                                         Home
-        //                                 </Link>
-        //                         </li>
-        //                         <li className="nav-item nav-item2">
-        //                                 <Link to='/aboutus' className='nav-links link' onClick={closeMobileMenu}>
-        //                                         About Us
-        //                                 </Link>
-        //                         </li>
-        //                         {/* <li class="nav-item nav-item2 dropdown">
-        //   <Link to='#' className="nav-links dropdown-toggle link" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        //     Find Here
-        //   </Link>
-        //   <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-        //     <li><a class="dropdown-item" href="/phones">Phones</a></li>
-        //     <li><a class="dropdown-item" href="/laptops">Laptops</a></li>
-        //     <li><a class="dropdown-item" href="/gamingconsoles">Gaming Consoles</a></li>
-        //     <li><a class="dropdown-item" href="/accessories">Accessories</a></li>
-        //   </ul>
-        // </li> */}
-        // <li className="nav-item nav-item2">
-        //                                 <Link to='findnow' className='nav-links link' onClick={closeMobileMenu}>
-        //                                         Find Now?
-        //                                 </Link>
-        //                         </li>
+                        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                                <li className="nav-item nav-item2">
+                                        <Link to='/home' className='nav-links link' onClick={closeMobileMenu}>
+                                                Home
+                                        </Link>
+                                </li>
+                                <li className="nav-item nav-item2">
+                                        <Link to='/aboutus' className='nav-links link' onClick={closeMobileMenu}>
+                                                About Us
+                                        </Link>
+                                </li>
+                                {/* <li class="nav-item nav-item2 dropdown">
+          <Link to='#' className="nav-links dropdown-toggle link" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Find Here
+          </Link>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="/phones">Phones</a></li>
+            <li><a class="dropdown-item" href="/laptops">Laptops</a></li>
+            <li><a class="dropdown-item" href="/gamingconsoles">Gaming Consoles</a></li>
+            <li><a class="dropdown-item" href="/accessories">Accessories</a></li>
+          </ul>
+        </li> */}
+        <li className="nav-item nav-item2">
+                                        <Link to='findnow' className='nav-links link' onClick={closeMobileMenu}>
+                                                Find Now?
+                                        </Link>
+                                </li>
 
-        //                         <li className="nav-item nav-item2 mylogin">
-        //                                 <Link to={!user && '/login'} onClick={closeMobileMenu}>
-        //                                 <a className="link mobile-login" onClick={handleLogout} href="#">{user ? 'LogOut' : 'Login'}</a>
-        //                                 </Link>
-        //                         </li>
+                                <li className="nav-item nav-item2 mylogin">
+                                        <Link to={!user && '/login'} onClick={closeMobileMenu}>
+                                        <a className="link mobile-login" onClick={handleLogout} href="#">{user ? 'LogOut' : 'Login'}</a>
+                                        </Link>
+                                </li>
 
-        //                         <li className="nav-item nav-item2 nav-links-mobile">
-        //                                 <Link to={!user && '/login'} onClick={closeMobileMenu}>
-        //                                         <button className="btn btn2" onClick={handleLogout}>{user ? 'LogOut' : 'Login'}</button>
-        //                                 </Link>
-        //                         </li>
-        //                 </ul>
+                                <li className="nav-item nav-item2 nav-links-mobile">
+                                        <Link to={!user && '/login'} onClick={closeMobileMenu}>
+                                                <button className="btn btn2" onClick={handleLogout}>{user ? 'LogOut' : 'Login'}</button>
+                                        </Link>
+                                </li>
+                        </ul>
                         
-        //         </nav>
+                </nav>
                 
 
 
