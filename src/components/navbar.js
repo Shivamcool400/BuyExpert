@@ -17,7 +17,7 @@ function Navbar() {
 
         const handleLogout = () => {
                 Fire.auth().signOut();
-                
+                history.push('/login')
         };
 
         const [click,setClick] = useState(false);
