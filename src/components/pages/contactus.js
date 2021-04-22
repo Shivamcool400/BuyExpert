@@ -1,35 +1,36 @@
-import React, {Component} from 'react';
+import React, {useState} from 'react';
+import Fire from '../../firebase';
 import './contactus.css'
 
-class Contactus extends Component{
+function Contactus () {
 
-    state = {
-        name: '',
-        email: '',
-        message: '',
-        responseToPost: ''
-    }
+   const [name,setName] = useState('');
+   const [email,setEmail]=useState("");
+   const [message,setMessage]=useState('');
+   const [responseToPost,setResponseToPost]=useState("");
+
+   const db = Fire.firestore();
 
 
-    handleSubmit = async e => {
+   const handleSubmit = (e) => {
         e.preventDefault();
-        const response = await fetch('/contactus', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({ 
-              name: this.state.name,
-              email: this.state.email,
-              message: this.state.message
-            }),
+        db.collection('contactus').add({
+            name: name,
+            email: email,
+            message: message
+        }).then(()=>{
+            setResponseToPost('Your message has been sent successfully.');
+        }).catch((error)=> {
+            alert(error.message);
         });
-        const body = await response.text();
         
-        this.setState({ responseToPost: 'Your message has been sent successfully.' });
+        setName("");
+        setMessage("");
+        setEmail("");
+        
       };
 
-    render() {
+    
         return(
         
         <div className="body">
@@ -37,19 +38,19 @@ class Contactus extends Component{
             {/* <h1 className="head"> Contact Us</h1> */}
             <div className="box box2">
                 <div className="left">
-                    <form method="POST" action="/contactus" onSubmit={this.handleSubmit}>
+                    <form method="POST" action="/contactus" onSubmit={handleSubmit}>
                         <fieldset>
                             <legend>Get in touch</legend>
-                            <p className="text-success text-center">{this.state.responseToPost}</p>
+                            <p className="text-success text-center">{responseToPost}</p>
                             <div class="form-group input">
-                                <input type="text" class="form-control" name="name" placeholder="Enter name" value={this.state.name} onChange={e => {this.setState({name: e.target.value})}} />
+                                <input type="text" class="form-control" name="name" placeholder="Enter name" value={name } onChange={e => setName(e.target.value)} />
                             </div>
                             <div class="form-group input">
-                                <input type="email" class="form-control" name="email" placeholder="Enter email" value={this.state.email} onChange={e => {this.setState({email: e.target.value})}} />
+                                <input type="email" class="form-control" name="email" placeholder="Enter email" value={email} onChange={e => setEmail(e.target.value)} />
                                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                             </div>
                             <div class="form-group input">
-                                <textarea class="form-control" rows="5" id="message" placeholder="Enter your message here..." name="message" value={this.state.message} onChange={e => {this.setState({message: e.target.value})}} ></textarea>
+                                <textarea class="form-control" rows="5" id="message" placeholder="Enter your message here..." name="message" value={message} onChange={e => setMessage(e.target.value)} ></textarea>
                             </div>
                             
                             <button className="btn btnmessage">Submit</button>
@@ -73,7 +74,7 @@ class Contactus extends Component{
         
         
         
-        ); } }
+        ); } 
         
 
 
