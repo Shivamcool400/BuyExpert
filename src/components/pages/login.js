@@ -3,6 +3,8 @@ import './login.css';
 import { useHistory } from 'react-router-dom';
 import Fire from '../../firebase';
 import firebase from 'firebase';
+import styledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth"
+import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 
 
 
@@ -17,7 +19,22 @@ const [emailError, setEmailError] = useState('');
 const [passwordError, setPasswordError] = useState('');
 const [hasAccount, setHasAccount] = useState(true);
 
-
+var uiConfig = {
+  
+  // Will use popup for IDP Providers sign-in flow instead of the default, redirect.
+  signInFlow: 'popup',
+  signInSuccessUrl: '/home',
+  signInOptions: [
+    // Leave the lines as is for the providers you want to offer your users.
+    firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+    firebase.auth.FacebookAuthProvider.PROVIDER_ID,
+    
+  ],
+  // Terms of service url.
+  tosUrl: '<your-tos-url>',
+  // Privacy policy url.
+  privacyPolicyUrl: '<your-privacy-policy-url>'
+};
 const clearInputs = () => {
   setEmail('');
   setPassword('');
@@ -62,66 +79,7 @@ const handleLogin = () => {
     }
   });
 };
-const facebooklogin = () => {
-  var provider = new firebase.auth.FacebookAuthProvider();
-  Fire
-  .auth()
-  .signInWithPopup(provider)
-  .then((result) => {
-    /** @type {Fire.auth.OAuthCredential} */
-    var credential = result.credential;
 
-    // The signed-in user info.
-    var user = result.user;
-
-    // This gives you a Facebook Access Token. You can use it to access the Facebook API.
-    var accessToken = credential.accessToken;
-    if (result) {
-      history.push('/home')
-      window.scrollTo(0,0);
-    }
-    // ...
-  })
-  .catch((error) => {
-    // Handle Errors here.
-    var errorCode = error.code;
-    var errorMessage = error.message;
-    // The email of the user's account used.
-    var email = error.email;
-    // The firebase.auth.AuthCredential type that was used.
-    var credential = error.credential;
-
-    // ...
-  });
-}
-const googlelogin = () => {
-  var provider = new firebase.auth.GoogleAuthProvider();
-  Fire.auth()
-  .signInWithPopup(provider)
-  .then((result) => {
-    /** @type {Fire.auth.OAuthCredential} */
-    var credential = result.credential;
-
-    // This gives you a Google Access Token. You can use it to access the Google API.
-    var token = credential.accessToken;
-    // The signed-in user info.
-    var user = result.user;
-    if (result) {
-      history.push('/home')
-      window.scrollTo(0,0);
-    }
-    // ...
-  }).catch((error) => {
-    // Handle Errors here.
-    var errorCode = error.code;
-    var errorMessage = error.message;
-    // The email of the user's account used.
-    var email = error.email;
-    // The firebase.auth.AuthCredential type that was used.
-    var credential = error.credential;
-    // ...
-  });
-}
 const handleSignup = () => {
   clearErrors();
   Fire.auth().createUserWithEmailAndPassword(email, password)
@@ -161,14 +119,7 @@ const handleSignup = () => {
 <div id="logreg-forms">
   <form className="form-signin">
     <h1 className="h3 mb-3 font-weight-normal" style={{textAlign: 'center'}}>{hasAccount ? (<> Sign in</>) : (<> Sign Up</>)}</h1>
-    <br />
-    <br />
-    <div className="social-login">
-      <button className="btn facebook-btn social-btn" onClick={facebooklogin} type="button"><span><i className="fab fa-facebook-f" />  Sign in with Facebook  </span> </button>
-      <button className="btn google-btn social-btn" onClick={googlelogin} type="button"><span><i className="fab fa-google-plus-g" />  Sign in with Google+ </span> </button>
-    </div>
-    <br />
-    <p style={{textAlign: 'center'}}> OR</p>
+    <br></br>
     <input type="email" id="inputEmail" className="form-control" placeholder="Email address" required autofocus value={email} onChange={(e) => setEmail(e.target.value)} />
     <p className="errorMsg">{emailError}</p>
     <input type="password" id="inputPassword" className="form-control" placeholder="Password" required value={password} onChange={(e) => setPassword(e.target.value)} />
@@ -189,7 +140,10 @@ const handleSignup = () => {
     { hasAccount ? (<>
       <a href="/forgot" id="forgot_pswd">Forgot password?</a>
     </>) : (<></>) }
+    <br />
     
+    <p style={{textAlign: 'center'}}> OR</p>
+    <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={Fire.auth()}/>
     
   </form>
   
