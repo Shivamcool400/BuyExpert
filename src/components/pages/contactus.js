@@ -1,36 +1,35 @@
-import React, {useState} from 'react';
-import Fire from '../../firebase';
+import React, {Component} from 'react';
 import './contactus.css'
 
-function Contactus () {
+class Contactus extends Component{
 
-   const [name,setName] = useState('');
-   const [email,setEmail]=useState("");
-   const [message,setMessage]=useState('');
-   const [responseToPost,setResponseToPost]=useState("");
+    state = {
+        name: '',
+        email: '',
+        message: '',
+        responseToPost: ''
+    }
 
-   const db = Fire.firestore();
 
-
-   const handleSubmit = (e) => {
+    handleSubmit = async e => {
         e.preventDefault();
-        db.collection('contactus').add({
-            name: name,
-            email: email,
-            message: message
-        }).then(()=>{
-            setResponseToPost('Your message has been sent successfully.');
-        }).catch((error)=> {
-            alert(error.message);
+        const response = await fetch('/contactus', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ 
+              name: this.state.name,
+              email: this.state.email,
+              message: this.state.message
+            }),
         });
+        const body = await response.text();
         
-        setName("");
-        setMessage("");
-        setEmail("");
-        
+        this.setState({ responseToPost: 'Your message has been sent successfully.' });
       };
 
-    
+    render() {
         return(
         
         <div className="body">
@@ -38,19 +37,19 @@ function Contactus () {
             {/* <h1 className="head"> Contact Us</h1> */}
             <div className="box box2">
                 <div className="left">
-                    <form method="POST" action="/contactus" onSubmit={handleSubmit}>
+                    <form method="POST" action="/contactus" onSubmit={this.handleSubmit}>
                         <fieldset>
                             <legend>Get in touch</legend>
-                            <p className="text-success text-center">{responseToPost}</p>
+                            <p className="text-success text-center">{this.state.responseToPost}</p>
                             <div class="form-group input">
-                                <input type="text" class="form-control" name="name" placeholder="Enter name" value={name } onChange={e => setName(e.target.value)} />
+                                <input type="text" class="form-control" name="name" placeholder="Enter name" value={this.state.name} onChange={e => {this.setState({name: e.target.value})}} />
                             </div>
                             <div class="form-group input">
-                                <input type="email" class="form-control" name="email" placeholder="Enter email" value={email} onChange={e => setEmail(e.target.value)} />
+                                <input type="email" class="form-control" name="email" placeholder="Enter email" value={this.state.email} onChange={e => {this.setState({email: e.target.value})}} />
                                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                             </div>
                             <div class="form-group input">
-                                <textarea class="form-control" rows="5" id="message" placeholder="Enter your message here..." name="message" value={message} onChange={e => setMessage(e.target.value)} ></textarea>
+                                <textarea class="form-control" rows="5" id="message" placeholder="Enter your message here..." name="message" value={this.state.message} onChange={e => {this.setState({message: e.target.value})}} ></textarea>
                             </div>
                             
                             <button className="btn btnmessage">Submit</button>
@@ -74,7 +73,7 @@ function Contactus () {
         
         
         
-        ); } 
+        ); } }
         
 
 
