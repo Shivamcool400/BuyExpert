@@ -145,9 +145,6 @@ const handleSignup = () => {
     <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={Fire.auth()}/>
     
   </form>
-  
-    
-    
   <br />
 </div>
 
