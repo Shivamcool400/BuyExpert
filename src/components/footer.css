@@ -122,17 +122,25 @@
     }
 
     .footer {
-        font-size: 0.5rem;
+        font-size: 0.8rem;
     }
 
     .head3 {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
 }
 
 @media screen and (max-width: 506px) {
     .footer-col {
         margin-right: 8%;
+    }
+
+    .footer {
+        font-size: 0.5rem;
+    }
+
+    .head3 {
+        font-size: 1.1rem;
     }
 }
 
