@@ -142,9 +142,12 @@ const handleSignup = () => {
     <br/>
 
     <p style={{textAlign: 'center'}}> OR</p>
-    <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={Fire.auth()}/>
+    
     
   </form>
+  
+    
+    
   <br />
 </div>
 
