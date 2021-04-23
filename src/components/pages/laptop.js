@@ -157,6 +157,68 @@ const reset = () => {
 
         return(
             <div>
+{/* casoroul */}
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/laptop_1.jpg" class="d-block w-100" alt="..." />
+      <div class="carousel-caption">
+        <h5 className="caption">"Coding in a better way with the "ideal" choice!"</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="/laptop_2.jpg" class="d-block w-100" alt="..." />
+      <div class="carousel-caption">
+        <h5 className="caption">"Gaming must be smooth and fun."</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="laptop_3.jpg" class="d-block w-100" alt="..." />
+      <div class="carousel-caption">
+        <h5 className="caption">"Go on!! Search your required device!"</h5>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div className="container" className="back-2 bg-dark">
+            
+            <figure className="text-center ">
+          <blockquote className="blockquote ">
+            <h2 className="msg-heading text-light">BUY IDEAL</h2>
+          </blockquote>
+        </figure>
+        <figure className="text-center ">
+        <blockquote className="blockquote ">
+          <p className="h1 msg-3 text-white">Always Working on Providing The best Support To Our Users And The Subscribers. We Are Commited To You And Will Not Leave Any Stone Unturned Until You Find A Phone Meeting Your Desired Needs.</p>
+        </blockquote>
+      </figure>
+    <br></br>
+    <br></br>
+            </div>
+
+
+
+
+
+
+
+
+
+
         <div className="container" className="back">
         <br></br>
           <br></br>
@@ -656,21 +718,7 @@ const reset = () => {
         <br></br>
         <br></br>
 
-        <div className="container" className="back-2 bg-dark">
-            
-            <figure className="text-center ">
-          <blockquote className="blockquote ">
-            <h2 className="msg-heading text-light">BUY EXPERTS</h2>
-          </blockquote>
-        </figure>
-        <figure className="text-center ">
-        <blockquote className="blockquote ">
-          <p className="h1 msg-3 text-white">Always Working on Providing The best Support To Our Users And The Subscribers. We Are Commited To You And Will Not Leave Any Stone Unturned Until You Find A Phone Meeting Your Desired Needs.</p>
-        </blockquote>
-      </figure>
-    <br></br>
-    <br></br>
-            </div>
+        
            
           <br></br>
           <br></br>
