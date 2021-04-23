@@ -6,8 +6,7 @@ class Home extends Component{
         return(
             <div className="homebody">
 
-            <br></br>
-            <br></br>
+            
 
 
   {/* <img src="/logo.jpeg" className="rounded mx-auto d-block img-fluid headshot mt-5" alt="..." />
@@ -42,10 +41,62 @@ class Home extends Component{
   </button>
 </div> */}
 
-<video className="advideo" width="100%" height="500px" controls>
+{/* <video className="advideo" width="100%" height="500px" controls>
   <source src="advertisementvideo.mp4" type="video/mp4" />
   Your browser does not support HTML video.
-</video>
+</video> */}
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/homenew1-1.jpg" class="d-block w-100" alt="..." />
+      <div class="carousel-caption">
+        <h5 className="caption">Find your ideal device in just a few clicks.</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="/homenew2.jpg" class="d-block w-100" alt="..." />
+      <div class="carousel-caption">
+        <h5 className="caption">Utilize your money in the best way.</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="homenew3.jpg" class="d-block w-100" alt="..." />
+      <div class="carousel-caption">
+        <h5 className="caption">Buy the best product that satisfies your needs.</h5>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<div className="body-content">
+  <div className="body-inner">
+  <div className="content-head">Are you in a habit of digging the Internet for hours before buying a new device?</div>
+
+<p className="para">Like a typical buyer, maybe you are jumping from Quora to Youtube to Amazon reviews to check which device will best suit you. Spending days on research, asking friends and relatives and maybe even hitting the store to give the damn thing a test. <br /><br />
+
+At BuyIdeal you can do all that research in one place!<br /><br />
+
+Whether you are looking for a device well within your budget (without sacrificing any features) or you just want a device that feels good in the hands. Whether you want to start a career as a content creator and need a gadget with an excellent camera, storage, speed and battery life or there isn’t much on your list and you just need a minimalist device.<br /><br />
+
+At BuyIdeal we give you relevant and unbiased suggestions, based on your needs, to help you buy the device which is ‘ideal’ for you. With our unique algorithm, you can choose from different tabs, the field of your usage, your budget, your special preferences etc. to get personalized recommendations in just a few clicks. Reviews from websites like Youtube, Amazon, plus our own opinion, all packed up in one place to provide you with an optimum research experience.<br /><br />
+</p>
+</div>
+</div>
 
 
 
@@ -106,43 +157,9 @@ class Home extends Component{
     </div>  <div className="col"> </div>
   </div>
 
-  <p className="h1 text_heading ourmotivehead">Our Motive</p>
+  {/* <p className="h1 text_heading ourmotivehead">Our Motive</p> */}
 
-  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/homenew1-1.jpg" class="d-block w-100" alt="..." />
-      <div class="carousel-caption">
-        <h5 className="caption">Find your ideal device in just a few clicks.</h5>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="/homenew2.jpg" class="d-block w-100" alt="..." />
-      <div class="carousel-caption">
-        <h5 className="caption">Utilize your money in the best way.</h5>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="homenew3.jpg" class="d-block w-100" alt="..." />
-      <div class="carousel-caption">
-        <h5 className="caption">Buy the best product that satisfies your needs.</h5>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+  
 
 
 

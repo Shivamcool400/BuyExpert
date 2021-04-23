@@ -11,6 +11,31 @@
     font-size: 30px;
 }
 
+
+.body-content {
+    display: block;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.content-head {
+    font-family: SamsungSharpSans-Bold  ;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.para {
+    font-family: 'SamsungOne 700';
+    font-size: 1.3rem;
+    width: 90%;
+    margin: auto;
+}
+
+.body-inner {
+    padding: 20px;
+}
+
 .ourmotivehead {
     margin-bottom: 50px;
 }
@@ -49,6 +74,10 @@
  @media screen and (max-width: 960px) {
      .caption {
          font-size: 1.5rem;
+     }
+
+     .content-head {
+         font-size: 38px;
      }
  }
 
@@ -192,6 +221,10 @@ button.mainbtn {
   .msg {
       font-size: 25px;
   }
+
+  .content-head {
+      font-size: 22px;
+  }
     
     .ques {
         font-size: 35px;
@@ -255,48 +288,6 @@ button.mainbtn {
 
 
 
-/*bubble*/
-.thought {
-  display:flex;
-  background-color:bisque;
-  padding:20px;
-  border-radius:30px;
-  min-width:40px;
-  max-width:220px;
-  min-height:40px;
- /* margin:20px;*/
-  margin-top: 50px;
-  position:relative;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-}
-.thought:before,
-.thought:after {
-  content:"";
-  background-color:bisque;
-  border-radius:50%;
-  display:block;
-  position:absolute;
-  z-index:-1;
-}
-.thought:before {
-  width:44px;
-  height:44px;
-  top:-12px;
-  left:28px;
-  box-shadow:-50px 30px 0 -12px bisque;
-}
-.thought:after {
-  bottom:-10px;
-  right:26px;
-  width:30px;
-  height:30px;
-  box-shadow:40px -34px 0 0 bisque,
-             -28px -6px 0 -2px bisque,
-             -24px 17px 0 -6px bisque,
-             -5px 25px 0 -10px bisque;
-  
-}
-/**/
+
+
 
