@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import './aboutus.css'
+import Ourteam from './ourteam';
+
 
 class Aboutus extends Component{
     render() {
@@ -39,8 +41,11 @@ class Aboutus extends Component{
       
       
             </div>
+
       
+      <Ourteam/>
       
+           
           </div>
         
         
