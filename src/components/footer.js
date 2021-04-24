@@ -42,9 +42,9 @@ function Footer() {
         </div>
         <div className="footer-col">
           <p>LEGAL</p>
-          <div><Link to="/login" className="foot-link" onClick={backtotop}>Terms & Conditions</Link></div>
-          <div><Link to="/login" className="foot-link" onClick={backtotop}>Privacy Policy</Link></div>
-          <div><Link to="/login" className="foot-link" onClick={backtotop}>Terms of use</Link></div>
+          <div><Link to="/legal" className="foot-link" onClick={backtotop}>Terms & Conditions</Link></div>
+          <div><Link to="/legal" className="foot-link" onClick={backtotop}>Privacy Policy</Link></div>
+          <div><Link to="/legal" className="foot-link" onClick={backtotop}>Terms of use</Link></div>
         </div>
       </div>
     </div>

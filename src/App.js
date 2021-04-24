@@ -16,6 +16,7 @@ import { useStateValue } from "./stateprovider";
 import Forgotpassword from './components/pages/forgotpassword';
 import Protected from './protected';
 import { AuthProvider } from './Auth';
+import Legal from './components/pages/legal';
 
 
 function App() {
@@ -52,6 +53,7 @@ function App() {
                   <Route path='/contactus'  component={Contactus} />
                   <Route path='/home'  component={Home} />
                   <Route path='/login'  component={Login} />
+                  <Route path='/legal'  component={Legal} />
                   
                   <Protected path='/phones' component={Phones}/>
                   <Protected path='/laptops' component={Laptops}/>
