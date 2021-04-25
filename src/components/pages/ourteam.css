@@ -6,9 +6,30 @@ body {
   html {
     box-sizing: border-box;
   }
+
+  .team-head {
+    margin-top: 40px;
+  }
+
+  .team_start {
+    margin-top: 100px;
+  }
   
   *, *:before, *:after {
     box-sizing: inherit;
+  }
+
+  .team-image {
+    text-align: center;
+  }
+
+  .team-image>img {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-radius: 50%;
   }
   
   .column {
