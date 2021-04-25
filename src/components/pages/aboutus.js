@@ -42,8 +42,7 @@ class Aboutus extends Component{
       
             </div>
 
-      
-      <Ourteam/>
+
       
            
           </div>

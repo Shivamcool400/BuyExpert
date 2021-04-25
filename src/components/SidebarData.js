@@ -51,7 +51,7 @@ export const SidebarData = [
   },
   {
     title: 'Team',
-    path: '/team',
+    path: '/ourteam',
     icon: <IoIcons.IoMdPeople />
   },
   
