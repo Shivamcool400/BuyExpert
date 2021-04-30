@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import './aboutus.css'
-import Ourteam from './ourteam';
 
 
 class Aboutus extends Component{
@@ -36,7 +35,7 @@ class Aboutus extends Component{
                   <img src="/ourprocess.jpg" alt="Our Process" className="image3" /></div>
                 <div className="para3">
                   <h3>Our Values</h3>
-                  <p>In today's world, we believe in communicating and working transparently following integrity. Being involve in a business, we are very much pasionate about meeting our customer's requirement. We work as team and are accountable for all our actions and we are dedicated to achieve our goals with a token of respect for each other.</p>
+                  <p>In today's world, we believe in communicating and working transparently following integrity. Being involve in a business, we are very much passionate about meeting our customer's requirement. We work as team and are accountable for all our actions and we are dedicated to achieve our goals with a token of respect for each other.</p>
                 </div>
               </div>
       
