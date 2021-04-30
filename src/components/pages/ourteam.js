@@ -40,11 +40,39 @@ function Ourteam() {
           <h2>Anurag Bral</h2>
           <p className="title">Data Manager and Analyzer</p>
           <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-          <p>Bral@example.com</p>
+          <p>Anuragbral2127@gmail.com</p>
           <p><button className="button">Contact</button></p>
         </div>
       </div>
     </div>
+
+    <div className="row team_start">
+    <div className="column">
+      <div className="card team-image">
+        <img src="/bindu.jpg" alt="shivam" />
+        <div className="container">
+          <h2>Bindu Bharti</h2>
+          <p className="title">Content Writer</p>
+          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p>bindubharti264@gmail.com</p>
+          <p><button className="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div className="column">
+      <div className="card team-image">
+        <img src="/surmeet.jpg" alt="Ravish" />
+        <div className="container">
+          <h2>Surmeet Kaur</h2>
+          <p className="title">Content Writer</p>
+          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p>surmeetsehgal@gmail.com</p>
+          <p><button className="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+    
+</div>
   </div>
 </>
  
