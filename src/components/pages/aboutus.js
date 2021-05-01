@@ -17,8 +17,9 @@ class Aboutus extends Component{
                 </div>
                 <div className="para1">
                   <h3>Our Vision</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eum laudantium eos, dolorem soluta facilis officiis culpa excepturi atque sunt consectetur recusandae eveniet doloremque corporis labore aliquam inventore in quis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim repudiandae iusto quis. Omnis voluptate quidem sint veniam, dolorem aliquam accusantium totam. Reprehenderit dolores facilis beatae tenetur, autem perspiciatis amet temporibus?</p>
+                  <p>Buy ideal's vision is to be the technical advancement in the nation. Due to an increase in demands of advance gadgets, we as a company visualise suggesting you no complain technology in subsequent era. As of now, many of us are having choice issues, so we come down as a solution to all your choice issues. We aim at helping you, pick up an ideal choice and at the same time recommending you a complain free technology.</p>
                 </div>
+      
               </div>
       
               <div className="item2 shadow p-3 mb-5 bg-white rounded">
@@ -26,7 +27,7 @@ class Aboutus extends Component{
                   <img src="/ourapproach.jpg" alt="Our Approach" className="image2" /></div>
                 <div className="para2">
                   <h3>Our Approach</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eum laudantium eos, dolorem soluta facilis officiis culpa excepturi atque sunt consectetur recusandae eveniet doloremque corporis labore aliquam inventore in quis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim repudiandae iusto quis. Omnis voluptate quidem sint veniam, dolorem aliquam accusantium totam. Reprehenderit dolores facilis beatae tenetur, autem perspiciatis amet temporibus?</p>
+                  <p>Buyideal, approaching to its major goals provide you with a single platform to pick up the best technology based upon our researches, be it be mobile phones, laptops or other useful gadgets. Our approach to contend with your choices utilizes a lot of researches. Stepping into buyideal will let you have a sight on all kinds of mobile phones, laptops and other available gadgets. Keeping your budget specifications and other criterias in mind, we ensure helping you in making the finest deal.</p>
                 </div>
               </div>
       
@@ -34,8 +35,8 @@ class Aboutus extends Component{
                 <div>
                   <img src="/ourprocess.jpg" alt="Our Process" className="image3" /></div>
                 <div className="para3">
-                  <h3>Our Process</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eum laudantium eos, dolorem soluta facilis officiis culpa excepturi atque sunt consectetur recusandae eveniet doloremque corporis labore aliquam inventore in quis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim repudiandae iusto quis. Omnis voluptate quidem sint veniam, dolorem aliquam accusantium totam. Reprehenderit dolores facilis beatae tenetur, autem perspiciatis amet temporibus?</p>
+                  <h3>Our Values</h3>
+                  <p>In today's world, we believe in communicating and working transparently following integrity. Being involve in a business, we are very much pasionate about meeting our customer's requirement. We work as team and are accountable for all our actions and we are dedicated to achieve our goals with a token of respect for each other.</p>
                 </div>
               </div>
       

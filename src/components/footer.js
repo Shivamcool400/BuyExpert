@@ -35,10 +35,9 @@ function Footer() {
         </div>
         <div className="footer-col">
           <p>ABOUT</p>
-          <div><Link to="/login" className="foot-link" onClick={backtotop}>Our story</Link></div>
-          <div><Link to="/login" className="foot-link" onClick={backtotop}>Benefits</Link></div>
+          <div><Link to="/benefits" className="foot-link" onClick={backtotop}>Benefits</Link></div>
           <div><Link to="/ourteam" className="foot-link" onClick={backtotop}>Team</Link></div>
-          <div><Link to="/login" className="foot-link" onClick={backtotop}>FAQs</Link></div>
+          <div><Link to="/faqs" className="foot-link" onClick={backtotop}>FAQs</Link></div>
         </div>
         <div className="footer-col">
           <p>LEGAL</p>

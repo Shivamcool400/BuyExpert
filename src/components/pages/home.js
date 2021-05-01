@@ -124,8 +124,8 @@ At BuyIdeal we give you relevant and unbiased suggestions, based on your needs, 
       <div className="card m-3 ">
         <div className="card-body">
           <blockquote className="blockquote mb-0">
-            <p> "Finding a desired phone these days is difficult and time consuming </p> 
-            <footer className="blockquote-footer "> "Rohit Mishra" <cite title="Source Title"></cite></footer>
+            <p> "Looking for a phone that will last me 4 years of college wihout too many hiccups" </p> 
+            {/* <footer className="blockquote-footer "> "Rohit Mishra" <cite title="Source Title"></cite></footer> */}
           </blockquote> 
         </div> </div>
     </div> <div className="col-sm-12 col-md-4">
@@ -133,7 +133,7 @@ At BuyIdeal we give you relevant and unbiased suggestions, based on your needs, 
         <div className="card-body">
           <blockquote className="blockquote mb-0">
             <p> "I needed a gaming phone under 20,000, but found the wrong one!" </p> 
-            <footer className="blockquote-footer"> "Rakesh Goyal <cite title="Source Title"></cite></footer>
+            {/* <footer className="blockquote-footer"> "Rakesh Goyal <cite title="Source Title"></cite></footer> */}
           </blockquote> </div> </div>
     </div>  <div className="col"> </div>
   </div>
@@ -142,8 +142,8 @@ At BuyIdeal we give you relevant and unbiased suggestions, based on your needs, 
       <div className="card m-3">
         <div className="card-body">
           <blockquote className="blockquote mb-0">
-            <p> "Searched thousand of videos on youtube, but which one to follow to buy a laptop" </p> 
-            <footer className="blockquote-footer"> "Preeti Chauhan" <cite title="Source Title"></cite></footer>
+            <p> "Want unbiased recommendation on buying a new laptop. But there's too much online" </p> 
+            {/* <footer className="blockquote-footer"> "Preeti Chauhan" <cite title="Source Title"></cite></footer> */}
           </blockquote> 
         </div> </div>
     </div> 
@@ -151,8 +151,8 @@ At BuyIdeal we give you relevant and unbiased suggestions, based on your needs, 
       <div className="card m-3">
         <div className="card-body">
           <blockquote className="blockquote mb-0">
-            <p> "Can't find the cheapest website to get my phone in a fairer price" </p> 
-            <footer className="blockquote-footer">"Laksaya Anand"<cite title="Source Title" /></footer>
+            <p> "Can't find the right website to buy a new phone at a fair price" </p> 
+            {/* <footer className="blockquote-footer">"Laksaya Anand"<cite title="Source Title" /></footer> */}
           </blockquote> </div> </div>
     </div>  <div className="col"> </div>
   </div>

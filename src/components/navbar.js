@@ -91,10 +91,13 @@ function Navbar() {
                 };
 
         const [click,setClick] = useState(false);
-        const [dropdown,setDropdown] = useState(false);
 
         const handleClick = () => setClick(!click);
-        const closeMobileMenu = () => setClick(false);
+        const closeMobileMenu = () => {
+          if(SidebarData.path != '/home') {
+          setSidebar(!sidebar);
+          }
+        }
 
         const [sidebar, setSidebar] = useState(false);
 

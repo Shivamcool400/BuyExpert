@@ -129,8 +129,8 @@ const handleSignup = () => {
       <button className="btn btn-success btn-block" type="button" onClick={handleLogin}><i className="fas fa-sign-in-alt" /> Sign in</button>
     
     <hr />
-      <p>Don't have an account!</p> 
-    <button className="btn btn-primary btn-block" type="button" id="btn-signup" onClick={togglesign}><i className="fas fa-user-plus" /> Sign up New Account</button>
+      <p>Don't have an account?</p> 
+    <button className="btn btn-primary btn-block" type="button" id="btn-signup" onClick={togglesign}><i className="fas fa-user-plus" /> Sign up</button>
     </>) : (<>
       <button className="btn btn-primary btn-block" type="button" onClick={handleSignup}><i className="fas fa-user-plus" /> Sign Up</button>
     <a href="#" id="cancel_signup" onClick={togglesign}><i className="fas fa-angle-left" /> Back</a>
