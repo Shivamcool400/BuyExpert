@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Fire from "./firebase";
+import './Auth.css'
 
 
 export const AuthContext = React.createContext();
@@ -16,7 +17,7 @@ useEffect(() => {
 },[]);
 
 if(pending) {
-    return <> Loading... </>
+    return <> <i class="fas fa-spinner loading-icon"></i> </>
 }
     return (
         <AuthContext.Provider 
