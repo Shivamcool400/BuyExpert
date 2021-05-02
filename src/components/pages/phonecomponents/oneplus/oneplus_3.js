@@ -1,13 +1,13 @@
-import React, {useState, useEffect, Component} from 'react';
+import React, {useState, useEffect} from 'react';
 import Fire from '../../../../firebase';
 import Product from '../product';
 
 
 const Oneplus_3 = () => {
-    const db = Fire.firestore();
+    
 
     useEffect(() => {
-        
+      const db = Fire.firestore();
        db.collection('head_3_oneplus').orderBy("choice").onSnapshot(snapshot => (
          setHead(snapshot.docs.map(doc => doc.data()))
        ))

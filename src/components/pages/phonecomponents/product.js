@@ -1,4 +1,4 @@
-import React, {Component, useState} from 'react'
+import React from 'react'
 import './product.css';
 function Product({choice, device, url,specs,youtube,blog,seller,gaming,tech}) {
 
@@ -32,7 +32,7 @@ function Product({choice, device, url,specs,youtube,blog,seller,gaming,tech}) {
     </figure>
 <br></br>
     <div className="row">
-      <div className="col-sm-12 col-md-6"><img src={url} className="rounded img-fluid " alt="..." /></div>
+      <div className="col-sm-12 col-md-6"><img src={url} className="rounded img-fluid mx-auto d-block " alt="..." /></div>
       <div className="col-sm-12 col-md-6"><br></br><figure className="text-center ">
       <blockquote className="blockquote ">
         <h2 className="title text-dark">Specifications</h2>

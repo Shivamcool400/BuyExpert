@@ -1,13 +1,13 @@
-import React, {useState, useEffect, Component} from 'react';
+import React, {useState, useEffect} from 'react';
 import Fire from '../../../../firebase';
 import Product from '../product';
 
 
 const Applelaps_7 = () => {
-    const db = Fire.firestore();
+    
 
     useEffect(() => {
-        
+      const db = Fire.firestore();
        db.collection('head_7_applelaps').orderBy("choice").onSnapshot(snapshot => (
          setHead(snapshot.docs.map(doc => doc.data()))
        ))
