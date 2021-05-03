@@ -7,11 +7,13 @@ import Fire from '../firebase';
 import { useHistory } from 'react-router-dom';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
-import { SidebarData } from './SidebarData';
-import SubMenu from './SubMenu';
+import * as IoIcons from 'react-icons/io';
+import * as RiIcons from 'react-icons/ri';
+import * as GiIcons from "react-icons/gi";
+import * as BiIcons from "react-icons/bi";
 import { IconContext } from 'react-icons/lib';
 import styled from 'styled-components';
-// import Dropdown from './Dropdown'
+
 
 const Nav = styled.div`
   background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
@@ -42,6 +44,22 @@ const SidebarNav = styled.nav`
   left: ${({ sidebar }) => (sidebar ? '0' : '-100%')};
   transition: 350ms;
   z-index: 10;
+`;
+
+const DropdownLink = styled(Link)`
+  background: #414757;
+  height: 60px;
+  padding-left: 3rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 18px;
+  &:hover {
+    background: #632ce4;
+    cursor: pointer;
+    color: white;
+  }
 `;
 
 const SidebarWrap = styled.div`
@@ -80,6 +98,10 @@ const LoginPage = styled(Link)`
   }
 `;
 
+const SidebarLabel = styled.span`
+  margin-left: 16px;
+`;
+
 
 
 function Navbar() {
@@ -94,14 +116,44 @@ function Navbar() {
 
         const handleClick = () => setClick(!click);
         const closeMobileMenu = () => {
-          if(SidebarData.path != '/home') {
           setSidebar(!sidebar);
-          }
         }
 
         const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
+
+  const [open,setOpen] = useState(false);
+
+  const toggledd = () => setOpen(!open);
+
+  const closeDropdownandmenu = () => {
+    setOpen(!open);
+    setSidebar(!sidebar);
+  }
+
+  const subNav = [
+    {
+      title: 'Phones',
+      path: '/phones',
+      icon: <IoIcons.IoIosPhonePortrait />
+    },
+    {
+      title: 'Laptops',
+      path: '/laptops',
+      icon: <IoIcons.IoIosLaptop />
+    },
+    {
+      title: 'Gaming Consoles',
+      path: '/gamingconsoles',
+      icon: <GiIcons.GiGamepad />
+    },
+    {
+      title: 'Accessories',
+      path: '/accessories',
+      icon: <BiIcons.BiHeadphone />
+    }
+  ]
 
         return (
 
@@ -119,146 +171,29 @@ function Navbar() {
             <NavIcon to='#'>
               <AiIcons.AiOutlineClose onClick={showSidebar} />
             </NavIcon>
-            {SidebarData.map((item, index) => {
+            <Link to='/home' className='pagelinks' onClick={closeMobileMenu}><AiIcons.AiFillHome /><SidebarLabel>Home</SidebarLabel></Link>
+            <Link to='/aboutus' className='pagelinks' onClick={closeMobileMenu}><IoIcons.IoIosPaper /><SidebarLabel>About Us</SidebarLabel></Link>
+            <Link to='#' className='pagelinks' onClick={toggledd}><IoIcons.IoIosEye /><SidebarLabel>Find Now?</SidebarLabel>
+            <div className='arrow_icon'>{open ? <RiIcons.RiArrowDownSFill /> : <RiIcons.RiArrowUpSFill /> }</div>
+            </Link>
+            {open && (
+              subNav.map((item, index) => {
+                return (
+                  <DropdownLink to={item.path} key={index} onClick={closeDropdownandmenu}>
+                    {item.icon}
+                    <SidebarLabel>{item.title}</SidebarLabel>
+                  </DropdownLink>
+            )}))}
+           <Link to='/ourteam' className='pagelinks' onClick={closeMobileMenu}><IoIcons.IoMdPeople /><SidebarLabel>Team</SidebarLabel></Link>
+            <Link to='/contactus' className='pagelinks' onClick={closeMobileMenu}><IoIcons.IoMdHelpCircle /><SidebarLabel>Support</SidebarLabel></Link>
+            {/* {SidebarData.map((item, index) => {
               return <SubMenu item={item} key={index} />;
-            })}
+            })} */}
           </SidebarWrap>
         </SidebarNav>
       </IconContext.Provider>
     </>
                 
-        //         <nav className="navbar fixed-top">
-        //                 <Link to='/home' className='navbar-logo'>
-        //                         <img src="./logomain.png" /> 
-        //                 </Link>
-        //                 <div className='menu-icon' onClick={handleClick}>
-        //                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
-        //                 </div>
-
-        //                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-        //                         <li className="nav-item nav-item2">
-        //                                 <Link to='/home' className='nav-links link' onClick={closeMobileMenu}>
-        //                                         Home
-        //                                 </Link>
-        //                         </li>
-        //                         <li className="nav-item nav-item2">
-        //                                 <Link to='/aboutus' className='nav-links link' onClick={closeMobileMenu}>
-        //                                         About Us
-        //                                 </Link>
-        //                         </li>
-        //                         {/* <li class="nav-item nav-item2 dropdown">
-        //   <Link to='#' className="nav-links dropdown-toggle link" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        //     Find Here
-        //   </Link>
-        //   <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-        //     <li><a class="dropdown-item" href="/phones">Phones</a></li>
-        //     <li><a class="dropdown-item" href="/laptops">Laptops</a></li>
-        //     <li><a class="dropdown-item" href="/gamingconsoles">Gaming Consoles</a></li>
-        //     <li><a class="dropdown-item" href="/accessories">Accessories</a></li>
-        //   </ul>
-        // </li> */}
-        // <li className="nav-item nav-item2">
-        //                                 <Link to='findnow' className='nav-links link' onClick={closeMobileMenu}>
-        //                                         Find Now?
-        //                                 </Link>
-        //                         </li>
-
-        //                         <li className="nav-item nav-item2 mylogin">
-        //                                 <Link to={!user && '/login'} onClick={closeMobileMenu}>
-        //                                 <a className="link mobile-login" onClick={handleLogout} href="#">{user ? 'LogOut' : 'Login'}</a>
-        //                                 </Link>
-        //                         </li>
-
-        //                         <li className="nav-item nav-item2 nav-links-mobile">
-        //                                 <Link to={!user && '/login'} onClick={closeMobileMenu}>
-        //                                         <button className="btn btn2" onClick={handleLogout}>{user ? 'LogOut' : 'Login'}</button>
-        //                                 </Link>
-        //                         </li>
-        //                 </ul>
-                        
-        //         </nav>
-                
-
-
-
-
-        //         //            <nav className="navbar navbar-expand-lg scrolling-navbar">
-        //         //   <div className="container-fluid">
-        //         //     <a className="navbar-brand abc pt-2" href="/home"><b>BUY</b></a>
-        //         //     <button className="navbar-toggler abc" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        //         //       <span className=""/><>
-        //         //   ☰
-        //         // </>
-
-        //         //     </button>
-        //         //     <div className="collapse navbar-collapse" id="navbarNavDropdown">
-        //         //       <ul className="navbar-nav">
-        //         //         <li className="nav-item abc">
-        //         //           <a className="nav-link active pt-3" aria-current="page" href="/home">Home</a>
-        //         //         </li>
-        //         //         <li className="nav-item abc">
-        //         //           <a className="nav-link pt-3" href="/aboutus">About us</a>
-        //         //         </li>
-        //         //         {/* <li className="nav-item abc">
-        //         //           <a className="nav-link pt-3" href="/contactus">Contact us!</a>
-        //         //         </li> */}
-        //         //         <li className="nav-item abc">
-
-        //         //           <Link to={!user && '/login'}>
-        //         //           <a className="nav-link pt-3" onClick={handleLogout} href="#">{user ? 'LogOut' : 'Login'}</a>
-        //         //           </Link>
-        //         //         </li>
-        //         //         {/* <li className="nav-item abc">
-        //         //         <span className="nav-link pt-3">Hello {!user ? 'Guest' : user.email}</span>
-        //         //         </li> */}
-        //         //         {/* <li className="nav-item abc">
-        //         //           <a className="nav-link pt-3 mx-5" href="/phones">Phones!</a>
-        //         //         </li>
-        //         //         <li className="nav-item abc">
-        //         //           <a className="nav-link pt-3 mx-5" href="/laptops">Laptops!</a>
-        //         //         </li>
-        //         //         <li className="nav-item abc">
-        //         //           <a className="nav-link pt-3 mx-5" href="/gamingconsoles">Gaming consoles!</a>
-        //         //         </li>
-        //         //         <li className="nav-item abc">
-        //         //           <a className="nav-link pt-3 mx-5" href="/accessories">Accessories!</a> 
-        //         //         </li>*/}
-        //         //         {/* <li class="nav-item dropdown abc">
-        //         //           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        //         //             Find Here
-        //         //           </a>
-        //         //           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-        //         //             <li><a class="dropdown-item" href="/phones">Phones</a></li>
-        //         //             <li><a class="dropdown-item" href="/laptops">Laptops</a></li>
-        //         //             <li><a class="dropdown-item" href="/gamingconsoles">Gaming Consoles</a></li>
-        //         //             <li><a class="dropdown-item" href="/accessories">Accessories</a></li>
-        //         //           </ul>
-        //         //         </li> */}
-
-
-        //         //         <li class="nav-item dropdown">
-        //         //           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        //         //             Dropdown
-        //         //           </a>
-        //         //           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-        //         //             <li><a class="dropdown-item" href="#">Action</a></li>
-        //         //             <li><a class="dropdown-item" href="#">Another action</a></li>
-
-        //         //             <li><a class="dropdown-item" href="#">Something else here</a></li>
-        //         //           </ul>
-        //         //         </li>
-
-        //         //       </ul>
-        //         //     </div>
-        //         //   </div>
-        //         // </nav>
-
-
-
-
-
-
-
         );
 
 }
