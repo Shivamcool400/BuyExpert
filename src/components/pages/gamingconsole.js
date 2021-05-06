@@ -84,19 +84,19 @@ const reset = () => {
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="/gaming_1.jpg" class="d-block w-100" alt="..." />
+      <img src="/gaming_1.webp" class="d-block w-100" alt="..." />
       <div class="carousel-caption">
         <h5 className="caption">"True gamers needs a "ideal" choice!"</h5>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="/gaming_2.jpg" class="d-block w-100" alt="..." />
+      <img src="/gaming_2.webp" class="d-block w-100" alt="..." />
       <div class="carousel-caption">
         <h5 className="caption">"Gaming must be smooth and fun."</h5>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="gaming_3.jpg" class="d-block w-100" alt="..." />
+      <img src="gaming_3.webp" class="d-block w-100" alt="..." />
       <div class="carousel-caption">
         <h5 className="caption">"Go on!! Search your required device!"</h5>
       </div>
@@ -258,11 +258,11 @@ const reset = () => {
     </figure>
         <div className="row">
           <div className="col image">
-          <img src="/microsoft.png" className="rounded mx-auto d-block w-40 h-60 image" alt="..." />
+          <img src="/microsoft.webp" className="rounded mx-auto d-block w-40 h-60 image" alt="..." />
 
           </div>
           <div className="col image">
-          <img src="/sony.png" className="rounded mx-auto d-block w-40 h-60 image" alt="..." />
+          <img src="/sony.webp" className="rounded mx-auto d-block w-40 h-60 image" alt="..." />
           </div>
           
         </div>

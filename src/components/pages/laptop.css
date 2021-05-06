@@ -7,6 +7,7 @@
     font-style: normal;
     font-weight: normal;
     src: local('SamsungOne 400'), url('SamsungOne-400.woff') format('woff');
+    font-display: swap;
     }
     
 
@@ -15,6 +16,7 @@
     font-style: normal;
     font-weight: normal;
     src: local('SamsungOne 700'), url('SamsungOne-700.woff') format('woff');
+    font-display: swap;
     }
     
 
@@ -23,12 +25,14 @@
     font-style: normal;
     font-weight: normal;
     src: local('Samsung Sharp Sans Bold'), url('SamsungSharpSans-Bold.woff') format('woff');
+    font-display: swap;
     }
  @font-face {
     font-family: 'Samsung Sharp Sans Regular Regular';
     font-style: normal;
     font-weight: normal;
     src: local('Samsung Sharp Sans Regular Regular'), url('./SamsungSharpSansRegular-Regular.woff') format('woff');
+    font-display: swap;
     }
 
  
@@ -38,6 +42,7 @@
     font-style: normal;
     font-weight: normal;
     src: local('SamsungSharpSans-Bold'), url('./samsung_s_sharp_by_629lyric-d8y77l9.woff') format('woff');
+    font-display: swap;
     }
 
 
