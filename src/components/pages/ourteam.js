@@ -11,7 +11,7 @@ function Ourteam() {
   <div className="row team_start">
     <div className="column">
       <div className="card team-image">
-        <img src="/shivam.jpg" alt="shivam" />
+        <img src="/shivam.webp" className="img-fluid" alt="shivam" />
         <div className="container">
           <h2>Shivam Gupta</h2>
           <p className="title">Founder &amp; Web Developer</p>
@@ -23,7 +23,7 @@ function Ourteam() {
     </div>
     <div className="column">
       <div className="card team-image">
-        <img src="/ravish.jpg" alt="Ravish" />
+        <img src="/ravish.webp" className="img-fluid" alt="Ravish" />
         <div className="container">
           <h2>Ravish Goyal</h2>
           <p className="title">Web Developer &amp; Debugger</p>
@@ -35,7 +35,7 @@ function Ourteam() {
     </div>
     <div className="column">
       <div className="card team-image">
-        <img src="/bral.jpeg" alt="bral" />
+        <img src="/bral.webp" className="img-fluid" alt="bral" />
         <div className="container">
           <h2>Anurag Bral</h2>
           <p className="title">Data Manager and Analyzer</p>
@@ -49,7 +49,7 @@ function Ourteam() {
     <div className="row team_start">
     <div className="column">
       <div className="card team-image">
-        <img src="/bindu.jpg" alt="shivam" />
+        <img src="/bindu.webp" className="img-fluid" alt="shivam" />
         <div className="container">
           <h2>Bindu Bharti</h2>
           <p className="title">Content Writer</p>
@@ -61,7 +61,7 @@ function Ourteam() {
     </div>
     <div className="column">
       <div className="card team-image">
-        <img src="/surmeet.jpg" alt="Ravish" />
+        <img src="/surmeet.webp" className="img-fluid" alt="Ravish" />
         <div className="container">
           <h2>Surmeet Kaur</h2>
           <p className="title">Content Writer</p>

@@ -133,19 +133,19 @@ const reset = () => {
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="/access_1.jpg" class="d-block w-100" alt="..." />
+      <img src="/access_1.webp" class="d-block w-100" alt="..." />
       <div class="carousel-caption">
         <h5 className="caption">"Listening to must must be fun and soothing"</h5>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="/access_2.jpg" class="d-block w-100" alt="..." />
+      <img src="/access_2.webp" class="d-block w-100" alt="..." />
       <div class="carousel-caption">
         <h5 className="caption">" "Ideal" accessories for "ideal" devices "</h5>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="access_3.jpg" class="d-block w-100" alt="..." />
+      <img src="access_3.webp" class="d-block w-100" alt="..." />
       <div class="carousel-caption">
         <h5 className="caption">"Go on!! Search your required Accessories!"</h5>
       </div>
@@ -349,26 +349,26 @@ const reset = () => {
     </figure>
         <div className="row">
           <div className="col-sm-12 col-md-4 image">
-          <img src="/oppo.jpg" className="rounded mx-auto d-block w-50 h-70 image" alt="..." />
+          <img src="/oppo.webp" className="rounded mx-auto d-block w-50 h-70 image" alt="..." />
 
           </div>
           <div className="col-sm-12 col-md-4 image">
-          <img src="/samsung.png" className="rounded mx-auto d-block w-50 h-70 image" alt="..." />
+          <img src="/samsung.webp" className="rounded mx-auto d-block w-50 h-70 image" alt="..." />
           </div>
           <div className="col-sm-12 col-md-4 image">
-          <img src="/oneplus.jpg" className="rounded mx-auto d-block w-50 h-70 image" alt="..." />
+          <img src="/oneplus.webp" className="rounded mx-auto d-block w-50 h-70 image" alt="..." />
           </div>
         </div>
 
         <div className="row">
           <div className="col-sm-12 col-md-4 image">
-          <img src="/mi.jpg" className="rounded mx-auto d-block w-50 h-70 image" alt="..." />
+          <img src="/mi.webp" className="rounded mx-auto d-block w-50 h-70 image" alt="..." />
           </div>
           <div className="col-sm-12 col-md-4 image">
-          <img src="/apple.png" className="rounded mx-auto d-block w-50 h-70 image" alt="..." />
+          <img src="/apple.webp" className="rounded mx-auto d-block w-50 h-70 image" alt="..." />
           </div>
           <div className="col-sm-12 col-md-4 image">
-          <img src="/micromax.png" className="rounded mx-auto d-block w-50 h-70 image" alt="..." />
+          <img src="/micromax.webp" className="rounded mx-auto d-block w-50 h-70 image" alt="..." />
           </div>
         </div>
 

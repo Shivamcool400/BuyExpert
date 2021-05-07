@@ -69,6 +69,7 @@
     font-style: normal;
     font-weight: normal;
     src: local('SamsungOne 700'), url('SamsungOne-700.woff') format('woff');
+    font-display: swap;
     }
 
 .followus {

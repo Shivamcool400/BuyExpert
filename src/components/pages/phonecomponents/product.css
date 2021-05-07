@@ -7,6 +7,7 @@
     font-style: normal;
     font-weight: normal;
     src: local('SamsungOne 400'), url('SamsungOne-400.woff') format('woff');
+    font-display: swap;
     }
     
 
@@ -15,6 +16,7 @@
     font-style: normal;
     font-weight: normal;
     src: local('SamsungOne 700'), url('SamsungOne-700.woff') format('woff');
+    font-display: swap;
     }
     
 
@@ -23,12 +25,14 @@
     font-style: normal;
     font-weight: normal;
     src: local('Samsung Sharp Sans Bold'), url('SamsungSharpSans-Bold.woff') format('woff');
+    font-display: swap;
     }
  @font-face {
     font-family: 'Samsung Sharp Sans Regular Regular';
     font-style: normal;
     font-weight: normal;
     src: local('Samsung Sharp Sans Regular Regular'), url('./SamsungSharpSansRegular-Regular.woff') format('woff');
+    font-display: swap;
     }
 
  
@@ -38,6 +42,7 @@
     font-style: normal;
     font-weight: normal;
     src: local('SamsungSharpSans-Bold'), url('./samsung_s_sharp_by_629lyric-d8y77l9.woff') format('woff');
+    font-display: swap;
     }
 
 
@@ -45,7 +50,7 @@
 
  .back {
         background-image: linear-gradient(to top right,#361fa7 50%,#3c27a1 50%);
-        font-family:'SamsungSharpSans-Bold' ;
+        font-family:'SamsungSharpSans-Bold',serif,sans-serif ;
         color: white;
     }
     .msg-heading {
@@ -54,7 +59,7 @@
         color:white;
         display: block;
         text-align: center;
-     font-family: SamsungSharpSans-Bold  ;
+     font-family: SamsungSharpSans-Bold,serif,sans-serif  ;
      font-size: 38px;
      padding-top: 5%;
      padding-bottom: 4%;
@@ -82,7 +87,7 @@
                 color:white;
               display: block;
               text-align: center;
-              font-family: 'SamsungOne 400';
+              font-family: 'SamsungOne 400',serif,sans-serif;
               font-size: 18px;
               font-weight: 400;
               padding-right: 8%;
@@ -92,7 +97,7 @@
     .heading-2 {
                 display: block;
                 text-align: center;
-             font-family: SamsungSharpSans-Bold  ;
+             font-family: SamsungSharpSans-Bold,serif,sans-serif  ;
              font-size: 38px;
               }
 

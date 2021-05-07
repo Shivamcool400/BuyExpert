@@ -7,7 +7,7 @@
     margin-top: 90px;
     margin-bottom: 30px;
     color: black;
-    font-family: SamsungSharpSans-Bold  ;
+    font-family: SamsungSharpSans-Bold,serif,sans-serif  ;
     font-size: 30px;
 }
 
@@ -19,14 +19,14 @@
 }
 
 .content-head {
-    font-family: SamsungSharpSans-Bold  ;
+    font-family: SamsungSharpSans-Bold,serif,sans-serif  ;
     font-size: 2rem;
     text-align: center;
     margin-bottom: 60px;
 }
 
 .para {
-    font-family: 'SamsungOne 400';
+    font-family: 'SamsungOne 400',serif,sans-serif;
     font-size: 1.3rem;
     width: 90%;
     margin: auto;
@@ -79,6 +79,7 @@
      .content-head {
          font-size: 38px;
      }
+     
  }
 
 
@@ -87,6 +88,7 @@
     font-style: normal;
     font-weight: normal;
     src: local('SamsungOne 400'), url('SamsungOne-400.woff') format('woff');
+    font-display: swap;
     }
     
 
@@ -95,6 +97,7 @@
     font-style: normal;
     font-weight: normal;
     src: local('SamsungOne 700'), url('SamsungOne-700.woff') format('woff');
+    font-display: swap;
     }
     
 
@@ -103,12 +106,14 @@
     font-style: normal;
     font-weight: normal;
     src: local('Samsung Sharp Sans Bold'), url('SamsungSharpSans-Bold.woff') format('woff');
+    font-display: swap;
     }
  @font-face {
     font-family: 'Samsung Sharp Sans Regular Regular';
     font-style: normal;
     font-weight: normal;
     src: local('Samsung Sharp Sans Regular Regular'), url('./SamsungSharpSansRegular-Regular.woff') format('woff');
+    font-display: swap;
     }
 
  
@@ -118,6 +123,7 @@
     font-style: normal;
     font-weight: normal;
     src: local('SamsungSharpSans-Bold'), url('./samsung_s_sharp_by_629lyric-d8y77l9.woff') format('woff');
+    font-display: swap;
     }
 
 

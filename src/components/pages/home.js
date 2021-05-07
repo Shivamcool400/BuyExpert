@@ -54,19 +54,19 @@ class Home extends Component{
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="/homenew1-1.jpg" class="d-block w-100" alt="..." />
+      <img src="/homenew1-1.webp" class="d-block w-100 img-fluid" alt="..." />
       <div class="carousel-caption">
         <h5 className="caption">Find your ideal device in just a few clicks.</h5>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="/homenew2.jpg" class="d-block w-100" alt="..." />
+      <img src="/homenew2.webp" class="d-block w-100 img-fluid" alt="..." />
       <div class="carousel-caption">
         <h5 className="caption">Utilize your money in the best way.</h5>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="homenew3.jpg" class="d-block w-100" alt="..." />
+      <img src="homenew3.webp" class="d-block w-100 img-fluid" alt="..." />
       <div class="carousel-caption">
         <h5 className="caption">Buy the best product that satisfies your needs.</h5>
       </div>
@@ -189,7 +189,7 @@ At BuyIdeal we give you relevant and unbiased suggestions, based on your needs, 
   <div className="row">
     <div className="col"> </div> <div className="col-sm-12 col-md-4">
       <div className="card m-3">
-        <img src="/phone.jpg" className="card-img-top " alt="..." />
+        <img src="/phone.webp" className="card-img-top w-100 h-100  " alt="..." />
         <div className="card-body">
           <h5 className="card-title text-center"> <b>Phones</b> </h5> 
           <p className="card-text text-center"> "Find the best phone which meets your required needs with our approved  guidance"</p>  <div classname="wrapper-btn">
@@ -200,7 +200,7 @@ At BuyIdeal we give you relevant and unbiased suggestions, based on your needs, 
     </div> 
     <div className="col-sm-12 col-md-4">
       <div className="card m-3">
-        <img src="/gamingconsole.jpg" className="card-img-top" alt="..." />
+        <img src="/gamingconsole.webp" className="card-img-top w-100 h-100" alt="..." />
         <div className="card-body">
           <h5 className="card-title text-center"> <b> Gaming Consoles</b> </h5> 
           <p className="card-text text-center"> "Winner winner chicken dinner!! True gamers always require  relevant choices."</p>
@@ -215,7 +215,7 @@ At BuyIdeal we give you relevant and unbiased suggestions, based on your needs, 
     <div className="col"> </div> 
     <div className="col-sm-12 col-md-4">
       <div className="card m-3">
-        <img src="/laptop.jpg" className="card-img-top " alt="..." />
+        <img src="/laptop.webp" className="card-img-top w-100 h-100 " alt="..." />
         <div className="card-body">
           <h5 className="card-title text-center"> <b>Laptops</b> </h5> 
           <p className="card-text text-center"> "Find a genuine laptop for youself"</p> 
@@ -225,7 +225,7 @@ At BuyIdeal we give you relevant and unbiased suggestions, based on your needs, 
     </div> 
     <div className="col-sm-12 col-md-4">
       <div className="card m-3">
-        <img src="/accesories.jpg" className="card-img-top" alt="..." />
+        <img src="/accesories.webp" className="card-img-top w-100 h-100" alt="..." />
         <div className="card-body">
           <h5 className="card-title text-center"> <b>Accessories</b> </h5> 
           <p className="card-text text-center">"Finding the thing which is right for u buddy!</p>
