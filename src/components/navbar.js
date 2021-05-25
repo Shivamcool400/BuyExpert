@@ -117,6 +117,7 @@ function Navbar() {
         const handleClick = () => setClick(!click);
         const closeMobileMenu = () => {
           setSidebar(!sidebar);
+          window.scrollTo(0,0);
         }
 
         const [sidebar, setSidebar] = useState(false);
@@ -127,9 +128,11 @@ function Navbar() {
 
   const toggledd = () => setOpen(!open);
 
+
   const closeDropdownandmenu = () => {
     setOpen(!open);
     setSidebar(!sidebar);
+    window.scrollTo(0,0);
   }
 
   const subNav = [
@@ -174,7 +177,7 @@ function Navbar() {
             <Link to='/home' className='pagelinks' onClick={closeMobileMenu}><AiIcons.AiFillHome /><SidebarLabel>Home</SidebarLabel></Link>
             <Link to='/aboutus' className='pagelinks' onClick={closeMobileMenu}><IoIcons.IoIosPaper /><SidebarLabel>About Us</SidebarLabel></Link>
             <Link to='#' className='pagelinks' onClick={toggledd}><IoIcons.IoIosEye /><SidebarLabel>Find Now?</SidebarLabel>
-            <div className='arrow_icon'>{open ? <RiIcons.RiArrowDownSFill /> : <RiIcons.RiArrowUpSFill /> }</div>
+            <div className='arrow_icon'>{open ? <RiIcons.RiArrowUpSFill /> : <RiIcons.RiArrowDownSFill /> }</div>
             </Link>
             {open && (
               subNav.map((item, index) => {

@@ -18,10 +18,13 @@ import Protected from './protected';
 import { AuthProvider } from './Auth';
 import Legal from './components/pages/legal';
 import Ourteam from './components/pages/ourteam';
+import Benefits from './components/pages/benefits';
+import Faqs from './components/pages/faqs';
 
 
 function App() {
   const [{}, dispatch] = useStateValue();
+
   const authListener = () => {
     Fire.auth().onAuthStateChanged((user) => {
       if (user) {
@@ -56,6 +59,8 @@ function App() {
                   <Route path='/login'  component={Login} />
                   <Route path='/legal'  component={Legal} />
                   <Route path='/ourteam' component={Ourteam} />
+                  <Route path='/benefits' component={Benefits} />
+                  <Route path='/faqs' component={Faqs} />
                   
                   <Protected path='/phones' component={Phones}/>
                   <Protected path='/laptops' component={Laptops}/>
@@ -63,6 +68,7 @@ function App() {
                   <Protected path='/accessories' component={Accessories}/>
                   
                    <Route path='/forgot' component={Forgotpassword}/>
+                   
                   
               
               </Switch>
