@@ -210,16 +210,32 @@ margin-top: 20px;
 }
 
 button.mainbtn {
-    background:black;
+    /* background: #1888ffb7; */
+    background-color: rgba(0, 0, 0, 0.767);
+    width: 60%;
     color: white;
     display: block;
     margin:auto;
+    border-radius: 50px;
     }
    /*  necessary as a underline apperars */
     a:hover, a:visited, a:link, a:active
     {
         text-decoration: none;
     }
+
+button.mainbtn:hover {
+    background: rgba(255, 192, 203, 0.1);
+    border: 2px solid #1888ff;
+    color: black;
+    
+}
+
+
+.search_icon {
+    float: right;
+    padding-top: 5px;
+}
 
 
 

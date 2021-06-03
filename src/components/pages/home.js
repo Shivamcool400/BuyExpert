@@ -193,7 +193,7 @@ At BuyIdeal we give you relevant and unbiased suggestions, based on your needs, 
         <div className="card-body">
           <h5 className="card-title text-center"> <b>Phones</b> </h5> 
           <p className="card-text text-center"> "Find the best phone which meets your required needs with our approved  guidance"</p>  <div classname="wrapper-btn">
-           <a className="phn" href="/phones"> <button type="button"  className="btn btn-lg btn-outline-secondary mainbtn">Find!</button></a>
+           <a className="phn" href="/phones"> <button type="button"  className="btn btn-lg btn-outline-secondary mainbtn">Find!<i className="fas fa-search search_icon"></i></button></a>
           </div> 
         </div> 
       </div>
@@ -205,7 +205,7 @@ At BuyIdeal we give you relevant and unbiased suggestions, based on your needs, 
           <h5 className="card-title text-center"> <b> Gaming Consoles</b> </h5> 
           <p className="card-text text-center"> "Winner winner chicken dinner!! True gamers always require  relevant choices."</p>
           <div className="wrapper-btn">
-          <a className="phn" href="/gamingconsoles"><button type="button" className="btn btn-lg btn-outline-secondary mainbtn">Find!</button></a>
+          <a className="phn" href="/gamingconsoles"><button type="button" className="btn btn-lg btn-outline-secondary mainbtn">Find!<i className="fas fa-search search_icon"></i></button></a>
           </div></div> 
       </div>
     </div> 
@@ -220,7 +220,7 @@ At BuyIdeal we give you relevant and unbiased suggestions, based on your needs, 
           <h5 className="card-title text-center"> <b>Laptops</b> </h5> 
           <p className="card-text text-center"> "Find a genuine laptop for youself"</p> 
           <div className="wrapper-btn">
-          <a className="phn" href="/laptops"><button type="button" className="btn btn-lg btn-outline-secondary mainbtn">Find!</button></a>
+          <a className="phn" href="/laptops"><button type="button" className="btn btn-lg btn-outline-secondary mainbtn">Find!<i className="fas fa-search search_icon"></i></button></a>
           </div> </div> </div>
     </div> 
     <div className="col-sm-12 col-md-4">
@@ -230,7 +230,7 @@ At BuyIdeal we give you relevant and unbiased suggestions, based on your needs, 
           <h5 className="card-title text-center"> <b>Accessories</b> </h5> 
           <p className="card-text text-center">"Finding the thing which is right for u buddy!</p>
           <div className="wrapper-btn">
-          <a className="phn" href="/accessories"><button type="button" className="btn btn-lg btn-outline-secondary mainbtn">Find!</button></a>
+          <a className="phn" href="/accessories"><button type="button" className="btn btn-lg btn-outline-secondary mainbtn">Find!<i className="fas fa-search search_icon"></i></button></a>
           </div></div> </div>
     </div>  <div className="col"> </div>
   </div>
