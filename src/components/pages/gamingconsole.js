@@ -23,7 +23,7 @@ import Playstation_4 from './phonecomponents/playstation/playstation_4';
   db.collection('playstation').orderBy("price").onSnapshot(snapshot => (
     setPs(snapshot.docs.map(doc => doc.data()))
   ))
-  
+  alert("The site is under development mode! so the reviews may be repetitive or inappropriate in some Sections. we are constantly working to provide you the best recommendations earliest! Team Buyideal")
  }, []);
 
 
