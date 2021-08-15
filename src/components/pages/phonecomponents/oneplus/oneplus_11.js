@@ -3,30 +3,30 @@ import Fire from '../../../../firebase';
 import Product from '../product';
 
 
-const Oneplus_10 = () => {
+const Oneplus_11 = () => {
    
 
     useEffect(() => {
       const db = Fire.firestore();
-       db.collection('head_10_oneplus').orderBy("choice").onSnapshot(snapshot => (
+       db.collection('head_11_oneplus').orderBy("choice").onSnapshot(snapshot => (
          setHead(snapshot.docs.map(doc => doc.data()))
        ))
-       db.collection('specs_10_oneplus').orderBy("name").onSnapshot(snapshot => (
+       db.collection('specs_11_oneplus').onSnapshot(snapshot => (
          setSpecs(snapshot.docs.map(doc => doc.data()))
        ))
-       db.collection('youtube_10_oneplus').onSnapshot(snapshot => (
+       db.collection('youtube_11_oneplus').onSnapshot(snapshot => (
          setYoutube(snapshot.docs.map(doc => doc.data()))
        ))
-       db.collection('blog_10_oneplus').onSnapshot(snapshot => (
+       db.collection('blog_11_oneplus').onSnapshot(snapshot => (
          setBlog(snapshot.docs.map(doc => doc.data()))
        ))
-       db.collection('seller_10_oneplus').orderBy("name").onSnapshot(snapshot => (
+       db.collection('seller_11_oneplus').orderBy("name").onSnapshot(snapshot => (
          setSeller(snapshot.docs.map(doc => doc.data()))
        ))
-       db.collection('gaming_10_oneplus').onSnapshot(snapshot => (
+       db.collection('gaming_11_oneplus').onSnapshot(snapshot => (
          setGaming(snapshot.docs.map(doc => doc.data()))
        ))
-       db.collection('tech_10_oneplus').orderBy("serial").onSnapshot(snapshot => (
+       db.collection('tech_11_oneplus').orderBy("serial").onSnapshot(snapshot => (
          setTech(snapshot.docs.map(doc => doc.data()))
        ))
        }, []);
@@ -52,5 +52,5 @@ const Oneplus_10 = () => {
     )
 }
 
-export default Oneplus_10
+export default Oneplus_11
 

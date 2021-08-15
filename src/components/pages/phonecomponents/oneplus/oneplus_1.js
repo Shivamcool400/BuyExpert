@@ -11,7 +11,7 @@ const Oneplus_1 = () => {
        db.collection('head_1_oneplus').orderBy("choice").onSnapshot(snapshot => (
          setHead(snapshot.docs.map(doc => doc.data()))
        ))
-       db.collection('specs_1_oneplus').onSnapshot(snapshot => (
+       db.collection('specs_1_oneplus').orderBy("name").onSnapshot(snapshot => (
          setSpecs(snapshot.docs.map(doc => doc.data()))
        ))
        db.collection('youtube_1_oneplus').onSnapshot(snapshot => (

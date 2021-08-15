@@ -296,7 +296,7 @@ const reset = () => {
 {selected === "Dell" && price === "20000-30000" && genere === "normal" && show  && <>           <Dell_1 /><Dell_2 /> <Dell_3/>  </>}
 {selected === "Dell" && price === "20000-30000" && genere === "speedy" && show  && <>           <Dell_1 /><Dell_2 /> <Dell_3/>  </>}
 {selected === "Dell" && price === "20000-30000" && genere === "coding" && show  && <>           <Dell_1 /><Dell_2 /> <Dell_3/>  </>}
-{selected === "Dell" && price === "20000-30000" && genere === "normal" && show  && <>           <Dell_1 /><Dell_2 /> <Dell_3/>  </>}
+{/* {selected === "Dell" && price === "20000-30000" && genere === "normal" && show  && <>           <Dell_1 /><Dell_2 /> <Dell_3/>  </>}
 {selected === "Dell" && price === "20000-30000" && genere === "speedy" && show  && <>           <Dell_1 /><Dell_2 /> <Dell_3/>  </>}
 {selected === "Dell" && price === "20000-30000" && genere === "gaming" && show  && <>           <Dell_1 /><Dell_2 /> <Dell_3/>  </>}
 {selected === "Dell" && price === "20000-30000" && genere === "coding" && show  && <>           <Dell_1 /><Dell_2 /> <Dell_3/>  </>}
@@ -308,12 +308,12 @@ const reset = () => {
 {selected === "Dell" && price === "20000-30000" && genere === "gaming" && show  && <>       <Dell_1 /><Dell_2 /> <Dell_3/>  </>}
 {selected === "Dell" && price === "20000-30000" && genere === "normal" && show  && <>       <Dell_1 /><Dell_2 /> <Dell_3/>  </>}
 {selected === "Dell" && price === "20000-30000" && genere === "coding" && show  && <>       <Dell_1 /><Dell_2 /> <Dell_3/>  </>}
- 
+  */}
 {selected === "Dell" && price === "30000-40000" && genere === "gaming" && show  && <>           <Dell_4 /><Dell_5 /> <Dell_6/>  </>}
 {selected === "Dell" && price === "30000-40000" && genere === "normal" && show  && <>           <Dell_4 /><Dell_5 /> <Dell_6/>  </>}
 {selected === "Dell" && price === "30000-40000" && genere === "speedy" && show  && <>           <Dell_4 /><Dell_5 /> <Dell_6/>  </>}
 {selected === "Dell" && price === "30000-40000" && genere === "coding" && show  && <>           <Dell_4 /><Dell_5 /> <Dell_6/>  </>}
-{selected === "Dell" && price === "30000-40000" && genere === "normal" && show  && <>           <Dell_4 /><Dell_5 /> <Dell_6/>  </>}
+{/* {selected === "Dell" && price === "30000-40000" && genere === "normal" && show  && <>           <Dell_4 /><Dell_5 /> <Dell_6/>  </>}
 {selected === "Dell" && price === "30000-40000" && genere === "speedy" && show  && <>           <Dell_4 /><Dell_5 /> <Dell_6/>  </>}
 {selected === "Dell" && price === "30000-40000" && genere === "gaming" && show  && <>           <Dell_4 /><Dell_5 /> <Dell_6/>  </>}
 {selected === "Dell" && price === "30000-40000" && genere === "coding" && show  && <>           <Dell_4 /><Dell_5 /> <Dell_6/>  </>}
@@ -325,12 +325,12 @@ const reset = () => {
 {selected === "Dell" && price === "30000-40000" && genere === "gaming" && show  && <>       <Dell_4 /><Dell_5 /> <Dell_6/>  </>}
 {selected === "Dell" && price === "30000-40000" && genere === "normal" && show  && <>       <Dell_4 /><Dell_5 /> <Dell_6/>  </>}
 {selected === "Dell" && price === "30000-40000" && genere === "coding" && show  && <>       <Dell_4 /><Dell_5 /> <Dell_6/>  </>}
-
+ */}
 {selected === "Dell" && price === "40000-50000" && genere === "gaming" && show  && <>           <Dell_7 /><Dell_8 /> <Dell_9/>  </>}
 {selected === "Dell" && price === "40000-50000" && genere === "normal" && show  && <>           <Dell_7 /><Dell_8 /> <Dell_9/>  </>}
 {selected === "Dell" && price === "40000-50000" && genere === "speedy" && show  && <>           <Dell_7 /><Dell_8 /> <Dell_9/>  </>}
 {selected === "Dell" && price === "40000-50000" && genere === "coding" && show  && <>           <Dell_7 /><Dell_8 /> <Dell_9/>  </>}
-{selected === "Dell" && price === "40000-50000" && genere === "normal" && show  && <>           <Dell_7 /><Dell_8 /> <Dell_9/>  </>}
+{/* {selected === "Dell" && price === "40000-50000" && genere === "normal" && show  && <>           <Dell_7 /><Dell_8 /> <Dell_9/>  </>}
 {selected === "Dell" && price === "40000-50000" && genere === "speedy" && show  && <>           <Dell_7 /><Dell_8 /> <Dell_9/>  </>}
 {selected === "Dell" && price === "40000-50000" && genere === "gaming" && show  && <>           <Dell_7 /><Dell_8 /> <Dell_9/>  </>}
 {selected === "Dell" && price === "40000-50000" && genere === "coding" && show  && <>           <Dell_7 /><Dell_8 /> <Dell_9/>  </>}
@@ -342,12 +342,12 @@ const reset = () => {
 {selected === "Dell" && price === "40000-50000" && genere === "gaming" && show  && <>       <Dell_7 /><Dell_8 /> <Dell_9/>  </>}
 {selected === "Dell" && price === "40000-50000" && genere === "normal" && show  && <>       <Dell_7 /><Dell_8 /> <Dell_9/>  </>}
 {selected === "Dell" && price === "40000-50000" && genere === "coding" && show  && <>       <Dell_7 /><Dell_8 /> <Dell_9/>  </>}
-
+ */}
 {selected === "Dell" && price === "above 50000" && genere === "gaming" && show  && <>           <Dell_10 /><Dell_11 /> <Dell_12/>  </>}
 {selected === "Dell" && price === "above 50000" && genere === "normal" && show  && <>           <Dell_10 /><Dell_11 /> <Dell_12/>  </>}
 {selected === "Dell" && price === "above 50000" && genere === "speedy" && show  && <>           <Dell_10 /><Dell_11 /> <Dell_12/>  </>}
 {selected === "Dell" && price === "above 50000" && genere === "coding" && show  && <>           <Dell_10 /><Dell_11 /> <Dell_12/>  </>}
-{selected === "Dell" && price === "above 50000" && genere === "normal" && show  && <>           <Dell_10 /><Dell_11 /> <Dell_12/>  </>}
+{/* {selected === "Dell" && price === "above 50000" && genere === "normal" && show  && <>           <Dell_10 /><Dell_11 /> <Dell_12/>  </>}
 {selected === "Dell" && price === "above 50000" && genere === "speedy" && show  && <>           <Dell_10 /><Dell_11 /> <Dell_12/>  </>}
 {selected === "Dell" && price === "above 50000" && genere === "gaming" && show  && <>           <Dell_10 /><Dell_11 /> <Dell_12/>  </>}
 {selected === "Dell" && price === "above 50000" && genere === "coding" && show  && <>           <Dell_10 /><Dell_11 /> <Dell_12/>  </>}
@@ -359,14 +359,14 @@ const reset = () => {
 {selected === "Dell" && price === "above 50000" && genere === "gaming" && show  && <>       <Dell_10 /><Dell_11 /> <Dell_12/>  </>}
 {selected === "Dell" && price === "above 50000" && genere === "normal" && show  && <>       <Dell_10 /><Dell_11 /> <Dell_12/>  </>}
 {selected === "Dell" && price === "above 50000" && genere === "coding" && show  && <>       <Dell_10 /><Dell_11 /> <Dell_12/>  </>}
-
+ */}
 {/* acer */}
 
 {selected === "Acer" && price === "20000-30000" && genere === "gaming" && show && <>           <Acer_1 /><Acer_2 /> <Acer_3/>  </>}
 {selected === "Acer" && price === "20000-30000" && genere === "normal" && show && <>           <Acer_1 /><Acer_2 /> <Acer_3/>  </>}
 {selected === "Acer" && price === "20000-30000" && genere === "speedy" && show && <>           <Acer_1 /><Acer_2 /> <Acer_3/>  </>}
 {selected === "Acer" && price === "20000-30000" && genere === "coding" && show && <>           <Acer_1 /><Acer_2 /> <Acer_3/>  </>}
-{selected === "Acer" && price === "20000-30000" && genere === "normal" && show && <>           <Acer_1 /><Acer_2 /> <Acer_3/>  </>}
+{/* {selected === "Acer" && price === "20000-30000" && genere === "normal" && show && <>           <Acer_1 /><Acer_2 /> <Acer_3/>  </>}
 {selected === "Acer" && price === "20000-30000" && genere === "speedy" && show && <>           <Acer_1 /><Acer_2 /> <Acer_3/>  </>}
 {selected === "Acer" && price === "20000-30000" && genere === "gaming" && show && <>           <Acer_1 /><Acer_2 /> <Acer_3/>  </>}
 {selected === "Acer" && price === "20000-30000" && genere === "coding" && show && <>           <Acer_1 /><Acer_2 /> <Acer_3/>  </>}
@@ -378,12 +378,12 @@ const reset = () => {
 {selected === "Acer" && price === "20000-30000" && genere === "gaming" && show && <>       <Acer_1 /><Acer_2 /> <Acer_3/>  </>}
 {selected === "Acer" && price === "20000-30000" && genere === "normal" && show && <>       <Acer_1 /><Acer_2 /> <Acer_3/>  </>}
 {selected === "Acer" && price === "20000-30000" && genere === "coding" && show && <>       <Acer_1 /><Acer_2 /> <Acer_3/>  </>}
- 
+  */}
 {selected === "Acer" && price === "30000-40000" && genere === "gaming" && show && <>           <Acer_4 /><Acer_5 /> <Acer_6/>  </>}
 {selected === "Acer" && price === "30000-40000" && genere === "normal" && show && <>           <Acer_4 /><Acer_5 /> <Acer_6/>  </>}
 {selected === "Acer" && price === "30000-40000" && genere === "speedy" && show && <>           <Acer_4 /><Acer_5 /> <Acer_6/>  </>}
 {selected === "Acer" && price === "30000-40000" && genere === "coding" && show && <>           <Acer_4 /><Acer_5 /> <Acer_6/>  </>}
-{selected === "Acer" && price === "30000-40000" && genere === "normal" && show && <>           <Acer_4 /><Acer_5 /> <Acer_6/>  </>}
+{/* {selected === "Acer" && price === "30000-40000" && genere === "normal" && show && <>           <Acer_4 /><Acer_5 /> <Acer_6/>  </>}
 {selected === "Acer" && price === "30000-40000" && genere === "speedy" && show && <>           <Acer_4 /><Acer_5 /> <Acer_6/>  </>}
 {selected === "Acer" && price === "30000-40000" && genere === "gaming" && show && <>           <Acer_4 /><Acer_5 /> <Acer_6/>  </>}
 {selected === "Acer" && price === "30000-40000" && genere === "coding" && show && <>           <Acer_4 /><Acer_5 /> <Acer_6/>  </>}
@@ -395,12 +395,12 @@ const reset = () => {
 {selected === "Acer" && price === "30000-40000" && genere === "gaming" && show && <>       <Acer_4 /><Acer_5 /> <Acer_6/>  </>}
 {selected === "Acer" && price === "30000-40000" && genere === "normal" && show && <>       <Acer_4 /><Acer_5 /> <Acer_6/>  </>}
 {selected === "Acer" && price === "30000-40000" && genere === "coding" && show && <>       <Acer_4 /><Acer_5 /> <Acer_6/>  </>}
-
+ */}
 {selected === "Acer" && price === "40000-50000" && genere === "gaming" && show && <>           <Acer_7 /><Acer_8 /> <Acer_9/>  </>}
 {selected === "Acer" && price === "40000-50000" && genere === "normal" && show && <>           <Acer_7 /><Acer_8 /> <Acer_9/>  </>}
 {selected === "Acer" && price === "40000-50000" && genere === "speedy" && show && <>           <Acer_7 /><Acer_8 /> <Acer_9/>  </>}
 {selected === "Acer" && price === "40000-50000" && genere === "coding" && show && <>           <Acer_7 /><Acer_8 /> <Acer_9/>  </>}
-{selected === "Acer" && price === "40000-50000" && genere === "normal" && show && <>           <Acer_7 /><Acer_8 /> <Acer_9/>  </>}
+{/* {selected === "Acer" && price === "40000-50000" && genere === "normal" && show && <>           <Acer_7 /><Acer_8 /> <Acer_9/>  </>}
 {selected === "Acer" && price === "40000-50000" && genere === "speedy" && show && <>           <Acer_7 /><Acer_8 /> <Acer_9/>  </>}
 {selected === "Acer" && price === "40000-50000" && genere === "gaming" && show && <>           <Acer_7 /><Acer_8 /> <Acer_9/>  </>}
 {selected === "Acer" && price === "40000-50000" && genere === "coding" && show && <>           <Acer_7 /><Acer_8 /> <Acer_9/>  </>}
@@ -412,12 +412,12 @@ const reset = () => {
 {selected === "Acer" && price === "40000-50000" && genere === "gaming" && show && <>       <Acer_7 /><Acer_8 /> <Acer_9/>  </>}
 {selected === "Acer" && price === "40000-50000" && genere === "normal" && show && <>       <Acer_7 /><Acer_8 /> <Acer_9/>  </>}
 {selected === "Acer" && price === "40000-50000" && genere === "coding" && show && <>       <Acer_7 /><Acer_8 /> <Acer_9/>  </>}
-
+ */}
 {selected === "Acer" && price === "above 50000" && genere === "gaming" && show && <>           <Acer_10 /><Acer_11 /> <Acer_12/>  </>}
 {selected === "Acer" && price === "above 50000" && genere === "normal" && show && <>           <Acer_10 /><Acer_11 /> <Acer_12/>  </>}
 {selected === "Acer" && price === "above 50000" && genere === "speedy" && show && <>           <Acer_10 /><Acer_11 /> <Acer_12/>  </>}
 {selected === "Acer" && price === "above 50000" && genere === "coding" && show && <>           <Acer_10 /><Acer_11 /> <Acer_12/>  </>}
-{selected === "Acer" && price === "above 50000" && genere === "normal" && show && <>           <Acer_10 /><Acer_11 /> <Acer_12/>  </>}
+{/* {selected === "Acer" && price === "above 50000" && genere === "normal" && show && <>           <Acer_10 /><Acer_11 /> <Acer_12/>  </>}
 {selected === "Acer" && price === "above 50000" && genere === "speedy" && show && <>           <Acer_10 /><Acer_11 /> <Acer_12/>  </>}
 {selected === "Acer" && price === "above 50000" && genere === "gaming" && show && <>           <Acer_10 /><Acer_11 /> <Acer_12/>  </>}
 {selected === "Acer" && price === "above 50000" && genere === "coding" && show && <>           <Acer_10 /><Acer_11 /> <Acer_12/>  </>}
@@ -429,7 +429,7 @@ const reset = () => {
 {selected === "Acer" && price === "above 50000" && genere === "gaming" && show && <>       <Acer_10 /><Acer_11 /> <Acer_12/>  </>}
 {selected === "Acer" && price === "above 50000" && genere === "normal" && show && <>       <Acer_10 /><Acer_11 /> <Acer_12/>  </>}
 {selected === "Acer" && price === "above 50000" && genere === "coding" && show && <>       <Acer_10 /><Acer_11 /> <Acer_12/>  </>}
-
+ */}
 
 {/* apple laps */}
 
@@ -437,7 +437,7 @@ const reset = () => {
 {selected === "Apple" && price === "20000-30000" && genere === "normal" && show  && <>           <Applelaps_1 /><Applelaps_2 /> <Applelaps_3/>  </>}
 {selected === "Apple" && price === "20000-30000" && genere === "speedy" && show  && <>           <Applelaps_1 /><Applelaps_2 /> <Applelaps_3/>  </>}
 {selected === "Apple" && price === "20000-30000" && genere === "coding" && show  && <>           <Applelaps_1 /><Applelaps_2 /> <Applelaps_3/>  </>}
-{selected === "Apple" && price === "20000-30000" && genere === "normal" && show  && <>           <Applelaps_1 /><Applelaps_2 /> <Applelaps_3/>  </>}
+{/* {selected === "Apple" && price === "20000-30000" && genere === "normal" && show  && <>           <Applelaps_1 /><Applelaps_2 /> <Applelaps_3/>  </>}
 {selected === "Apple" && price === "20000-30000" && genere === "speedy" && show  && <>           <Applelaps_1 /><Applelaps_2 /> <Applelaps_3/>  </>}
 {selected === "Apple" && price === "20000-30000" && genere === "gaming" && show  && <>           <Applelaps_1 /><Applelaps_2 /> <Applelaps_3/>  </>}
 {selected === "Apple" && price === "20000-30000" && genere === "coding" && show  && <>           <Applelaps_1 /><Applelaps_2 /> <Applelaps_3/>  </>}
@@ -449,12 +449,12 @@ const reset = () => {
 {selected === "Apple" && price === "20000-30000" && genere === "gaming" && show  && <>       <Applelaps_1 /><Applelaps_2 /> <Applelaps_3/>  </>}
 {selected === "Apple" && price === "20000-30000" && genere === "normal" && show  && <>       <Applelaps_1 /><Applelaps_2 /> <Applelaps_3/>  </>}
 {selected === "Apple" && price === "20000-30000" && genere === "coding" && show  && <>       <Applelaps_1 /><Applelaps_2 /> <Applelaps_3/>  </>}
- 
+  */}
 {selected === "Apple" && price === "30000-40000" && genere === "gaming" && show  && <>           <Applelaps_4 /><Applelaps_5 /> <Applelaps_6/>  </>}
 {selected === "Apple" && price === "30000-40000" && genere === "normal" && show  && <>           <Applelaps_4 /><Applelaps_5 /> <Applelaps_6/>  </>}
 {selected === "Apple" && price === "30000-40000" && genere === "speedy" && show  && <>           <Applelaps_4 /><Applelaps_5 /> <Applelaps_6/>  </>}
 {selected === "Apple" && price === "30000-40000" && genere === "coding" && show  && <>           <Applelaps_4 /><Applelaps_5 /> <Applelaps_6/>  </>}
-{selected === "Apple" && price === "30000-40000" && genere === "normal" && show  && <>           <Applelaps_4 /><Applelaps_5 /> <Applelaps_6/>  </>}
+{/* {selected === "Apple" && price === "30000-40000" && genere === "normal" && show  && <>           <Applelaps_4 /><Applelaps_5 /> <Applelaps_6/>  </>}
 {selected === "Apple" && price === "30000-40000" && genere === "speedy" && show  && <>           <Applelaps_4 /><Applelaps_5 /> <Applelaps_6/>  </>}
 {selected === "Apple" && price === "30000-40000" && genere === "gaming" && show  && <>           <Applelaps_4 /><Applelaps_5 /> <Applelaps_6/>  </>}
 {selected === "Apple" && price === "30000-40000" && genere === "coding" && show  && <>           <Applelaps_4 /><Applelaps_5 /> <Applelaps_6/>  </>}
@@ -466,12 +466,12 @@ const reset = () => {
 {selected === "Apple" && price === "30000-40000" && genere === "gaming" && show  && <>       <Applelaps_4 /><Applelaps_5 /> <Applelaps_6/>  </>}
 {selected === "Apple" && price === "30000-40000" && genere === "normal" && show  && <>       <Applelaps_4 /><Applelaps_5 /> <Applelaps_6/>  </>}
 {selected === "Apple" && price === "30000-40000" && genere === "coding" && show  && <>       <Applelaps_4 /><Applelaps_5 /> <Applelaps_6/>  </>}
-
+ */}
 {selected === "Apple" && price === "40000-50000" && genere === "gaming" && show  && <>           <Applelaps_7 /><Applelaps_8 /> <Applelaps_9/>  </>}
 {selected === "Apple" && price === "40000-50000" && genere === "normal" && show  && <>           <Applelaps_7 /><Applelaps_8 /> <Applelaps_9/>  </>}
 {selected === "Apple" && price === "40000-50000" && genere === "speedy" && show  && <>           <Applelaps_7 /><Applelaps_8 /> <Applelaps_9/>  </>}
 {selected === "Apple" && price === "40000-50000" && genere === "coding" && show  && <>           <Applelaps_7 /><Applelaps_8 /> <Applelaps_9/>  </>}
-{selected === "Apple" && price === "40000-50000" && genere === "normal" && show  && <>           <Applelaps_7 /><Applelaps_8 /> <Applelaps_9/>  </>}
+{/* {selected === "Apple" && price === "40000-50000" && genere === "normal" && show  && <>           <Applelaps_7 /><Applelaps_8 /> <Applelaps_9/>  </>}
 {selected === "Apple" && price === "40000-50000" && genere === "speedy" && show  && <>           <Applelaps_7 /><Applelaps_8 /> <Applelaps_9/>  </>}
 {selected === "Apple" && price === "40000-50000" && genere === "gaming" && show  && <>           <Applelaps_7 /><Applelaps_8 /> <Applelaps_9/>  </>}
 {selected === "Apple" && price === "40000-50000" && genere === "coding" && show  && <>           <Applelaps_7 /><Applelaps_8 /> <Applelaps_9/>  </>}
@@ -483,12 +483,12 @@ const reset = () => {
 {selected === "Apple" && price === "40000-50000" && genere === "gaming" && show  && <>       <Applelaps_7 /><Applelaps_8 /> <Applelaps_9/>  </>}
 {selected === "Apple" && price === "40000-50000" && genere === "normal" && show  && <>       <Applelaps_7 /><Applelaps_8 /> <Applelaps_9/>  </>}
 {selected === "Apple" && price === "40000-50000" && genere === "coding" && show  && <>       <Applelaps_7 /><Applelaps_8 /> <Applelaps_9/>  </>}
-
+ */}
 {selected === "Apple" && price === "above 50000" && genere === "gaming" && show  && <>           <Applelaps_10 /><Applelaps_11 /> <Applelaps_12/>  </>}
 {selected === "Apple" && price === "above 50000" && genere === "normal" && show  && <>           <Applelaps_10 /><Applelaps_11 /> <Applelaps_12/>  </>}
 {selected === "Apple" && price === "above 50000" && genere === "speedy" && show  && <>           <Applelaps_10 /><Applelaps_11 /> <Applelaps_12/>  </>}
 {selected === "Apple" && price === "above 50000" && genere === "coding" && show  && <>           <Applelaps_10 /><Applelaps_11 /> <Applelaps_12/>  </>}
-{selected === "Apple" && price === "above 50000" && genere === "normal" && show  && <>           <Applelaps_10 /><Applelaps_11 /> <Applelaps_12/>  </>}
+{/* {selected === "Apple" && price === "above 50000" && genere === "normal" && show  && <>           <Applelaps_10 /><Applelaps_11 /> <Applelaps_12/>  </>}
 {selected === "Apple" && price === "above 50000" && genere === "speedy" && show  && <>           <Applelaps_10 /><Applelaps_11 /> <Applelaps_12/>  </>}
 {selected === "Apple" && price === "above 50000" && genere === "gaming" && show  && <>           <Applelaps_10 /><Applelaps_11 /> <Applelaps_12/>  </>}
 {selected === "Apple" && price === "above 50000" && genere === "coding" && show  && <>           <Applelaps_10 /><Applelaps_11 /> <Applelaps_12/>  </>}
@@ -500,7 +500,7 @@ const reset = () => {
 {selected === "Apple" && price === "above 50000" && genere === "gaming" && show  && <>       <Applelaps_10 /><Applelaps_11 /> <Applelaps_12/>  </>}
 {selected === "Apple" && price === "above 50000" && genere === "normal" && show  && <>       <Applelaps_10 /><Applelaps_11 /> <Applelaps_12/>  </>}
 {selected === "Apple" && price === "above 50000" && genere === "coding" && show  && <>       <Applelaps_10 /><Applelaps_11 /> <Applelaps_12/>  </>}
-
+ */}
 
 {/* hp  */}
 
@@ -508,7 +508,7 @@ const reset = () => {
 {selected === "Hp" && price === "20000-30000" && genere === "normal" && show  && <>           <Hp_1 /><Hp_2 /> <Hp_3/>  </>}
 {selected === "Hp" && price === "20000-30000" && genere === "speedy" && show  && <>           <Hp_1 /><Hp_2 /> <Hp_3/>  </>}
 {selected === "Hp" && price === "20000-30000" && genere === "coding" && show  && <>           <Hp_1 /><Hp_2 /> <Hp_3/>  </>}
-{selected === "Hp" && price === "20000-30000" && genere === "normal" && show  && <>           <Hp_1 /><Hp_2 /> <Hp_3/>  </>}
+{/* {selected === "Hp" && price === "20000-30000" && genere === "normal" && show  && <>           <Hp_1 /><Hp_2 /> <Hp_3/>  </>}
 {selected === "Hp" && price === "20000-30000" && genere === "speedy" && show  && <>           <Hp_1 /><Hp_2 /> <Hp_3/>  </>}
 {selected === "Hp" && price === "20000-30000" && genere === "gaming" && show  && <>           <Hp_1 /><Hp_2 /> <Hp_3/>  </>}
 {selected === "Hp" && price === "20000-30000" && genere === "coding" && show  && <>           <Hp_1 /><Hp_2 /> <Hp_3/>  </>}
@@ -520,12 +520,12 @@ const reset = () => {
 {selected === "Hp" && price === "20000-30000" && genere === "gaming" && show  && <>       <Hp_1 /><Hp_2 /> <Hp_3/>  </>}
 {selected === "Hp" && price === "20000-30000" && genere === "normal" && show  && <>       <Hp_1 /><Hp_2 /> <Hp_3/>  </>}
 {selected === "Hp" && price === "20000-30000" && genere === "coding" && show  && <>       <Hp_1 /><Hp_2 /> <Hp_3/>  </>}
- 
+  */}
 {selected === "Hp" && price === "30000-40000" && genere === "gaming" && show  && <>           <Hp_4 /><Hp_5 /> <Hp_6/>  </>}
 {selected === "Hp" && price === "30000-40000" && genere === "normal" && show  && <>           <Hp_4 /><Hp_5 /> <Hp_6/>  </>}
 {selected === "Hp" && price === "30000-40000" && genere === "speedy" && show  && <>           <Hp_4 /><Hp_5 /> <Hp_6/>  </>}
 {selected === "Hp" && price === "30000-40000" && genere === "coding" && show  && <>           <Hp_4 /><Hp_5 /> <Hp_6/>  </>}
-{selected === "Hp" && price === "30000-40000" && genere === "normal" && show  && <>           <Hp_4 /><Hp_5 /> <Hp_6/>  </>}
+{/* {selected === "Hp" && price === "30000-40000" && genere === "normal" && show  && <>           <Hp_4 /><Hp_5 /> <Hp_6/>  </>}
 {selected === "Hp" && price === "30000-40000" && genere === "speedy" && show  && <>           <Hp_4 /><Hp_5 /> <Hp_6/>  </>}
 {selected === "Hp" && price === "30000-40000" && genere === "gaming" && show  && <>           <Hp_4 /><Hp_5 /> <Hp_6/>  </>}
 {selected === "Hp" && price === "30000-40000" && genere === "coding" && show  && <>           <Hp_4 /><Hp_5 /> <Hp_6/>  </>}
@@ -537,12 +537,12 @@ const reset = () => {
 {selected === "Hp" && price === "30000-40000" && genere === "gaming" && show  && <>       <Hp_4 /><Hp_5 /> <Hp_6/>  </>}
 {selected === "Hp" && price === "30000-40000" && genere === "normal" && show  && <>       <Hp_4 /><Hp_5 /> <Hp_6/>  </>}
 {selected === "Hp" && price === "30000-40000" && genere === "coding" && show  && <>       <Hp_4 /><Hp_5 /> <Hp_6/>  </>}
-
+ */}
 {selected === "Hp" && price === "40000-50000" && genere === "gaming" && show  && <>           <Hp_7 /><Hp_8 /> <Hp_9/>  </>}
 {selected === "Hp" && price === "40000-50000" && genere === "normal" && show  && <>           <Hp_7 /><Hp_8 /> <Hp_9/>  </>}
 {selected === "Hp" && price === "40000-50000" && genere === "speedy" && show  && <>           <Hp_7 /><Hp_8 /> <Hp_9/>  </>}
 {selected === "Hp" && price === "40000-50000" && genere === "coding" && show  && <>           <Hp_7 /><Hp_8 /> <Hp_9/>  </>}
-{selected === "Hp" && price === "40000-50000" && genere === "normal" && show  && <>           <Hp_7 /><Hp_8 /> <Hp_9/>  </>}
+{/* {selected === "Hp" && price === "40000-50000" && genere === "normal" && show  && <>           <Hp_7 /><Hp_8 /> <Hp_9/>  </>}
 {selected === "Hp" && price === "40000-50000" && genere === "speedy" && show  && <>           <Hp_7 /><Hp_8 /> <Hp_9/>  </>}
 {selected === "Hp" && price === "40000-50000" && genere === "gaming" && show  && <>           <Hp_7 /><Hp_8 /> <Hp_9/>  </>}
 {selected === "Hp" && price === "40000-50000" && genere === "coding" && show  && <>           <Hp_7 /><Hp_8 /> <Hp_9/>  </>}
@@ -554,12 +554,12 @@ const reset = () => {
 {selected === "Hp" && price === "40000-50000" && genere === "gaming" && show  && <>       <Hp_7 /><Hp_8 /> <Hp_9/>  </>}
 {selected === "Hp" && price === "40000-50000" && genere === "normal" && show  && <>       <Hp_7 /><Hp_8 /> <Hp_9/>  </>}
 {selected === "Hp" && price === "40000-50000" && genere === "coding" && show  && <>       <Hp_7 /><Hp_8 /> <Hp_9/>  </>}
-
+ */}
 {selected === "Hp" && price === "above 50000" && genere === "gaming" && show  && <>           <Hp_10 /><Hp_11 /> <Hp_12/>  </>}
 {selected === "Hp" && price === "above 50000" && genere === "normal" && show  && <>           <Hp_10 /><Hp_11 /> <Hp_12/>  </>}
 {selected === "Hp" && price === "above 50000" && genere === "speedy" && show  && <>           <Hp_10 /><Hp_11 /> <Hp_12/>  </>}
 {selected === "Hp" && price === "above 50000" && genere === "coding" && show  && <>           <Hp_10 /><Hp_11 /> <Hp_12/>  </>}
-{selected === "Hp" && price === "above 50000" && genere === "normal" && show  && <>           <Hp_10 /><Hp_11 /> <Hp_12/>  </>}
+{/* {selected === "Hp" && price === "above 50000" && genere === "normal" && show  && <>           <Hp_10 /><Hp_11 /> <Hp_12/>  </>}
 {selected === "Hp" && price === "above 50000" && genere === "speedy" && show  && <>           <Hp_10 /><Hp_11 /> <Hp_12/>  </>}
 {selected === "Hp" && price === "above 50000" && genere === "gaming" && show  && <>           <Hp_10 /><Hp_11 /> <Hp_12/>  </>}
 {selected === "Hp" && price === "above 50000" && genere === "coding" && show  && <>           <Hp_10 /><Hp_11 /> <Hp_12/>  </>}
@@ -571,7 +571,7 @@ const reset = () => {
 {selected === "Hp" && price === "above 50000" && genere === "gaming" && show  && <>       <Hp_10 /><Hp_11 /> <Hp_12/>  </>}
 {selected === "Hp" && price === "above 50000" && genere === "normal" && show  && <>       <Hp_10 /><Hp_11 /> <Hp_12/>  </>}
 {selected === "Hp" && price === "above 50000" && genere === "coding" && show  && <>       <Hp_10 /><Hp_11 /> <Hp_12/>  </>}
-
+ */}
 
 
 {/* lenovo */}
@@ -580,7 +580,7 @@ const reset = () => {
 {selected === "Lenovo" && price === "20000-30000" && genere === "normal" && show  && <>           <Lenovo_1 /><Lenovo_2 /> <Lenovo_3/>  </>}
 {selected === "Lenovo" && price === "20000-30000" && genere === "speedy" && show  && <>           <Lenovo_1 /><Lenovo_2 /> <Lenovo_3/>  </>}
 {selected === "Lenovo" && price === "20000-30000" && genere === "coding" && show  && <>           <Lenovo_1 /><Lenovo_2 /> <Lenovo_3/>  </>}
-{selected === "Lenovo" && price === "20000-30000" && genere === "normal" && show  && <>           <Lenovo_1 /><Lenovo_2 /> <Lenovo_3/>  </>}
+{/* {selected === "Lenovo" && price === "20000-30000" && genere === "normal" && show  && <>           <Lenovo_1 /><Lenovo_2 /> <Lenovo_3/>  </>}
 {selected === "Lenovo" && price === "20000-30000" && genere === "speedy" && show  && <>           <Lenovo_1 /><Lenovo_2 /> <Lenovo_3/>  </>}
 {selected === "Lenovo" && price === "20000-30000" && genere === "gaming" && show  && <>           <Lenovo_1 /><Lenovo_2 /> <Lenovo_3/>  </>}
 {selected === "Lenovo" && price === "20000-30000" && genere === "coding" && show  && <>           <Lenovo_1 /><Lenovo_2 /> <Lenovo_3/>  </>}
@@ -592,12 +592,12 @@ const reset = () => {
 {selected === "Lenovo" && price === "20000-30000" && genere === "gaming" && show  && <>       <Lenovo_1 /><Lenovo_2 /> <Lenovo_3/>  </>}
 {selected === "Lenovo" && price === "20000-30000" && genere === "normal" && show  && <>       <Lenovo_1 /><Lenovo_2 /> <Lenovo_3/>  </>}
 {selected === "Lenovo" && price === "20000-30000" && genere === "coding" && show  && <>       <Lenovo_1 /><Lenovo_2 /> <Lenovo_3/>  </>}
- 
+  */}
 {selected === "Lenovo" && price === "30000-40000" && genere === "gaming" && show  && <>           <Lenovo_4 /><Lenovo_5 /> <Lenovo_6/>  </>}
 {selected === "Lenovo" && price === "30000-40000" && genere === "normal" && show  && <>           <Lenovo_4 /><Lenovo_5 /> <Lenovo_6/>  </>}
 {selected === "Lenovo" && price === "30000-40000" && genere === "speedy" && show  && <>           <Lenovo_4 /><Lenovo_5 /> <Lenovo_6/>  </>}
 {selected === "Lenovo" && price === "30000-40000" && genere === "coding" && show  && <>           <Lenovo_4 /><Lenovo_5 /> <Lenovo_6/>  </>}
-{selected === "Lenovo" && price === "30000-40000" && genere === "normal" && show  && <>           <Lenovo_4 /><Lenovo_5 /> <Lenovo_6/>  </>}
+{/* {selected === "Lenovo" && price === "30000-40000" && genere === "normal" && show  && <>           <Lenovo_4 /><Lenovo_5 /> <Lenovo_6/>  </>}
 {selected === "Lenovo" && price === "30000-40000" && genere === "speedy" && show  && <>           <Lenovo_4 /><Lenovo_5 /> <Lenovo_6/>  </>}
 {selected === "Lenovo" && price === "30000-40000" && genere === "gaming" && show  && <>           <Lenovo_4 /><Lenovo_5 /> <Lenovo_6/>  </>}
 {selected === "Lenovo" && price === "30000-40000" && genere === "coding" && show  && <>           <Lenovo_4 /><Lenovo_5 /> <Lenovo_6/>  </>}
@@ -609,12 +609,12 @@ const reset = () => {
 {selected === "Lenovo" && price === "30000-40000" && genere === "gaming" && show  && <>       <Lenovo_4 /><Lenovo_5 /> <Lenovo_6/>  </>}
 {selected === "Lenovo" && price === "30000-40000" && genere === "normal" && show  && <>       <Lenovo_4 /><Lenovo_5 /> <Lenovo_6/>  </>}
 {selected === "Lenovo" && price === "30000-40000" && genere === "coding" && show  && <>       <Lenovo_4 /><Lenovo_5 /> <Lenovo_6/>  </>}
-
+ */}
 {selected === "Lenovo" && price === "40000-50000" && genere === "gaming" && show  && <>           <Lenovo_7 /><Lenovo_8 /> <Lenovo_9/>  </>}
 {selected === "Lenovo" && price === "40000-50000" && genere === "normal" && show  && <>           <Lenovo_7 /><Lenovo_8 /> <Lenovo_9/>  </>}
 {selected === "Lenovo" && price === "40000-50000" && genere === "speedy" && show  && <>           <Lenovo_7 /><Lenovo_8 /> <Lenovo_9/>  </>}
 {selected === "Lenovo" && price === "40000-50000" && genere === "coding" && show  && <>           <Lenovo_7 /><Lenovo_8 /> <Lenovo_9/>  </>}
-{selected === "Lenovo" && price === "40000-50000" && genere === "normal" && show  && <>           <Lenovo_7 /><Lenovo_8 /> <Lenovo_9/>  </>}
+{/* {selected === "Lenovo" && price === "40000-50000" && genere === "normal" && show  && <>           <Lenovo_7 /><Lenovo_8 /> <Lenovo_9/>  </>}
 {selected === "Lenovo" && price === "40000-50000" && genere === "speedy" && show  && <>           <Lenovo_7 /><Lenovo_8 /> <Lenovo_9/>  </>}
 {selected === "Lenovo" && price === "40000-50000" && genere === "gaming" && show  && <>           <Lenovo_7 /><Lenovo_8 /> <Lenovo_9/>  </>}
 {selected === "Lenovo" && price === "40000-50000" && genere === "coding" && show  && <>           <Lenovo_7 /><Lenovo_8 /> <Lenovo_9/>  </>}
@@ -626,12 +626,12 @@ const reset = () => {
 {selected === "Lenovo" && price === "40000-50000" && genere === "gaming" && show  && <>       <Lenovo_7 /><Lenovo_8 /> <Lenovo_9/>  </>}
 {selected === "Lenovo" && price === "40000-50000" && genere === "normal" && show  && <>       <Lenovo_7 /><Lenovo_8 /> <Lenovo_9/>  </>}
 {selected === "Lenovo" && price === "40000-50000" && genere === "coding" && show  && <>       <Lenovo_7 /><Lenovo_8 /> <Lenovo_9/>  </>}
-
+ */}
 {selected === "Lenovo" && price === "above 50000" && genere === "gaming" && show  && <>           <Lenovo_10 /><Lenovo_11 /> <Lenovo_12/>  </>}
 {selected === "Lenovo" && price === "above 50000" && genere === "normal" && show  && <>           <Lenovo_10 /><Lenovo_11 /> <Lenovo_12/>  </>}
 {selected === "Lenovo" && price === "above 50000" && genere === "speedy" && show  && <>           <Lenovo_10 /><Lenovo_11 /> <Lenovo_12/>  </>}
 {selected === "Lenovo" && price === "above 50000" && genere === "coding" && show  && <>           <Lenovo_10 /><Lenovo_11 /> <Lenovo_12/>  </>}
-{selected === "Lenovo" && price === "above 50000" && genere === "normal" && show  && <>           <Lenovo_10 /><Lenovo_11 /> <Lenovo_12/>  </>}
+{/* {selected === "Lenovo" && price === "above 50000" && genere === "normal" && show  && <>           <Lenovo_10 /><Lenovo_11 /> <Lenovo_12/>  </>}
 {selected === "Lenovo" && price === "above 50000" && genere === "speedy" && show  && <>           <Lenovo_10 /><Lenovo_11 /> <Lenovo_12/>  </>}
 {selected === "Lenovo" && price === "above 50000" && genere === "gaming" && show  && <>           <Lenovo_10 /><Lenovo_11 /> <Lenovo_12/>  </>}
 {selected === "Lenovo" && price === "above 50000" && genere === "coding" && show  && <>           <Lenovo_10 /><Lenovo_11 /> <Lenovo_12/>  </>}
@@ -644,7 +644,7 @@ const reset = () => {
 {selected === "Lenovo" && price === "above 50000" && genere === "normal" && show  && <>       <Lenovo_10 /><Lenovo_11 /> <Lenovo_12/>  </>}
 {selected === "Lenovo" && price === "above 50000" && genere === "coding" && show  && <>       <Lenovo_10 /><Lenovo_11 /> <Lenovo_12/>  </>}
 
-
+ */}
 
 
 

@@ -67,6 +67,7 @@ import Vivo_6 from './phonecomponents/vivo/vivo_6';
 import Vivo_7 from './phonecomponents/vivo/vivo_7';
 import Vivo_8 from './phonecomponents/vivo/vivo_8';
 import Vivo_9 from './phonecomponents/vivo/vivo_9';
+import Oneplus_10 from './phonecomponents/oneplus/oneplus_10';
 
 
 function Phones () {
@@ -328,13 +329,13 @@ const reset = () => {
 {selected === "oneplus" && price === "above 30000" && genere === "normal" && show  && <> <Oneplus_1 /><Oneplus_2 /> <Oneplus_3/>  </>}
 {selected === "oneplus" && price === "above 30000" && genere === "gaming" && show  && <> <Oneplus_1 /><Oneplus_2 /> <Oneplus_3/>  </>}
 {selected === "oneplus" && price === "above 30000" && genere === "speedy" && show  && <> <Oneplus_1 /><Oneplus_2 /> <Oneplus_3/>  </>}
-{selected === "oneplus" && price === "above 30000" && genere === "normal" && show  && <> <Oneplus_1 /><Oneplus_2 /> <Oneplus_3/>  </>}
+{/* {selected === "oneplus" && price === "above 30000" && genere === "normal" && show  && <> <Oneplus_1 /><Oneplus_2 /> <Oneplus_3/>  </>}
 {selected === "oneplus" && price === "above 30000" && genere === "speedy" && show  && <> <Oneplus_1 /><Oneplus_2 /> <Oneplus_3/>  </>}
 {selected === "oneplus" && price === "above 30000" && genere === "gaming" && show  && <> <Oneplus_1 /><Oneplus_2 /> <Oneplus_3/>  </>}
 {selected === "oneplus" && price === "above 30000" && genere === "speedy" && show  && <> <Oneplus_1 /><Oneplus_2 /> <Oneplus_3/>  </>}
 {selected === "oneplus" && price === "above 30000" && genere === "gaming" && show  && <> <Oneplus_1 /><Oneplus_2 /> <Oneplus_3/>  </>}
 {selected === "oneplus" && price === "above 30000" && genere === "normal" && show  && <> <Oneplus_1 /><Oneplus_2 /> <Oneplus_3/>  </>}
-
+ */}
 
 
 
@@ -342,63 +343,63 @@ const reset = () => {
 {selected === "oneplus" && price === "above 40000" && genere === "gaming" && show  && <> <Oneplus_4 /><Oneplus_5 /> <Oneplus_6/>  </>}
 {selected === "oneplus" && price === "above 40000" && genere === "normal" && show  && <> <Oneplus_4 /><Oneplus_5 /> <Oneplus_6/>  </>}
 {selected === "oneplus" && price === "above 40000" && genere === "speedy" && show  && <> <Oneplus_4 /><Oneplus_5 /> <Oneplus_6/>  </>}
-{selected === "oneplus" && price === "above 40000" && genere === "normal" && show && <> <Oneplus_4 /><Oneplus_5 /> <Oneplus_6/>  </>}
+{/* {selected === "oneplus" && price === "above 40000" && genere === "normal" && show && <> <Oneplus_4 /><Oneplus_5 /> <Oneplus_6/>  </>}
 {selected === "oneplus" && price === "above 40000" && genere === "speedy" && show && <> <Oneplus_4 /><Oneplus_5 /> <Oneplus_6/>  </>}
 {selected === "oneplus" && price === "above 40000" && genere === "gaming" && show && <> <Oneplus_4 /><Oneplus_5 /> <Oneplus_6/>  </>}
 {selected === "oneplus" && price === "above 40000" && genere === "speedy" && show  && <> <Oneplus_4 /><Oneplus_5 /> <Oneplus_6/>  </>}
 {selected === "oneplus" && price === "above 40000" && genere === "gaming" && show  && <> <Oneplus_4 /><Oneplus_5 /> <Oneplus_6/>  </>}
 {selected === "oneplus" && price === "above 40000" && genere === "normal" && show  && <> <Oneplus_4 /><Oneplus_5 /> <Oneplus_6/>  </>}
-
+ */}
 
 {/* one plus above 20000 */}
 
-{selected === "oneplus" && price === "above 20000" && genere === "gaming" && show  && <> <Oneplus_7 /><Oneplus_8 /> <Oneplus_9/>  </>}
-{selected === "oneplus" && price === "above 20000" && genere === "normal" && show  && <> <Oneplus_7 /><Oneplus_8 /> <Oneplus_9/>  </>}
-{selected === "oneplus" && price === "above 20000" && genere === "speedy" && show  && <> <Oneplus_7 /><Oneplus_8 /> <Oneplus_9/>  </>}
-{selected === "oneplus" && price === "above 20000" && genere === "normal" && show && <> <Oneplus_7 /><Oneplus_8 /> <Oneplus_9/>  </>}
+{selected === "oneplus" && price === "above 20000" && genere === "gaming" && show  && <> <Oneplus_9/>  </>}
+{selected === "oneplus" && price === "above 20000" && genere === "normal" && show  && <> <Oneplus_7 />  </>}
+{selected === "oneplus" && price === "above 20000" && genere === "speedy" && show  && <> <Oneplus_8 /><Oneplus_10/>  </>}
+{/* {selected === "oneplus" && price === "above 20000" && genere === "normal" && show && <> <Oneplus_7 /><Oneplus_8 /> <Oneplus_9/>  </>}
 {selected === "oneplus" && price === "above 20000" && genere === "speedy" && show && <> <Oneplus_7 /><Oneplus_8 /> <Oneplus_9/>  </>}
 {selected === "oneplus" && price === "above 20000" && genere === "gaming" && show && <> <Oneplus_7 /><Oneplus_8 /> <Oneplus_9/>  </>}
 {selected === "oneplus" && price === "above 20000" && genere === "speedy" && show  && <> <Oneplus_7 /><Oneplus_8 /> <Oneplus_9/>  </>}
 {selected === "oneplus" && price === "above 20000" && genere === "gaming" && show  && <> <Oneplus_7 /><Oneplus_8 /> <Oneplus_9/>  </>}
 {selected === "oneplus" && price === "above 20000" && genere === "normal" && show  && <> <Oneplus_7 /><Oneplus_8 /> <Oneplus_9/>  </>}
-
+ */}
 {/* apple above 30000 */}
 
 {selected === "Apple" && price === "above 30000" && genere === "gaming" && show && <> <Apple_1 /><Apple_2 /> <Apple_3/>  </>}
 {selected === "Apple" && price === "above 30000" && genere === "normal" && show && <> <Apple_1 /><Apple_2 /> <Apple_3/>  </>}
 {selected === "Apple" && price === "above 30000" && genere === "speedy" && show && <> <Apple_1 /><Apple_2 /> <Apple_3/>  </>}
-{selected === "Apple" && price === "above 30000" && genere === "normal" && show  && <><Apple_1 /><Apple_2 /> <Apple_3/>  </>}
+{/* {selected === "Apple" && price === "above 30000" && genere === "normal" && show  && <><Apple_1 /><Apple_2 /> <Apple_3/>  </>}
 {selected === "Apple" && price === "above 30000" && genere === "speedy" && show  && <><Apple_1 /><Apple_2 /> <Apple_3/>  </>}
 {selected === "Apple" && price === "above 30000" && genere === "gaming" && show  && <><Apple_1 /><Apple_2 /> <Apple_3/>  </>}
 {selected === "Apple" && price === "above 30000" && genere === "speedy" && show  && <>  <Apple_1 /><Apple_2 /> <Apple_3/>  </>}
 {selected === "Apple" && price === "above 30000" && genere === "gaming" && show  && <>  <Apple_1 /><Apple_2 /> <Apple_3/>  </>}
 {selected === "Apple" && price === "above 30000" && genere === "normal" && show  && <>  <Apple_1 /><Apple_2 /> <Apple_3/>  </>}
-
+ */}
 {/* apple above 40000 */}
 
 {selected === "Apple" && price === "above 40000" && genere === "gaming" && show && <> <Apple_4 /><Apple_5 /> <Apple_6/>  </>}
 {selected === "Apple" && price === "above 40000" && genere === "normal" && show && <> <Apple_4 /><Apple_5 /> <Apple_6/>  </>}
 {selected === "Apple" && price === "above 40000" && genere === "speedy" && show && <> <Apple_4 /><Apple_5 /> <Apple_6/>  </>}
-{selected === "Apple" && price === "above 40000" && genere === "normal" && show  && <><Apple_4 /><Apple_5 /> <Apple_6/>  </>}
+{/* {selected === "Apple" && price === "above 40000" && genere === "normal" && show  && <><Apple_4 /><Apple_5 /> <Apple_6/>  </>}
 {selected === "Apple" && price === "above 40000" && genere === "speedy" && show  && <><Apple_4 /><Apple_5 /> <Apple_6/>  </>}
 {selected === "Apple" && price === "above 40000" && genere === "gaming" && show  && <><Apple_4 /><Apple_5 /> <Apple_6/>  </>}
 {selected === "Apple" && price === "above 40000" && genere === "speedy" && show  && <>  <Apple_4 /><Apple_5 /> <Apple_6/>  </>}
 {selected === "Apple" && price === "above 40000" && genere === "gaming" && show  && <>  <Apple_4 /><Apple_5 /> <Apple_6/>  </>}
 {selected === "Apple" && price === "above 40000" && genere === "normal" && show  && <>  <Apple_4 /><Apple_5 /> <Apple_6/>  </>}
-
+ */}
 
 {/* apple above 50000 */}
 
 {selected === "Apple" && price === "above 50000" && genere === "gaming" && show && <> <Apple_7 /><Apple_8/> <Apple_9/>  </>}
 {selected === "Apple" && price === "above 50000" && genere === "normal" && show && <> <Apple_7 /><Apple_8/> <Apple_9/>  </>}
 {selected === "Apple" && price === "above 50000" && genere === "speedy" && show && <> <Apple_7 /><Apple_8/> <Apple_9/>  </>}
-{selected === "Apple" && price === "above 50000" && genere === "normal" && show  && <><Apple_7 /><Apple_8/> <Apple_9/>  </>}
+{/* {selected === "Apple" && price === "above 50000" && genere === "normal" && show  && <><Apple_7 /><Apple_8/> <Apple_9/>  </>}
 {selected === "Apple" && price === "above 50000" && genere === "speedy" && show  && <><Apple_7 /><Apple_8/> <Apple_9/>  </>}
 {selected === "Apple" && price === "above 50000" && genere === "gaming" && show  && <><Apple_7 /><Apple_8/> <Apple_9/>  </>}
 {selected === "Apple" && price === "above 50000" && genere === "speedy" && show  && <>  <Apple_7 /><Apple_8/> <Apple_9/>  </>}
 {selected === "Apple" && price === "above 50000" && genere === "gaming" && show  && <>  <Apple_7 /><Apple_8/> <Apple_9/>  </>}
 {selected === "Apple" && price === "above 50000" && genere === "normal" && show  && <>  <Apple_7 /><Apple_8/> <Apple_9/>  </>}
-
+ */}
 
 {/* samsung above 10000 */}
 
@@ -406,7 +407,7 @@ const reset = () => {
 {selected === "samsung" && price === "above 10000" && genere === "normal" && show  && <> <Samsung_1 /><Samsung_2 /> <Samsung_3/>  </>}
 {selected === "samsung" && price === "above 10000" && genere === "speedy" && show  && <> <Samsung_1 /><Samsung_2 /> <Samsung_3/>  </>}
 {selected === "samsung" && price === "above 10000" && genere === "both"   && show  && <> <Samsung_1 /><Samsung_2 /> <Samsung_3/>  </>}
-{selected === "samsung" && price === "above 10000" && genere === "normal" && show  && <>           <Samsung_1 /><Samsung_2 /> <Samsung_3/>  </>}
+{/* {selected === "samsung" && price === "above 10000" && genere === "normal" && show  && <>           <Samsung_1 /><Samsung_2 /> <Samsung_3/>  </>}
 {selected === "samsung" && price === "above 10000" && genere === "speedy" && show  && <>           <Samsung_1 /><Samsung_2 /> <Samsung_3/>  </>}
 {selected === "samsung" && price === "above 10000" && genere === "gaming" && show  && <>           <Samsung_1 /><Samsung_2 /> <Samsung_3/>  </>}
 {selected === "samsung" && price === "above 10000" && genere === "both"   && show  && <>           <Samsung_1 /><Samsung_2 /> <Samsung_3/>  </>}
@@ -418,7 +419,7 @@ const reset = () => {
 {selected === "samsung" && price === "above 10000" && genere === "gaming" && show  && <>           <Samsung_1 /><Samsung_2 /> <Samsung_3/>  </>}
 {selected === "samsung" && price === "above 10000" && genere === "normal" && show  && <>           <Samsung_1 /><Samsung_2 /> <Samsung_3/>  </>}
 {selected === "samsung" && price === "above 10000" && genere === "both"   && show  && <>           <Samsung_1 /><Samsung_2 /> <Samsung_3/>  </>}
-
+ */}
 
 {/* samsung above 20000 */}
 
@@ -426,7 +427,7 @@ const reset = () => {
 {selected === "samsung" && price === "above 20000" && genere === "normal" && show  && <> <Samsung_4 /><Samsung_5 /> <Samsung_6/>  </>}
 {selected === "samsung" && price === "above 20000" && genere === "speedy" && show  && <> <Samsung_4 /><Samsung_5 /> <Samsung_6/>  </>}
 {selected === "samsung" && price === "above 20000" && genere === "both"   && show  && <> <Samsung_4 /><Samsung_5 /> <Samsung_6/>  </>}
-{selected === "samsung" && price === "above 20000" && genere === "normal" && show  && <>           <Samsung_4 /><Samsung_5 /> <Samsung_6/>  </>}
+{/* {selected === "samsung" && price === "above 20000" && genere === "normal" && show  && <>           <Samsung_4 /><Samsung_5 /> <Samsung_6/>  </>}
 {selected === "samsung" && price === "above 20000" && genere === "speedy" && show  && <>           <Samsung_4 /><Samsung_5 /> <Samsung_6/>  </>}
 {selected === "samsung" && price === "above 20000" && genere === "gaming" && show  && <>           <Samsung_4 /><Samsung_5 /> <Samsung_6/>  </>}
 {selected === "samsung" && price === "above 20000" && genere === "both"   && show  && <>           <Samsung_4 /><Samsung_5 /> <Samsung_6/>  </>}
@@ -438,14 +439,14 @@ const reset = () => {
 {selected === "samsung" && price === "above 20000" && genere === "gaming" && show  && <>           <Samsung_4 /><Samsung_5 /> <Samsung_6/>  </>}
 {selected === "samsung" && price === "above 20000" && genere === "normal" && show  && <>           <Samsung_4 /><Samsung_5 /> <Samsung_6/>  </>}
 {selected === "samsung" && price === "above 20000" && genere === "both"   && show  && <>           <Samsung_4 /><Samsung_5 /> <Samsung_6/>  </>}
-
+ */}
 {/*  samsung above 30000 */}
 
 {selected === "samsung" && price === "above 30000" && genere === "gaming" && show &&  <> <Samsung_7 /><Samsung_8 /> <Samsung_9/>  </>}
 {selected === "samsung" && price === "above 30000" && genere === "normal" && show &&  <> <Samsung_7 /><Samsung_8 /> <Samsung_9/>  </>}
 {selected === "samsung" && price === "above 30000" && genere === "speedy" && show &&  <> <Samsung_7 /><Samsung_8 /> <Samsung_9/>  </>}
 {selected === "samsung" && price === "above 30000" && genere === "both"   && show &&  <> <Samsung_7 /><Samsung_8 /> <Samsung_9/>  </>}
-{selected === "samsung" && price === "above 30000" && genere === "normal" && show  && <>           <Samsung_7 /><Samsung_8 /> <Samsung_9/>  </>}
+{/* {selected === "samsung" && price === "above 30000" && genere === "normal" && show  && <>           <Samsung_7 /><Samsung_8 /> <Samsung_9/>  </>}
 {selected === "samsung" && price === "above 30000" && genere === "speedy" && show  && <>           <Samsung_7 /><Samsung_8 /> <Samsung_9/>  </>}
 {selected === "samsung" && price === "above 30000" && genere === "gaming" && show  && <>           <Samsung_7 /><Samsung_8 /> <Samsung_9/>  </>}
 {selected === "samsung" && price === "above 30000" && genere === "both"   && show  && <>           <Samsung_7 /><Samsung_8 /> <Samsung_9/>  </>}
@@ -457,9 +458,9 @@ const reset = () => {
 {selected === "samsung" && price === "above 30000" && genere === "gaming" && show  && <>           <Samsung_7 /><Samsung_8 /> <Samsung_9/>  </>}
 {selected === "samsung" && price === "above 30000" && genere === "normal" && show  && <>           <Samsung_7 /><Samsung_8 /> <Samsung_9/>  </>}
 {selected === "samsung" && price === "above 30000" && genere === "both"   && show  && <>           <Samsung_7 /><Samsung_8 /> <Samsung_9/>  </>}
-
+ */}
 {/* samsung above 40000 */}
-
+{/* 
 {selected === "samsung" && price === "above 40000" && genere === "normal" && show  && <> <Samsung_10 /><Samsung_11 /> <Samsung_12/>  </>}
 {selected === "samsung" && price === "above 40000" && genere === "speedy" && show  && <> <Samsung_10 /><Samsung_11 /> <Samsung_12/>  </>}
 {selected === "samsung" && price === "above 40000" && genere === "both"   && show  && <> <Samsung_10 /><Samsung_11 /> <Samsung_12/>  </>}
@@ -472,7 +473,7 @@ const reset = () => {
 {selected === "samsung" && price === "above 40000" && genere === "gaming" && show  && <> <Samsung_10 /><Samsung_11 /> <Samsung_12/>  </>}
 {selected === "samsung" && price === "above 40000" && genere === "normal" && show  && <> <Samsung_10 /><Samsung_11 /> <Samsung_12/>  </>}
 {selected === "samsung" && price === "above 40000" && genere === "both"   && show  && <> <Samsung_10 /><Samsung_11 /> <Samsung_12/>  </>}
-{selected === "samsung" && price === "above 40000" && genere === "speedy" && show  && <> <Samsung_10 /><Samsung_11 /> <Samsung_12/>  </>}
+ */}{selected === "samsung" && price === "above 40000" && genere === "speedy" && show  && <> <Samsung_10 /><Samsung_11 /> <Samsung_12/>  </>}
 {selected === "samsung" && price === "above 40000" && genere === "gaming" && show  && <> <Samsung_10 /><Samsung_11 /> <Samsung_12/>  </>}
 {selected === "samsung" && price === "above 40000" && genere === "normal" && show  && <> <Samsung_10 /><Samsung_11 /> <Samsung_12/>  </>}
 {selected === "samsung" && price === "above 40000" && genere === "both"   && show  && <> <Samsung_10 /><Samsung_11 /> <Samsung_12/>  </>}
@@ -482,137 +483,137 @@ const reset = () => {
 {selected === "realme" && price === "above 10000" && genere === "gaming" && show  && <> <Realme_1 /><Realme_2 /> <Realme_3/>  </>}
 {selected === "realme" && price === "above 10000" && genere === "normal" && show  && <> <Realme_1 /><Realme_2 /> <Realme_3/>  </>}
 {selected === "realme" && price === "above 10000" && genere === "speedy" && show  && <> <Realme_1 /><Realme_2 /> <Realme_3/>  </>}
-{selected === "realme" && price === "above 10000" && genere === "normal" && show  && <>           <Realme_1 /><Realme_2 /> <Realme_3/>  </>}
+{/* {selected === "realme" && price === "above 10000" && genere === "normal" && show  && <>           <Realme_1 /><Realme_2 /> <Realme_3/>  </>}
 {selected === "realme" && price === "above 10000" && genere === "speedy" && show  && <>           <Realme_1 /><Realme_2 /> <Realme_3/>  </>}
 {selected === "realme" && price === "above 10000" && genere === "gaming" && show  && <>           <Realme_1 /><Realme_2 /> <Realme_3/>  </>}
 {selected === "realme" && price === "above 10000" && genere === "speedy" && show  && <>           <Realme_1 /><Realme_2 /> <Realme_3/>  </>}
 {selected === "realme" && price === "above 10000" && genere === "gaming" && show  && <>           <Realme_1 /><Realme_2 /> <Realme_3/>  </>}
 {selected === "realme" && price === "above 10000" && genere === "normal" && show  && <>           <Realme_1 /><Realme_2 /> <Realme_3/>  </>}
-
+ */}
 {/* realme above 20000 */}
 {selected === "realme" && price === "above 20000" && genere === "gaming" && show && <> <Realme_4 /><Realme_5 /> <Realme_6/>  </>}
 {selected === "realme" && price === "above 20000" && genere === "normal" && show && <> <Realme_4 /><Realme_5 /> <Realme_6/>  </>}
 {selected === "realme" && price === "above 20000" && genere === "speedy" && show && <> <Realme_4 /><Realme_5 /> <Realme_6/>  </>}
-{selected === "realme" && price === "above 20000" && genere === "normal" && show && <>           <Realme_4 /><Realme_5 /> <Realme_6/>  </>}
+{/* {selected === "realme" && price === "above 20000" && genere === "normal" && show && <>           <Realme_4 /><Realme_5 /> <Realme_6/>  </>}
 {selected === "realme" && price === "above 20000" && genere === "speedy" && show && <>           <Realme_4 /><Realme_5 /> <Realme_6/>  </>}
 {selected === "realme" && price === "above 20000" && genere === "gaming" && show && <>           <Realme_4 /><Realme_5 /> <Realme_6/>  </>}
 {selected === "realme" && price === "above 20000" && genere === "speedy" && show && <>           <Realme_4 /><Realme_5 /> <Realme_6/>  </>}
 {selected === "realme" && price === "above 20000" && genere === "gaming" && show && <>           <Realme_4 /><Realme_5 /> <Realme_6/>  </>}
 {selected === "realme" && price === "above 20000" && genere === "normal" && show && <>           <Realme_4 /><Realme_5 /> <Realme_6/>  </>}
-
+ */}
 {/* realme above 30000 */}
 {selected === "realme" && price === "above 30000" && genere === "gaming" && show && <> <Realme_7 /><Realme_8 /> <Realme_9/>  </>}
 {selected === "realme" && price === "above 30000" && genere === "normal" && show && <> <Realme_7 /><Realme_8 /> <Realme_9/>  </>}
 {selected === "realme" && price === "above 30000" && genere === "speedy" && show && <> <Realme_7 /><Realme_8 /> <Realme_9/>  </>}
-{selected === "realme" && price === "above 30000" && genere === "normal" && show && <>           <Realme_7 /><Realme_8 /> <Realme_9/>  </>}
+{/* {selected === "realme" && price === "above 30000" && genere === "normal" && show && <>           <Realme_7 /><Realme_8 /> <Realme_9/>  </>}
 {selected === "realme" && price === "above 30000" && genere === "speedy" && show && <>           <Realme_7 /><Realme_8 /> <Realme_9/>  </>}
 {selected === "realme" && price === "above 30000" && genere === "gaming" && show && <>           <Realme_7 /><Realme_8 /> <Realme_9/>  </>}
 {selected === "realme" && price === "above 30000" && genere === "speedy" && show && <>           <Realme_7 /><Realme_8 /> <Realme_9/>  </>}
 {selected === "realme" && price === "above 30000" && genere === "gaming" && show && <>           <Realme_7 /><Realme_8 /> <Realme_9/>  </>}
 {selected === "realme" && price === "above 30000" && genere === "normal" && show && <>           <Realme_7 /><Realme_8 /> <Realme_9/>  </>}
-
+ */}
 {/* xiaomi above 10000 */}
 {selected === "xiaomi" && price === "above 10000" && genere === "gaming" && show && <> <Xiaomi_1 /><Xiaomi_2 /> <Xiaomi_3/>  </>}
 {selected === "xiaomi" && price === "above 10000" && genere === "normal" && show && <> <Xiaomi_1 /><Xiaomi_2 /> <Xiaomi_3/>  </>}
 {selected === "xiaomi" && price === "above 10000" && genere === "speedy" && show && <> <Xiaomi_1 /><Xiaomi_2 /> <Xiaomi_3/>  </>}
-{selected === "xiaomi" && price === "above 10000" && genere === "normal" && show && <>           <Xiaomi_1 /><Xiaomi_2 /> <Xiaomi_3/>  </>}
+{/* {selected === "xiaomi" && price === "above 10000" && genere === "normal" && show && <>           <Xiaomi_1 /><Xiaomi_2 /> <Xiaomi_3/>  </>}
 {selected === "xiaomi" && price === "above 10000" && genere === "speedy" && show && <>           <Xiaomi_1 /><Xiaomi_2 /> <Xiaomi_3/>  </>}
 {selected === "xiaomi" && price === "above 10000" && genere === "gaming" && show && <>           <Xiaomi_1 /><Xiaomi_2 /> <Xiaomi_3/>  </>}
 {selected === "xiaomi" && price === "above 10000" && genere === "gaming" && show && <>           <Xiaomi_1 /><Xiaomi_2 /> <Xiaomi_3/>  </>}
 {selected === "xiaomi" && price === "above 10000" && genere === "normal" && show && <>           <Xiaomi_1 /><Xiaomi_2 /> <Xiaomi_3/>  </>}
 {selected === "xiaomi" && price === "above 10000" && genere === "speedy" && show && <>           <Xiaomi_1 /><Xiaomi_2 /> <Xiaomi_3/>  </>}
-
+ */}
 {/* xiaomi above 20000 */}
 {selected === "xiaomi" && price === "above 20000" && genere === "gaming" && show && <> <Xiaomi_4 /><Xiaomi_5 /> <Xiaomi_6/>  </>}
 {selected === "xiaomi" && price === "above 20000" && genere === "normal" && show && <> <Xiaomi_4 /><Xiaomi_5 /> <Xiaomi_6/>  </>}
 {selected === "xiaomi" && price === "above 20000" && genere === "speedy" && show && <> <Xiaomi_4 /><Xiaomi_5 /> <Xiaomi_6/>  </>}
-{selected === "xiaomi" && price === "above 20000" && genere === "normal" && show && <>           <Xiaomi_4 /><Xiaomi_5 /> <Xiaomi_6/>  </>}
+{/* {selected === "xiaomi" && price === "above 20000" && genere === "normal" && show && <>           <Xiaomi_4 /><Xiaomi_5 /> <Xiaomi_6/>  </>}
 {selected === "xiaomi" && price === "above 20000" && genere === "speedy" && show && <>           <Xiaomi_4 /><Xiaomi_5 /> <Xiaomi_6/>  </>}
 {selected === "xiaomi" && price === "above 20000" && genere === "gaming" && show && <>           <Xiaomi_4 /><Xiaomi_5 /> <Xiaomi_6/>  </>}
 {selected === "xiaomi" && price === "above 20000" && genere === "speedy" && show && <>           <Xiaomi_4 /><Xiaomi_5 /> <Xiaomi_6/>  </>}
 {selected === "xiaomi" && price === "above 20000" && genere === "gaming" && show && <>           <Xiaomi_4 /><Xiaomi_5 /> <Xiaomi_6/>  </>}
 {selected === "xiaomi" && price === "above 20000" && genere === "normal" && show && <>           <Xiaomi_4 /><Xiaomi_5 /> <Xiaomi_6/>  </>}
-
+ */}
 {/* xiaomi above 30000 */}
 {selected === "xiaomi" && price === "above 30000" && genere === "gaming" && show  && <> <Xiaomi_7 /><Xiaomi_8 /> <Xiaomi_9/>  </>}
 {selected === "xiaomi" && price === "above 30000" && genere === "normal" && show  && <> <Xiaomi_7 /><Xiaomi_8 /> <Xiaomi_9/>  </>}
 {selected === "xiaomi" && price === "above 30000" && genere === "speedy" && show  && <> <Xiaomi_7 /><Xiaomi_8 /> <Xiaomi_9/>  </>}
-{selected === "xiaomi" && price === "above 30000" && genere === "normal" && show  && <> <Xiaomi_7 /><Xiaomi_8 /> <Xiaomi_9/>  </>}
+{/* {selected === "xiaomi" && price === "above 30000" && genere === "normal" && show  && <> <Xiaomi_7 /><Xiaomi_8 /> <Xiaomi_9/>  </>}
 {selected === "xiaomi" && price === "above 30000" && genere === "speedy" && show  && <> <Xiaomi_7 /><Xiaomi_8 /> <Xiaomi_9/>  </>}
 {selected === "xiaomi" && price === "above 30000" && genere === "gaming" && show  && <> <Xiaomi_7 /><Xiaomi_8 /> <Xiaomi_9/>  </>}
 {selected === "xiaomi" && price === "above 30000" && genere === "gaming" && show  && <> <Xiaomi_7 /><Xiaomi_8 /> <Xiaomi_9/>  </>}
 {selected === "xiaomi" && price === "above 30000" && genere === "normal" && show  && <> <Xiaomi_7 /><Xiaomi_8 /> <Xiaomi_9/>  </>}
 {selected === "xiaomi" && price === "above 30000" && genere === "speedy" && show  && <> <Xiaomi_7 /><Xiaomi_8 /> <Xiaomi_9/>  </>}
-
+ */}
 {/* oppo above 10000 */}
 {selected === "oppo" && price === "above 10000" && genere === "gaming" && show && <> <Oppo_1 /><Oppo_2 /> <Oppo_3/>  </>}
 {selected === "oppo" && price === "above 10000" && genere === "normal" && show && <> <Oppo_1 /><Oppo_2 /> <Oppo_3/>  </>}
 {selected === "oppo" && price === "above 10000" && genere === "speedy" && show && <> <Oppo_1 /><Oppo_2 /> <Oppo_3/>  </>}
-{selected === "oppo" && price === "above 10000" && genere === "normal" && show  && <>           <Oppo_1 /><Oppo_2 /> <Oppo_3/>  </>}
+{/* {selected === "oppo" && price === "above 10000" && genere === "normal" && show  && <>           <Oppo_1 /><Oppo_2 /> <Oppo_3/>  </>}
 {selected === "oppo" && price === "above 10000" && genere === "speedy" && show  && <>           <Oppo_1 /><Oppo_2 /> <Oppo_3/>  </>}
 {selected === "oppo" && price === "above 10000" && genere === "gaming" && show  && <>           <Oppo_1 /><Oppo_2 /> <Oppo_3/>  </>}
 {selected === "oppo" && price === "above 10000" && genere === "gaming" && show  && <>           <Oppo_1 /><Oppo_2 /> <Oppo_3/>  </>}
 {selected === "oppo" && price === "above 10000" && genere === "normal" && show  && <>           <Oppo_1 /><Oppo_2 /> <Oppo_3/>  </>}
 {selected === "oppo" && price === "above 10000" && genere === "speedy" && show  && <>           <Oppo_1 /><Oppo_2 /> <Oppo_3/>  </>}
-
+ */}
 {/* oppo above 20000 */}
 {selected === "oppo" && price === "above 20000" && genere === "gaming" && show && <> <Oppo_4 /><Oppo_5 /> <Oppo_6/>  </>}
 {selected === "oppo" && price === "above 20000" && genere === "normal" && show && <> <Oppo_4 /><Oppo_5 /> <Oppo_6/>  </>}
 {selected === "oppo" && price === "above 20000" && genere === "speedy" && show && <> <Oppo_4 /><Oppo_5 /> <Oppo_6/>  </>}
-{selected === "oppo" && price === "above 20000" && genere === "normal" && show  && <>           <Oppo_4 /><Oppo_5 /> <Oppo_6/>  </>}
+{/* {selected === "oppo" && price === "above 20000" && genere === "normal" && show  && <>           <Oppo_4 /><Oppo_5 /> <Oppo_6/>  </>}
 {selected === "oppo" && price === "above 20000" && genere === "speedy" && show  && <>           <Oppo_4 /><Oppo_5 /> <Oppo_6/>  </>}
 {selected === "oppo" && price === "above 20000" && genere === "gaming" && show  && <>           <Oppo_4 /><Oppo_5 /> <Oppo_6/>  </>}
 {selected === "oppo" && price === "above 20000" && genere === "gaming" && show  && <>           <Oppo_4 /><Oppo_5 /> <Oppo_6/>  </>}
 {selected === "oppo" && price === "above 20000" && genere === "normal" && show  && <>           <Oppo_4 /><Oppo_5 /> <Oppo_6/>  </>}
 {selected === "oppo" && price === "above 20000" && genere === "speedy" && show  && <>           <Oppo_4 /><Oppo_5 /> <Oppo_6/>  </>}
-
+ */}
 {/* oppo above 30000 */}
 
 {selected === "oppo" && price === "above 30000" && genere === "gaming" && show && <> <Oppo_7 /><Oppo_8 /> <Oppo_9/>  </>}
 {selected === "oppo" && price === "above 30000" && genere === "normal" && show && <> <Oppo_7 /><Oppo_8 /> <Oppo_9/>  </>}
 {selected === "oppo" && price === "above 30000" && genere === "speedy" && show && <> <Oppo_7 /><Oppo_8 /> <Oppo_9/>  </>}
-{selected === "oppo" && price === "above 30000" && genere === "normal" && show  && <><Oppo_7 /><Oppo_8 /> <Oppo_9/>  </>}
+{/* {selected === "oppo" && price === "above 30000" && genere === "normal" && show  && <><Oppo_7 /><Oppo_8 /> <Oppo_9/>  </>}
 {selected === "oppo" && price === "above 30000" && genere === "speedy" && show  && <><Oppo_7 /><Oppo_8 /> <Oppo_9/>  </>}
 {selected === "oppo" && price === "above 30000" && genere === "gaming" && show  && <><Oppo_7 /><Oppo_8 /> <Oppo_9/>  </>}
 {selected === "oppo" && price === "above 30000" && genere === "gaming" && show  && <><Oppo_7 /><Oppo_8 /> <Oppo_9/>  </>}
 {selected === "oppo" && price === "above 30000" && genere === "normal" && show  && <><Oppo_7 /><Oppo_8 /> <Oppo_9/>  </>}
 {selected === "oppo" && price === "above 30000" && genere === "speedy" && show  && <><Oppo_7 /><Oppo_8 /> <Oppo_9/>  </>}
-
+ */}
 {/* vivo above 10000 */}
 
 {selected === "vivo" && price === "above 10000" && genere === "gaming" && show && <> <Vivo_1 /><Vivo_2 /> <Vivo_3/>  </>}
 {selected === "vivo" && price === "above 10000" && genere === "normal" && show && <> <Vivo_1 /><Vivo_2 /> <Vivo_3/>  </>}
 {selected === "vivo" && price === "above 10000" && genere === "speedy" && show && <> <Vivo_1 /><Vivo_2 /> <Vivo_3/>  </>}
-{selected === "vivo" && price === "above 10000" && genere === "normal" && show  && <>           <Vivo_1 /><Vivo_2 /> <Vivo_3/>  </>}
+{/* {selected === "vivo" && price === "above 10000" && genere === "normal" && show  && <>           <Vivo_1 /><Vivo_2 /> <Vivo_3/>  </>}
 {selected === "vivo" && price === "above 10000" && genere === "speedy" && show  && <>           <Vivo_1 /><Vivo_2 /> <Vivo_3/>  </>}
 {selected === "vivo" && price === "above 10000" && genere === "gaming" && show  && <>           <Vivo_1 /><Vivo_2 /> <Vivo_3/>  </>}
 {selected === "vivo" && price === "above 10000" && genere === "gaming" && show  && <>           <Vivo_1 /><Vivo_2 /> <Vivo_3/>  </>}
 {selected === "vivo" && price === "above 10000" && genere === "normal" && show  && <>           <Vivo_1 /><Vivo_2 /> <Vivo_3/>  </>}
 {selected === "vivo" && price === "above 10000" && genere === "speedy" && show  && <>           <Vivo_1 /><Vivo_2 /> <Vivo_3/>  </>}
-
+ */}
 {/* vivo above 20000 */}
 {selected === "vivo" && price === "above 20000" && genere === "gaming" && show && <> <Vivo_4 /><Vivo_5 /> <Vivo_6/>  </>}
 {selected === "vivo" && price === "above 20000" && genere === "normal" && show && <> <Vivo_4 /><Vivo_5 /> <Vivo_6/>  </>}
 {selected === "vivo" && price === "above 20000" && genere === "speedy" && show && <> <Vivo_4 /><Vivo_5 /> <Vivo_6/>  </>}
-{selected === "vivo" && price === "above 20000" && genere === "normal" && show  && <>           <Vivo_4 /><Vivo_5 /> <Vivo_6/>  </>}
+{/* {selected === "vivo" && price === "above 20000" && genere === "normal" && show  && <>           <Vivo_4 /><Vivo_5 /> <Vivo_6/>  </>}
 {selected === "vivo" && price === "above 20000" && genere === "speedy" && show  && <>           <Vivo_4 /><Vivo_5 /> <Vivo_6/>  </>}
 {selected === "vivo" && price === "above 20000" && genere === "gaming" && show  && <>           <Vivo_4 /><Vivo_5 /> <Vivo_6/>  </>}
 {selected === "vivo" && price === "above 20000" && genere === "gaming" && show  && <>           <Vivo_4 /><Vivo_5 /> <Vivo_6/>  </>}
 {selected === "vivo" && price === "above 20000" && genere === "normal" && show  && <>           <Vivo_4 /><Vivo_5 /> <Vivo_6/>  </>}
 {selected === "vivo" && price === "above 20000" && genere === "speedy" && show  && <>           <Vivo_4 /><Vivo_5 /> <Vivo_6/>  </>}
-
+ */}
 {/* vivo above 30000 */}
 
 {selected === "vivo" && price === "above 30000" && genere === "gaming" && show && <> <Vivo_7 /><Vivo_8 /> <Vivo_9/>  </>}
 {selected === "vivo" && price === "above 30000" && genere === "normal" && show && <> <Vivo_7 /><Vivo_8 /> <Vivo_9/>  </>}
 {selected === "vivo" && price === "above 30000" && genere === "speedy" && show && <> <Vivo_7 /><Vivo_8 /> <Vivo_9/>  </>}
-{selected === "vivo" && price === "above 30000" && genere === "normal" && show  && <>           <Vivo_7 /><Vivo_8 /> <Vivo_9/>  </>}
+{/* {selected === "vivo" && price === "above 30000" && genere === "normal" && show  && <>           <Vivo_7 /><Vivo_8 /> <Vivo_9/>  </>}
 {selected === "vivo" && price === "above 30000" && genere === "speedy" && show  && <>           <Vivo_7 /><Vivo_8 /> <Vivo_9/>  </>}
 {selected === "vivo" && price === "above 30000" && genere === "gaming" && show  && <>           <Vivo_7 /><Vivo_8 /> <Vivo_9/>  </>}
 {selected === "vivo" && price === "above 30000" && genere === "gaming" && show  && <>           <Vivo_7 /><Vivo_8 /> <Vivo_9/>  </>}
 {selected === "vivo" && price === "above 30000" && genere === "normal" && show  && <>           <Vivo_7 /><Vivo_8 /> <Vivo_9/>  </>}
 {selected === "vivo" && price === "above 30000" && genere === "speedy" && show  && <>           <Vivo_7 /><Vivo_8 /> <Vivo_9/>  </>}
-
+ */}
 
 
 
