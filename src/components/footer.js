@@ -24,7 +24,7 @@ function Footer() {
   </div>
   <footer className="footer">
     <div className="footer-body">
-      <div className="head3">BuyIdeal</div>
+      <div className="head3">buyexperts</div>
       <div className="main-footer">
         <div className="footer-col">
           <p>EXPLORE</p>
@@ -47,7 +47,7 @@ function Footer() {
         </div>
       </div>
     </div>
-    <div className="copyright text-center">&copy; BUY IDEAL. All rights reserved</div>
+    <div className="copyright text-center">&copy; buyexperts. All rights reserved</div>
   </footer>
 
   

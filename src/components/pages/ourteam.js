@@ -47,41 +47,7 @@ function Ourteam() {
     </div>
     <div className='col'></div>
     </div>
-  <div className="row team_start">
-    
-  <div className='col'></div>
-    <div className="column">
-      <div className="card team-image">
-        <img src="/bindu.webp" className="img-fluid" alt="shivam" />
-        <div className="container">
-          <h2>Bindu Bharti</h2>
-          <p className="title">Content Writer</p>
-          {/* <p>Some text that describes me lorem ipsum ipsum lorem.</p> */}
-          <p>bindubharti264@gmail.com</p>
-          <p><button className="button">Contact</button></p>
-        </div>
-      </div>
-    </div>
-    <div className='col'></div>
-    </div>
-    <div className="row team_start">
-    <div className='col'></div>
-    <div className="column">
-      <div className="card team-image">
-        <img src="/surmeet.webp" className="img-fluid" alt="Ravish" />
-        <div className="container">
-          <h2>Surmeet Kaur</h2>
-          <p className="title">Content Writer</p>
-         {/*  <p>Some text that describes me lorem ipsum ipsum lorem.</p> */}
-          <p>surmeetsehgal@gmail.com</p>
-          <p><button className="button">Contact</button></p>
-        </div>
-      </div>
-    </div>
-    <div className='col'></div>
-    
-
-  </div>
+  
 </>
  
         </div>

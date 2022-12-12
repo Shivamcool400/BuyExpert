@@ -30,37 +30,37 @@ function Legal() {
           <blockquote className="blockquote ">
             <p className="h1 msg-3 text-white"><b><h2><strong>Terms and Conditions</strong></h2>
 
-<p>Welcome to Buy Ideal!</p>
+<p>Welcome to buyexperts!</p>
 
-<p>These terms and conditions outline the rules and regulations for the use of Buy Ideal's Website, located at https://buyideal.in/.</p>
+<p>These terms and conditions outline the rules and regulations for the use of buyexperts's Website, located at https://buyexperts.in/.</p>
 
-<p>By accessing this website we assume you accept these terms and conditions. Do not continue to use Buy Ideal if you do not agree to take all of the terms and conditions stated on this page.</p>
+<p>By accessing this website we assume you accept these terms and conditions. Do not continue to use buyexperts if you do not agree to take all of the terms and conditions stated on this page.</p>
 
 <p>The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: "Client", "You" and "Your" refers to you, the person log on this website and compliant to the Company’s terms and conditions. "The Company", "Ourselves", "We", "Our" and "Us", refers to our Company. "Party", "Parties", or "Us", refers to both the Client and ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client’s needs in respect of provision of the Company’s stated services, in accordance with and subject to, prevailing law of Netherlands. Any use of the above terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and therefore as referring to same.</p>
 
 <h3><strong>Cookies</strong></h3>
 
-<p>We employ the use of cookies. By accessing Buy Ideal, you agreed to use cookies in agreement with the Buy Ideal's Privacy Policy. </p>
+<p>We employ the use of cookies. By accessing buyexperts, you agreed to use cookies in agreement with the buyexperts's Privacy Policy. </p>
 
 <p>Most interactive websites use cookies to let us retrieve the user’s details for each visit. Cookies are used by our website to enable the functionality of certain areas to make it easier for people visiting our website. Some of our affiliate/advertising partners may also use cookies.</p>
 
 <h3><strong>License</strong></h3>
 
-<p>Unless otherwise stated, Buy Ideal and/or its licensors own the intellectual property rights for all material on Buy Ideal. All intellectual property rights are reserved. You may access this from Buy Ideal for your own personal use subjected to restrictions set in these terms and conditions.</p>
+<p>Unless otherwise stated, buyexperts and/or its licensors own the intellectual property rights for all material on buyexperts. All intellectual property rights are reserved. You may access this from buyexperts for your own personal use subjected to restrictions set in these terms and conditions.</p>
 
 <p>You must not:</p>
 <ul>
-    <li>Republish material from Buy Ideal</li>
-    <li>Sell, rent or sub-license material from Buy Ideal</li>
-    <li>Reproduce, duplicate or copy material from Buy Ideal</li>
-    <li>Redistribute content from Buy Ideal</li>
+    <li>Republish material from buyexperts</li>
+    <li>Sell, rent or sub-license material from buyexperts</li>
+    <li>Reproduce, duplicate or copy material from buyexperts</li>
+    <li>Redistribute content from buyexperts</li>
 </ul>
 
 <p>This Agreement shall begin on the date hereof. Our Terms and Conditions were created with the help of the <a href="https://www.termsandconditionsgenerator.com">Terms And Conditions Generator</a> and the <a href="https://www.generateprivacypolicy.com">Privacy Policy Generator</a>.</p>
 
-<p>Parts of this website offer an opportunity for users to post and exchange opinions and information in certain areas of the website. Buy Ideal does not filter, edit, publish or review Comments prior to their presence on the website. Comments do not reflect the views and opinions of Buy Ideal,its agents and/or affiliates. Comments reflect the views and opinions of the person who post their views and opinions. To the extent permitted by applicable laws, Buy Ideal shall not be liable for the Comments or for any liability, damages or expenses caused and/or suffered as a result of any use of and/or posting of and/or appearance of the Comments on this website.</p>
+<p>Parts of this website offer an opportunity for users to post and exchange opinions and information in certain areas of the website. buyexperts does not filter, edit, publish or review Comments prior to their presence on the website. Comments do not reflect the views and opinions of buyexperts,its agents and/or affiliates. Comments reflect the views and opinions of the person who post their views and opinions. To the extent permitted by applicable laws, buyexperts shall not be liable for the Comments or for any liability, damages or expenses caused and/or suffered as a result of any use of and/or posting of and/or appearance of the Comments on this website.</p>
 
-<p>Buy Ideal reserves the right to monitor all Comments and to remove any Comments which can be considered inappropriate, offensive or causes breach of these Terms and Conditions.</p>
+<p>buyexperts reserves the right to monitor all Comments and to remove any Comments which can be considered inappropriate, offensive or causes breach of these Terms and Conditions.</p>
 
 <p>You warrant and represent that:</p>
 
@@ -71,7 +71,7 @@ function Legal() {
     <li>The Comments will not be used to solicit or promote business or custom or present commercial activities or unlawful activity.</li>
 </ul>
 
-<p>You hereby grant Buy Ideal a non-exclusive license to use, reproduce, edit and authorize others to use, reproduce and edit any of your Comments in any and all forms, formats or media.</p>
+<p>You hereby grant buyexperts a non-exclusive license to use, reproduce, edit and authorize others to use, reproduce and edit any of your Comments in any and all forms, formats or media.</p>
 
 <h3><strong>Hyperlinking to our Content</strong></h3>
 
@@ -99,11 +99,11 @@ function Legal() {
     <li>educational institutions and trade associations.</li>
 </ul>
 
-<p>We will approve link requests from these organizations if we decide that: (a) the link would not make us look unfavorably to ourselves or to our accredited businesses; (b) the organization does not have any negative records with us; (c) the benefit to us from the visibility of the hyperlink compensates the absence of Buy Ideal; and (d) the link is in the context of general resource information.</p>
+<p>We will approve link requests from these organizations if we decide that: (a) the link would not make us look unfavorably to ourselves or to our accredited businesses; (b) the organization does not have any negative records with us; (c) the benefit to us from the visibility of the hyperlink compensates the absence of buyexperts; and (d) the link is in the context of general resource information.</p>
 
 <p>These organizations may link to our home page so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products or services; and (c) fits within the context of the linking party’s site.</p>
 
-<p>If you are one of the organizations listed in paragraph 2 above and are interested in linking to our website, you must inform us by sending an e-mail to Buy Ideal. Please include your name, your organization name, contact information as well as the URL of your site, a list of any URLs from which you intend to link to our Website, and a list of the URLs on our site to which you would like to link. Wait 2-3 weeks for a response.</p>
+<p>If you are one of the organizations listed in paragraph 2 above and are interested in linking to our website, you must inform us by sending an e-mail to buyexperts. Please include your name, your organization name, contact information as well as the URL of your site, a list of any URLs from which you intend to link to our Website, and a list of the URLs on our site to which you would like to link. Wait 2-3 weeks for a response.</p>
 
 <p>Approved organizations may hyperlink to our Website as follows:</p>
 
@@ -113,7 +113,7 @@ function Legal() {
     <li>By use of any other description of our Website being linked to that makes sense within the context and format of content on the linking party’s site.</li>
 </ul>
 
-<p>No use of Buy Ideal's logo or other artwork will be allowed for linking absent a trademark license agreement.</p>
+<p>No use of buyexperts's logo or other artwork will be allowed for linking absent a trademark license agreement.</p>
 
 <h3><strong>iFrames</strong></h3>
 
@@ -180,7 +180,7 @@ function Legal() {
 <p><strong>Account</strong> means a unique account created for You to access our Service or parts of our Service.</p>
 </li>
 <li>
-<p><strong>Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this Agreement) refers to Buy Ideal, akhnoor, jammu.</p>
+<p><strong>Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this Agreement) refers to buyexperts, akhnoor, jammu.</p>
 </li>
 <li>
 <p><strong>Cookies</strong> are small files that are placed on Your computer, mobile device or any other device by a website, containing the details of Your browsing history on that website among its many uses.</p>
@@ -207,7 +207,7 @@ function Legal() {
 <p><strong>Usage Data</strong> refers to data collected automatically, either generated by the use of the Service or from the Service infrastructure itself (for example, the duration of a page visit).</p>
 </li>
 <li>
-<p><strong>Website</strong> refers to Buy Ideal, accessible from <a href="https://buyideal.in/" rel="external nofollow noopener" target="_blank">https://buyideal.in/</a></p>
+<p><strong>Website</strong> refers to buyexperts, accessible from <a href="https://buyexperts.in/" rel="external nofollow noopener" target="_blank">https://buyexperts.in/</a></p>
 </li>
 <li>
 <p><strong>You</strong> means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</p>
@@ -346,7 +346,7 @@ function Legal() {
 <p>If you have any questions about this Privacy Policy, You can contact us:</p>
 <ul>
 <li>
-<p>By email: Buyideal.in@gmail.com</p>
+<p>By email: buyexperts.in@gmail.com</p>
 </li>
 <li>
 <p>By phone number: 8492991857</p>
@@ -371,7 +371,7 @@ function Legal() {
 
 <p>Version 1.0</p>
 
-<p>The Buy Ideal website located at https://buyideal.in/ is a copyrighted work belonging to Buy Ideal. Certain features of the Site may be subject to additional guidelines, terms, or rules, which will be posted on the Site in connection with such features.</p>
+<p>The buyexperts website located at https://buyexperts.in/ is a copyrighted work belonging to buyexperts. Certain features of the Site may be subject to additional guidelines, terms, or rules, which will be posted on the Site in connection with such features.</p>
 
 <p>All such additional terms, guidelines, and rules are incorporated by reference into these Terms.</p>
 
@@ -488,7 +488,7 @@ Dispute Resolution. Please read this Arbitration Agreement carefully. It is part
 <h2>Contact Information</h2>
 
 <p>Address: Jammu</p>
-<p>Email: Buyideal.in@gmail.com</p></b></p>
+<p>Email: buyexperts.in@gmail.com</p></b></p>
           </blockquote>
         </figure></div>
     </div>

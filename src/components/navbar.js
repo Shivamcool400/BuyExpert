@@ -166,7 +166,7 @@ function Navbar() {
           <NavIcon to='#'>
             <FaIcons.FaBars onClick={showSidebar} />
           </NavIcon>
-          <Logo to='/home'>buyideal</Logo>
+          <Logo to='/home'>Buyexperts</Logo>
           <LoginPage to={!user && '/login'} onClick={handleLogout}>{user ? 'LogOut' : 'Login'}</LoginPage>
         </Nav>
         <SidebarNav sidebar={sidebar}>

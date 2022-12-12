@@ -89,11 +89,11 @@ class Home extends Component{
 
 <p className="para">Like a typical buyer, maybe you are jumping from Quora to Youtube to Amazon reviews to check which device will best suit you. Spending days on research, asking friends and relatives and maybe even hitting the store to give the damn thing a test. <br /><br />
 
-At BuyIdeal you can do all that research in one place!<br /><br />
+At buyexperts you can do all that research in one place!<br /><br />
 
 Whether you are looking for a device well within your budget (without sacrificing any features) or you just want a device that feels good in the hands. Whether you want to start a career as a content creator and need a gadget with an excellent camera, storage, speed and battery life or there isn’t much on your list and you just need a minimalist device.<br /><br />
 
-At BuyIdeal we give you relevant and unbiased suggestions, based on your needs, to help you buy the device which is ‘ideal’ for you. With our unique algorithm, you can choose from different tabs, the field of your usage, your budget, your special preferences etc. to get personalized recommendations in just a few clicks. Reviews from websites like Youtube, Amazon, plus our own opinion, all packed up in one place to provide you with an optimum research experience.<br /><br />
+At buyexperts we give you relevant and unbiased suggestions, based on your needs, to help you buy the device which is ‘ideal’ for you. With our unique algorithm, you can choose from different tabs, the field of your usage, your budget, your special preferences etc. to get personalized recommendations in just a few clicks. Reviews from websites like Youtube, Amazon, plus our own opinion, all packed up in one place to provide you with an optimum research experience.<br /><br />
 </p>
 </div>
 </div>

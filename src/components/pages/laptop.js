@@ -85,7 +85,7 @@ function Laptops () {
     setHp(snapshot.docs.map(doc => doc.data()))
   ))
  
-  alert("The site is under development mode! so the reviews may be repetitive or inappropriate in some Sections. we are constantly working to provide you the best recommendations earliest! Team Buyideal")
+  alert("The site is under development mode! so the reviews may be repetitive or inappropriate in some Sections. we are constantly working to provide you the best recommendations earliest! Team buyexperts")
   
   }, []);
 
@@ -199,7 +199,7 @@ const reset = () => {
             
             <figure className="text-center ">
           <blockquote className="blockquote ">
-            <h2 className="msg-heading text-light">BUY IDEAL</h2>
+            <h2 className="msg-heading text-light">buyexperts</h2>
           </blockquote>
         </figure>
         <figure className="text-center ">

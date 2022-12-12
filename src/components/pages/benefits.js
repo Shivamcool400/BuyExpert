@@ -27,7 +27,7 @@ With us, you can discover answers to all your questions and even more which you 
 Well, we’ve got you covered here, too.
 </li>
                     <li className="benefits_point">&nbsp;&nbsp;And why at all listen to us when there are so many other websites out there? 
-Because BuyIdeal provides you impartial reviews, completely based on data from around the Internet. No commissions involved. <br /><br />
+Because buyexperts provides you impartial reviews, completely based on data from around the Internet. No commissions involved. <br /><br />
 Here you can choose specifications you need in your device, compare reviews from a ton of websites and save time and confusion of switching from website to website during your research process.  
 You don’t even need to worry about checking every day for bargains on your ideal device. You’ll get notifications from us as and when the best deals are available.</li>
                 
